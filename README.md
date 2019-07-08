@@ -6,6 +6,6 @@ MicrobeDirectory 2.
 From source
 ```
 git clone https://github.com/dcdanko/MD2
-cd MetaSUB
+cd MD2
 python setup.py install
 ```
