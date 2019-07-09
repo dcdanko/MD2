@@ -31,3 +31,19 @@ def compare_categorical(value_being_compared, values_in_taxa_list_1, values_in_t
 def compare_numeric(values_in_taxa_list_1, values_in_taxa_list_2):
     """Return a Pandas Series with [abundance-in, abundance-out, p-value]."""
     pass
+
+
+if __name__ == '__main__':
+    # Run some simple tests
+    categorical_test = compare_categorical(
+        'yes',
+         pd.Series(['yes', 'yes', 'no', 'yes', 'yes']),  # note that these are NOT the same length
+         pd.Series(['no', 'no', 'no', 'yes', 'yes', 'no', 'no']),
+    )
+    print(categorical_test)
+    numeric_test = compare_numeric(
+        pd.Series([0, 1, 3, 0, 1, 1, 2, 2]),
+        pd.Series([2, 2, , 3, 1, 3, 4]),
+    )
+    print(numeric_test)
+ 
