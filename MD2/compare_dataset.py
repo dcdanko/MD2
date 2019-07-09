@@ -50,4 +50,3 @@ if __name__ == '__main__':
         pd.Series([2, 2, , 3, 1, 3, 4]),
     )
     print(numeric_test)
- 

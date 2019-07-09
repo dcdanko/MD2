@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: MD2
+Version: 0.1.0
+Summary: Codes for Microbe Directory 2.0 and above
+Home-page: https://github.com/dcdanko/MD2
+Author: Chandrima Bhattacharya
+Author-email: chb4004@med.cornell.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
