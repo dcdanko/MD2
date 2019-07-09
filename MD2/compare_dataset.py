@@ -30,7 +30,11 @@ def compare_categorical(value_being_compared, values_in_taxa_list_1, values_in_t
 
 def compare_numeric(values_in_taxa_list_1, values_in_taxa_list_2):
     """Return a Pandas Series with [abundance-in, abundance-out, p-value]."""
-    pass
+    return pd.Series({
+        'abundance_in': values_in_taxa_list_1.mean(),
+        'abundance_out': values_in_taxa_list_2.mean(),
+        'p-value': 1,  # TODO
+    })
 
 
 if __name__ == '__main__':
