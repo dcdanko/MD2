@@ -23,15 +23,6 @@ class NCBITaxaTree:
     def _name(self, node_num):
         return self.nodes_to_name[node_num]['name']
 
-    def ancestors(self, taxon):
-        """Return a list of all ancestors of the taxon starting with the taxon itself."""
-        parents = [taxon]
-        parent_num = self.parent_map[self._node(taxon)]
-        while parent_num:
-            parents.append(self.nodes_to_name[parent_num]['name'])
-            parent_num = self.parent_map[parent_num]
-        return parents
-
     def parent(self, taxon):
         """Return the name of the parent taxon."""
         return self._name(self.parent_map[self._node(taxon)])
@@ -45,17 +36,45 @@ class NCBITaxaTree:
             parent_num = self.parent_map[parent_num]
         return default
 
+    def microbe_taxonomy(self, taxon, default=None):
+        """Return the entire taxonomy for Bacteria or Viruses."""
+        parent_num = self.parent_map[self._node(taxon)]
+        taxonomy = list()
+        superkingdom, phylum, m_class, order, family, genus = '', '', '', '', '', ''
+        if self.nodes_to_name[parent_num]['rank'] == 'species':    
+            while int(parent_num) > 1:
+                if self.nodes_to_name[parent_num]['rank'] == 'genus':
+                    genus = self.nodes_to_name[parent_num]['name']
+                elif self.nodes_to_name[parent_num]['rank'] == 'family':
+                    family = self.nodes_to_name[parent_num]['name']
+                elif self.nodes_to_name[parent_num]['rank'] == 'order':
+                    order = self.nodes_to_name[parent_num]['name']
+                elif self.nodes_to_name[parent_num]['rank'] == 'class':
+                    m_class = self.nodes_to_name[parent_num]['name']
+                elif self.nodes_to_name[parent_num]['rank'] == 'phylum':
+                    phylum = self.nodes_to_name[parent_num]['name']
+                elif self.nodes_to_name[parent_num]['rank'] == 'superkingdom':
+                    superkingdom = self.nodes_to_name[parent_num]['name']
+                    if self.nodes_to_name[parent_num]['name'] == 'Bacteria' or self.nodes_to_name[parent_num]['name'] == 'Viruses':
+                        taxonomy = {'tax_id' : self.parent_map[self._node(taxon)], 'species' : taxon, 'genus' : genus, 
+                                  'family' : family, 'order' : order, 'class' : m_class, 'phylum' : phylum}
+                        return taxonomy              
+                parent_num = self.parent_map[parent_num]     
+        return default
+
     def phyla(self, taxon, default=None):
         """Return the phyla for the given taxon."""
         if taxon == 'root':
-            return None 
+            return default
         if taxon == '':
             return 'Empty String'
         return self.ancestor_rank('phylum', taxon, default=None)
 
-    def genus(self, taxon, default=None):
-        """Return the phyla for the given taxon."""
-        return self.ancestor_rank('genus', taxon, default=None)
+    def taxonomic_rank(self, taxon, default=None):
+        """Return the taxonomy for the Bacteria or Viruses."""
+        if taxon == 'root':
+            return default
+        return self.microbe_taxonomy(taxon, default=None)
 
     def _tree(self, taxa):
         queue, tree = {self._node(el) for el in taxa}, {}
@@ -123,5 +142,4 @@ class NCBITaxaTree:
                     if node == parent:  # NCBI has a self loop at the root
                         parent = None
                     parent_map[node] = parent
-        print (type(cls(parent_map, names_to_nodes, nodes_to_name)))
         return cls(parent_map, names_to_nodes, nodes_to_name), sci_name
