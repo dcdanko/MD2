@@ -2,6 +2,7 @@ import click
 import pandas as pd
 from .taxa_tree import NCBITaxaTree
 
+
 @click.group()
 def main():
     pass
@@ -10,14 +11,24 @@ def main():
 def data_table():
     pass
 	
-@main.command('filter-taxa')
-def filter_taxa():
-    pass
+@main.command('filter-microbes')
+@click.argument('out', type=click.File('w'))
+def filter_taxa(out):
+    """Parse NCBI File to return the phyla classification of a species"""
+    taxa_tree, sci_name = NCBITaxaTree.parse_files()
+    taxonomy = {}
+    for taxon in sci_name:
+        taxon = taxon.strip()
+        if taxa_tree.taxonomic_rank(taxon, default=None) != None:
+            taxonomy[taxon] = taxa_tree.taxonomic_rank(taxon, default=None).values()
+    col_names = ['taxonomic_id', 'species', 'genus', 'family', 'order', 'class', 'phylum']
+    annotated = pd.DataFrame.from_dict(taxonomy, columns=col_names, orient='index')
+    annotated.to_csv(out)
 	
 @main.command('annotate-taxa')
 @click.argument('out', type=click.File('w'))
 def annotate(out):
-    """Parse NCBI File to return the taxonomic classification of a species"""
+    """Parse NCBI File to return the phyla classification of a species"""
     taxa_tree, sci_name = NCBITaxaTree.parse_files()
     phyla = list()
     for taxon in sci_name:
