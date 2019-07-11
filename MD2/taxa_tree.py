@@ -6,8 +6,11 @@ import gzip
 NCBI_DELIM = '\t|'  # really...
 NAMES_ENV_VAR = 'MD2_NCBI_NAMES'
 NODES_ENV_VAR = 'MD2_NCBI_NODES'
-NAMES_DEF = join(dirname(__file__), 'ncbi_tree/names.dmp.gz')
-NODES_DEF = join(dirname(__file__), 'ncbi_tree/nodes.dmp.gz')
+RANKEDLINEAGE_ENV_VAR = 'MD2_NCBI_RANKEDLINEAGE'
+NAMES_DEF = join(dirname(__file__), 'ncbi_taxa_file/names.dmp.gz')
+NODES_DEF = join(dirname(__file__), 'ncbi_taxa_file/nodes.dmp.gz')
+RANKEDLINEAGE_DEF = join(dirname(__file__), 'ncbi_taxa_file/rankedlineage.dmp.gz')
+
 
 
 class NCBITaxaTree:
@@ -56,19 +59,27 @@ class NCBITaxaTree:
                 elif self.nodes_to_name[parent_num]['rank'] == 'superkingdom':
                     superkingdom = self.nodes_to_name[parent_num]['name']
                     if self.nodes_to_name[parent_num]['name'] == 'Bacteria' or self.nodes_to_name[parent_num]['name'] == 'Viruses':
-                        taxonomy = {'tax_id' : self.parent_map[self._node(taxon)], 'species' : taxon, 'genus' : genus, 
+                        taxonomy = {'tax_id' : self._node(taxon), 'species' : taxon, 'genus' : genus, 
                                   'family' : family, 'order' : order, 'class' : m_class, 'phylum' : phylum}
                         return taxonomy              
                 parent_num = self.parent_map[parent_num]     
         return default
+		
+    def rank_of_species(self, taxon):
+        """Returns the rank and taxonomic id for a given taxon."""
+        taxon_file = {'scientific name': taxon, 'tax_id' : self._node(taxon), 
+                      'rank': self.nodes_to_name[self._node(taxon)]['rank']}
+        return taxon_file
 
-    def phyla(self, taxon, default=None):
-        """Return the phyla for the given taxon."""
-        if taxon == 'root':
+    def rank_microbes(self, taxon, default=None):
+        """Returns the rank and taxonomic id for a given microbial taxon."""
+        if taxon == 'root' or self.nodes_to_name[self._node(taxon)]['rank'] == 'subspecies' or self.nodes_to_name[self._node(taxon)]['rank'] == 'no rank':
             return default
-        if taxon == '':
-            return 'Empty String'
-        return self.ancestor_rank('phylum', taxon, default=None)
+        if self.ancestor_rank('superkingdom', taxon, default=None) == 'Viruses' or self.ancestor_rank('superkingdom', taxon, default=None) == 'Bacteria':
+            taxon_file = {'scientific name': taxon, 'tax_id' : self._node(taxon), 
+                          'rank': self.nodes_to_name[self._node(taxon)]['rank']}
+            return taxon_file
+        return default
 
     def taxonomic_rank(self, taxon, default=None):
         """Return the taxonomy for the Bacteria or Viruses."""
@@ -143,3 +154,5 @@ class NCBITaxaTree:
                         parent = None
                     parent_map[node] = parent
         return cls(parent_map, names_to_nodes, nodes_to_name), sci_name
+	
+    
