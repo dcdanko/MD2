@@ -9,8 +9,8 @@ def main():
 	
 @main.command('data-table')
 def data_table():
-    """Merge existing data tables"""
-    pass
+    """New NCBI data parsing"""
+    taxa_tree, taxonomy = NCBITaxaTree.parse_new_ncbi_files()
 	
 @main.command('filter-microbes')
 @click.argument('out', type=click.File('w'))
@@ -21,7 +21,7 @@ def filter_taxa(out):
     for taxon in sci_name:
         taxon = taxon.strip()
         if taxa_tree.taxonomic_rank(taxon, default=None) != None:
-            taxonomy[taxon] = taxa_tree.taxonomic_rank(taxon, default=None).values()
+            taxonomy[taxon] = taxa_tree.taxonomic_tree_species(taxon, default=None).values()
     col_names = ['taxonomic_id', 'species', 'genus', 'family', 'order', 'class', 'phylum']
     annotated = pd.DataFrame.from_dict(taxonomy, columns=col_names, orient='index')
     annotated.to_csv(out)
@@ -32,17 +32,31 @@ def filter_taxa(out):
 def annotate(microbes, out):
     """Parse NCBI File to return the rank for given scientific name"""
     taxa_tree, sci_name = NCBITaxaTree.parse_files()
-    rank_file = {}
+    rank_file, tax_rank, rank = {}, list(), ''
+    bacteria, viruses, fungi = {}, {}, {}
     for taxon in sci_name:
         taxon = taxon.strip()
         if microbes == False:        
             rank_file[taxon] = taxa_tree.rank_of_species(taxon).values()
         else:
-            if taxa_tree.rank_microbes(taxon, default=None) != None:
-                rank_file[taxon] = taxa_tree.rank_microbes(taxon, default=None).values()
+            tax_rank, rank = taxa_tree.rank_microbes(taxon, default=None)
+            rank_file[taxon] = tax_rank
+            if rank != None:   
+                if rank == 'Viruses':
+                    viruses[taxon] = tax_rank
+                elif rank == 'Bacteria':
+                    bacteria[taxon] = tax_rank	
+                elif rank == 'Fungi':
+                    fungi[taxon] = tax_rank			
     col_names = ['scientific name', 'taxonomic_id', 'rank']
     annotated = pd.DataFrame.from_dict(rank_file, columns=col_names, orient='index')
     annotated.to_csv(out)
+    annotated = pd.DataFrame.from_dict(viruses, columns=col_names, orient='index')
+    annotated.to_csv("NCBI_Virus_rank.csv")
+    annotated = pd.DataFrame.from_dict(bacteria, columns=col_names, orient='index')
+    annotated.to_csv("NCBI_Bacteria_rank.csv")
+    annotated = pd.DataFrame.from_dict(fungi, columns=col_names, orient='index')
+    annotated.to_csv("NCBI_Fungi_rank.csv")
 	
 
 if __name__ == '__main__':
