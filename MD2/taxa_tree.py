@@ -74,14 +74,19 @@ class NCBITaxaTree:
     def rank_microbes(self, taxon, default=None):
         """Returns the rank and taxonomic id for a given microbial taxon."""
         if taxon == 'root' or self.nodes_to_name[self._node(taxon)]['rank'] == 'subspecies' or self.nodes_to_name[self._node(taxon)]['rank'] == 'no rank':
-            return default
-        if self.ancestor_rank('superkingdom', taxon, default=None) == 'Viruses' or self.ancestor_rank('superkingdom', taxon, default=None) == 'Bacteria':
-            taxon_file = {'scientific name': taxon, 'tax_id' : self._node(taxon), 
-                          'rank': self.nodes_to_name[self._node(taxon)]['rank']}
-            return taxon_file
-        return default
+            return default, default
+        #taxon_file = {'scientific name': taxon, 'tax_id' : self._node(taxon), 
+        #             'rank': self.nodes_to_name[self._node(taxon)]['rank']}
+        taxon_file = [taxon, self._node(taxon), self.nodes_to_name[self._node(taxon)]['rank']]
+        if self.ancestor_rank('superkingdom', taxon, default=None) == 'Viruses':
+            return taxon_file, 'Viruses'
+        elif self.ancestor_rank('superkingdom', taxon, default=None) == 'Bacteria':
+            return taxon_file, 'Bacteria'
+        elif self.ancestor_rank('kingdom', taxon, default=None) == 'Fungi':
+            return taxon_file, 'Fungi'
+        return default, default
 
-    def taxonomic_rank(self, taxon, default=None):
+    def taxonomic_tree_species(self, taxon, default=None):
         """Return the taxonomy for the Bacteria or Viruses."""
         if taxon == 'root':
             return default
