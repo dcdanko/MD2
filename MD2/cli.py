@@ -1,5 +1,7 @@
 import click
 import pandas as pd
+import glob
+import csv
 from .taxa_tree import NCBITaxaTree
 
 
@@ -8,9 +10,20 @@ def main():
     pass
 	
 @main.command('data-table')
-def data_table():
-    """New NCBI data parsing"""
-    taxa_tree, taxonomy = NCBITaxaTree.parse_new_ncbi_files()
+@click.argument('file_path', type=click.Path(exists=True))
+@click.argument('out', type=click.File('w'))
+def data_table(file_path, out):
+    """Concanate all the CSV files into one combined file"""
+    all_files = glob.glob(file_path + "/*.csv")
+    concat_list = []
+    
+    for filename in all_files: 
+        df = pd.read_csv(open(filename, 'r'))
+        concat_list.append(df)
+
+    annotated = pd.concat(concat_list, axis=0, ignore_index=True)
+    annotated.to_csv(out)
+
 	
 @main.command('filter-microbes')
 @click.argument('out', type=click.File('w'))
