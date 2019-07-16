@@ -32,15 +32,26 @@ class NCBITaxaTree:
         """Return the name of the parent taxon."""
         return self._name(self.parent_map[self._node(taxon)])
 		
-    def data_table(self, file_path):
+    def find_column(self, df, scientific_name):
+        header = list(df.columns.values)
+        set_val, col_name = 0, ''
+        for headers in header:
+            list_col = df[headers]
+            val = set(list_col).intersection(set(scientific_name))
+            if len(val) > set_val:
+                set_val = len(val)
+                col_name = headers
+        return col_name, set_val
+		
+    def data_table(self, file_path, ncbi_file):
         """Concanate all the CSV files into one combined file"""
         all_files = glob.glob(file_path + "/*.csv")
-        concat_list = []
         for filename in all_files: 
             df = pd.read_csv(open(filename, 'r'))
-            concat_list.append(df)
-        annotated = pd.concat(concat_list, axis=0, ignore_index=True, sort=False)
-        return annotated
+            column_name, value = self.find_column(df, ncbi_file['scientific name'])
+            if value > 0:
+                ncbi_file  = ncbi_file.merge(df, left_on='scientific name', right_on=column_name, how='left')
+        return ncbi_file
 
     def ancestor_rank(self, rank, taxon, default=None):
         """Return the ancestor of taxon at the given rank."""
