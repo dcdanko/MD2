@@ -50,9 +50,11 @@ def annotate(microbes, file_path):
     annotated = annotated.join(merged_file, how='left')
     annotated.to_csv("NCBI_Bacteria_rank.csv")
     annotated = pd.DataFrame.from_dict(viruses, columns=col_names, orient='index')
+    annotated = annotated.set_index('scientific name')
     annotated = annotated.join(merged_file, how='left')
     annotated.to_csv("NCBI_Virus_rank.csv")
     annotated = pd.DataFrame.from_dict(fungi, columns=col_names, orient='index')
+    annotated = annotated.set_index('scientific name')
     annotated = annotated.join(merged_file, how='left')
     annotated.to_csv("NCBI_Fungi_rank.csv")
 	
