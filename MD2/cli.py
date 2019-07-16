@@ -30,7 +30,6 @@ def annotate(microbes, file_path):
     taxa_tree, sci_name = NCBITaxaTree.parse_files()
     rank_file, tax_rank, rank = {}, list(), ''
     bacteria, viruses, fungi = {}, {}, {}
-    merged_file = taxa_tree.data_table(file_path)
     for taxon in sci_name:
         taxon = taxon.strip()
         if microbes == False:        
@@ -41,22 +40,20 @@ def annotate(microbes, file_path):
                 if rank == 'Viruses':
                     viruses[taxon] = tax_rank
                 elif rank == 'Bacteria':
-                    bacteria[taxon] = tax_rank	
+                    bacteria[taxon] = tax_rank					
                 elif rank == 'Fungi':
-                    fungi[taxon] = tax_rank			
+                    fungi[taxon] = tax_rank							
     col_names = ['scientific name', 'taxonomic_id', 'rank']
-    annotated = pd.DataFrame.from_dict(bacteria, columns=col_names, orient='index')
-    annotated = annotated.set_index('scientific name')
-    annotated = annotated.join(merged_file, how='left')
-    annotated.to_csv("NCBI_Bacteria_rank.csv")
-    annotated = pd.DataFrame.from_dict(viruses, columns=col_names, orient='index')
-    annotated = annotated.set_index('scientific name')
-    annotated = annotated.join(merged_file, how='left')
+    annotated = pd.DataFrame.from_dict(viruses, columns =col_names, orient='index')
+    annotated = taxa_tree.data_table(file_path, annotated)
     annotated.to_csv("NCBI_Virus_rank.csv")
-    annotated = pd.DataFrame.from_dict(fungi, columns=col_names, orient='index')
-    annotated = annotated.set_index('scientific name')
-    annotated = annotated.join(merged_file, how='left')
+    annotated = pd.DataFrame.from_dict(bacteria, columns =col_names, orient='index')
+    annotate = taxa_tree.data_table(file_path, annotated)
+    annotate.to_csv("NCBI_Bacteria_rank.csv")
+    annotated = pd.DataFrame.from_dict(fungi, columns =col_names, orient='index')
+    annotated = taxa_tree.data_table(file_path, annotated)
     annotated.to_csv("NCBI_Fungi_rank.csv")
+    
 	
 
 if __name__ == '__main__':
