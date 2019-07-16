@@ -1,6 +1,8 @@
 from os import environ
 from os.path import join, dirname
 import gzip
+import glob
+import pandas as pd
 
 
 NCBI_DELIM = '\t|'  # really...
@@ -29,6 +31,16 @@ class NCBITaxaTree:
     def parent(self, taxon):
         """Return the name of the parent taxon."""
         return self._name(self.parent_map[self._node(taxon)])
+		
+    def data_table(self, file_path):
+        """Concanate all the CSV files into one combined file"""
+        all_files = glob.glob(file_path + "/*.csv")
+        concat_list = []
+        for filename in all_files: 
+            df = pd.read_csv(open(filename, 'r'))
+            concat_list.append(df)
+        annotated = pd.concat(concat_list, axis=0, ignore_index=True, sort=False)
+        return annotated
 
     def ancestor_rank(self, rank, taxon, default=None):
         """Return the ancestor of taxon at the given rank."""
@@ -75,8 +87,6 @@ class NCBITaxaTree:
         """Returns the rank and taxonomic id for a given microbial taxon."""
         if taxon == 'root' or self.nodes_to_name[self._node(taxon)]['rank'] == 'subspecies' or self.nodes_to_name[self._node(taxon)]['rank'] == 'no rank':
             return default, default
-        #taxon_file = {'scientific name': taxon, 'tax_id' : self._node(taxon), 
-        #             'rank': self.nodes_to_name[self._node(taxon)]['rank']}
         taxon_file = [taxon, self._node(taxon), self.nodes_to_name[self._node(taxon)]['rank']]
         if self.ancestor_rank('superkingdom', taxon, default=None) == 'Viruses':
             return taxon_file, 'Viruses'
