@@ -46,16 +46,16 @@ Since microbial communities are phenotypic and genetically diverse, microbial fe
 4. Strand: The nucleic acid may be single (*ss*) or double stranded (*ds*).
 5. Capsid: The outer layer of a virus that protects the nucleic acid. Virus without capsid are called naked.
 6. Capsid symmetry: The way in which the capsid units are arranged.
-  * Helical 
-  * Icosahedral
-  * Complex
+   * Helical 
+   * Icosahedral
+   * Complex
 7. Is it a pathogen? If yes, which is its host.
-  * Human
-  * Animal
-  * Fungi
-  * Plant
-  * Bacteria
-  * Protozoa
+   * Human
+   * Animal
+   * Fungi
+   * Plant
+   * Bacteria
+   * Protozoa
 
 #### Bacteria
 
@@ -77,7 +77,7 @@ Since microbial communities are phenotypic and genetically diverse, microbial fe
    * Primary sources of reducing equivalents:
      * Organotrophs: Organic compounds are used as electron donor.
      * Lithotrophs: Inorganic compounds are used as electron donor.
-   * Primary sources of carbon
+   * Primary sources of carbon:
      * Heterotrophs: Organic compounds are metabolized to get carbon for growth and development.
      * Autotrophs: Carbon dioxide (CO2) is used as source of carbon.
 
