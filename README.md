@@ -50,12 +50,12 @@ Since microbial communities are phenotypic and genetically diverse, microbial fe
   * Icosahedral
   * Complex
 7. Is it a pathogen? If yes, which is its host.
-   * Human
-   * Animal
-   * Fungi
-   * Plant
-   * Bacteria
-   * Protozoa
+  * Human
+  * Animal
+  * Fungi
+  * Plant
+  * Bacteria
+  * Protozoa
 
 #### Bacteria
 
