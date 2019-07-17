@@ -5,7 +5,7 @@ Microbes include all unicellular organisms and so are extremely rich and diverse
 
 TMD aims to:
 
->* Provide a curated list of microbes from three kingdoms: Archaea, Bacteria and Eukarya
+>* Provide a curated list of microbes from four kingdoms: Archaea, Bacteria, Virus and Eukarya
 >* Compile microbial data from different [databases](#first) into a single one
 >* Give a phenotypic and ecologic description of microbial species [features](#second).
 >* Make microbial data handy to everyone!
