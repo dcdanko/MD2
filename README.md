@@ -1,4 +1,4 @@
-#The Microbe Directory v2.0
+# The Microbe Directory v2.0
 *The ultimate microbe database*
 
 Microbes include all unicellular organisms and so are extremely rich and diverse.
@@ -60,11 +60,11 @@ Since microbial communities are phenotypic and genetically diverse, microbial fe
    * Bacteria
    * Protozoa
 
-####Bacteria
+#### Bacteria
 
 1. Gram stain: Used to distinguish and classify bacterial species into two large groups: Gram-positive and Gram-negative. 
 
-####Bacteria and Archaea
+#### Bacteria and Archaea
 
 2. Known antimicrobial resistance (AMR): Antimicrobial resistance occurs naturally over time, usually through genetic changes. However, the misuse and overuse of antimicrobials is accelerating this process. Information about microbes with antimicrobial resistance are increasingly relevant.
 3. Biofilm forming: Biofilms are multicellular communities held together by a self-produced extracellular matrix.  Biofilms impact humans in many ways as they can form in natural, medical, and industrial settings.
@@ -84,7 +84,7 @@ Since microbial communities are phenotypic and genetically diverse, microbial fe
      * Heterotrophs: Organic compounds are metabolized to get carbon for growth and development.
      * Autotrophs: Carbon dioxide (CO2) is used as source of carbon.
 
-####Bacteria, Archaea and Eukarya
+#### Bacteria, Archaea and Eukarya
 
 6. Extremophile: a microbe that thrives in physically or geochemically extreme conditions that are detrimental to most life on Earth.
 7. If extremophile, which type.
