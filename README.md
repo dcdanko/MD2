@@ -1,10 +1,7 @@
-# The Microbe Directory v2.0
+# The Microbe Directory v2.0 
 *The ultimate microbe database*
 
-Microbes include all unicellular organisms and so are extremely rich and diverse.
-
-
-**The Microbe Directory (TMD)** is a collective research effort to profile and annotate more than 30,000 microbial species that include Bacteria, Archaea, Virus, Fungi, and Algae.
+Microbes include all unicellular organisms and so are extremely rich and diverse.**The Microbe Directory (TMD)** is a collective research effort to profile and annotate more than 30,000 microbial species that include Bacteria, Archaea, Virus, Fungi, and Algae.
 
 TMD aims to:
 
