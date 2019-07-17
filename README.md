@@ -31,7 +31,7 @@ TMD aims to:
 
 Since microbial communities are phenotypic and genetically diverse, microbial features are stipulated by kingdom.
 
-####Virus
+#### Virus
 1. Extremophile: a microbe that thrives in physically or geochemically extreme conditions that are detrimental to most life on Earth.
 2. If extremophile, which type.
    * Acidophile: Microbes that live in acidic systems with pH -0.06 to 4.0.
