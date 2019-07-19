@@ -23,37 +23,29 @@ def compare_datasets(taxa_list_1, taxa_list_2):
     """
      
 
-def count_values(values, all_variables):
+def count_values(values, value_being_compared):
     x=defaultdict(float)
-    for var in all_variables:
-        if var not in x:
-            x[var] == 0/len(values)
+    for var in [True, False]:
+        x[var] = 1 / (1000 * 1000)
     for var in values:
-        if var in x:
-            x[var] += 1/len(values)
+        if var == value_being_compared:
+            x[True] += 1
+        else:
+            x[False] +=1
     return x
         
 
 def compare_categorical(value_being_compared, values_in_taxa_list_1, values_in_taxa_list_2):
     all_variables= set(values_in_taxa_list_1) | set(values_in_taxa_list_2)
-    print(all_variables)
-    stats1 = count_values(values_in_taxa_list_1, all_variables)
-    print("Original Dictionary:")
-    print(stats1)
+    stats1 = count_values(values_in_taxa_list_1, value_being_compared)
     stats1 = pd.Series(stats1)
-    print("Converted Series:")
-    print(stats1)
-    stats2 =  count_values(values_in_taxa_list_2, all_variables)
-    print("Original Dictionary:")
-    print(stats2)
+    stats2 =  count_values(values_in_taxa_list_2, value_being_compared)
     stats2 = pd.Series(stats2)
-    print("Converted Series:")
-    print(stats2)
     a = chisquare(stats1, stats2)
     return pd.Series({
         'abundance_in': stats1,
         'abundance_out': stats2,
-        'p-value': a.pvalue, #TODO
+        'p-value': a.pvalue,
     })
 
 
@@ -65,7 +57,7 @@ def compare_numeric(values_in_taxa_list_1, values_in_taxa_list_2):
     return pd.Series({
         'abundance_in': mean1, 
         'abundance_out': mean2,
-        'p-value': a.pvalue,  # TODO
+        'p-value': a.pvalue,
     })
 
 
