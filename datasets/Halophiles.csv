@@ -1,0 +1,1167 @@
+ID,Species,Order,Class,Phylum,Domain,Genome availability,Salinity concentration/range(w/v),Halotolerance classification
+1,Halobacterium jilantaiense,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,"16% - 30%, optimum 18% - 20%",Moderate 
+2,Halobacterium noricense,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,>12%,Moderate 
+3,Halococcus salifodinae,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,>12%,Moderate 
+4,Halococcus saccharolyticus,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,"15% - satr, optimum 25%",Extreme
+5,Haloarcula hispanica,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,complete genome,>12%,Moderate 
+6,Haloarcula marismortui,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,complete genome,"10% - 30%, optimum 20% - 23%",Extreme
+7,Haloarcula sp. CBA1115,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,complete genome,>12%,Moderate 
+9,Halomicrobium mukohataei,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,complete genome,>12%,Moderate 
+10,Natronomonas pharaonis,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,complete genome,>12%,Moderate 
+11,Halobacterium salinarum,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,complete genome,">12%, NaCl saturation",Moderate 
+12,Halalkalicoccus jeotgali,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,complete genome,"10% - 30%, optimum 15%",Moderate 
+13,Halorhabdus utahensis,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,complete genome,"9% - 30%, optimum 27%",Extreme
+14,Haloarcula quadrata,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,>12%,Moderate 
+15,Halosimplex carlsbadense,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,20% - 30% (optimum 25%),Extreme
+16,Halococcus morrhuae (sarcina morrhuae),Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,">12%, 23.3%",Extreme
+17,Haloarcula argentinensis,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,"12% - 26%, optimum 15% - 17.5%",Moderate 
+18,Haloarcula japonica,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,"15% - 30%, optimum 20%",Extreme
+19,Haloarcula vallismortis,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,">15%, optimum 25%",Extreme
+20,Haloarcula amylolytica,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,">12%, optimum 17% - 19%",Moderate 
+21,Halobacterium cutirubrum,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,>12%,Moderate 
+22,Haloquadratum walsbyi,Haloferacales,Halobacteria,Euryarchaeota,Archaea,complete genome,0.19,Moderate 
+23,Haloferax gibbonsii,Haloferacales,Halobacteria,Euryarchaeota,Archaea,complete genome,>12%,Moderate 
+24,Haloferax mediterranei,Haloferacales,Halobacteria,Euryarchaeota,Archaea,complete genome,>12%,Moderate 
+25,Haloferax volcanii,Haloferacales,Halobacteria,Euryarchaeota,Archaea,complete genome,"6% - 29%, optimum 10% - 15%",Moderate 
+26,Halorubrum lacusprofundi,Haloferacales,Halobacteria,Euryarchaeota,Archaea,complete genome,>12%,Moderate 
+27,Halogeometricum borinquense,Haloferacales,Halobacteria,Euryarchaeota,Archaea,complete genome,"min 8%, optimum 20% - 25%",Extreme
+28,Halobaculum gomorrense,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,"min 5.8%, optimum 9% - 15%",Moderate 
+29,Halorubrum sodomense,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,>12%,Moderate 
+30,Halorubrum trapanicum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,>12%,Moderate 
+31,Halorubrum vacuolatum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,>12%,Moderate 
+32,Haloferax sulfurifontis,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,"6% - saturation, optimum 12.5% - 15%",Extreme
+33,Haloferax elongans,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,9.9% - 29.8%,Extreme
+34,Haloferax mucosum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,9.9% - 29.8%,Extreme
+35,Halorubrum saccharovorum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,>12%,Moderate 
+36,Haloferax denitrificans,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,"9% - 26%, optimum 12% - 17.5%",Moderate 
+37,Halorubrum distributum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,>12%,Moderate 
+38,Halorubrum coriense,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,>12%,Moderate 
+39,Methanocalculus halotolerans,Methanomicrobiales,Methanomicrobia,Euryarchaeota,Archaea,no,0.12,Moderate 
+40,Methanohalophilus halophilus,Methanosarcinales,Methanomicrobia,Euryarchaeota,Archaea,complete genome,optimum 4% - 12%,Moderate 
+41,Methanohalophilus portucalensis,Methanosarcinales,Methanomicrobia,Euryarchaeota,Archaea,shotgun,up to 25% - 26%,Extreme
+42,Methanosarcina acetivorans,Methanosarcinales,Methanomicrobia,Euryarchaeota,Archaea,complete genome,0.06,Moderate 
+44,Methanosalsum zhilinae (Methanohalophilus zhilinae),Methanosarcinales,Methanomicrobia,Euryarchaeota,Archaea,complete genome,"1% - 12%, optimum 4%",Slight
+45,Methanohalophilus mahii,Methanosarcinales,Methanomicrobia,Euryarchaeota,Archaea,complete genome,"6% - 15%, optimum 12%",Moderate 
+46,Methanohalobium evestigatum,Methanosarcinales,Methanomicrobia,Euryarchaeota,Archaea,complete genome,"25%, up to 25% - 26%",Extreme
+47,Natronococcus amylolyticus,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,>12%,Moderate 
+49,Haloterrigena turkmenica,Natrialbales,Halobacteria,Euryarchaeota,Archaea,complete genome,>12%,Moderate 
+50,Natrialba magadii,Natrialbales,Halobacteria,Euryarchaeota,Archaea,complete genome,">12%, optimum 20%",Moderate 
+51,Natronobacterium gregoryi,Natrialbales,Halobacteria,Euryarchaeota,Archaea,complete genome,>12%,Moderate 
+52,Natronococcus occultus,Natrialbales,Halobacteria,Euryarchaeota,Archaea,complete genome,>12%,Moderate 
+53,Halovivax ruber,Natrialbales,Halobacteria,Euryarchaeota,Archaea,complete genome,min 14.6% (optimum 19.8%),Moderate 
+54,Halopiger xanaduensis,Natrialbales,Halobacteria,Euryarchaeota,Archaea,complete genome,"15% - 30%, optimum 25%",Extreme
+55,Nodularia Spumigena,Nostocales,Cyanophyceae,Cyanobacteria,Bacteria,complete genome,"6% - 10%, <=7%",Moderate 
+56,Nesterenkonia sp HQ704868,Micrococcales,Actinobacteria,Actinobacteria,Bacteria,no,5% - 25%,Extreme
+57,Marinobacter hydrocarbonoclasticus (Marinobacter aquaeolei),Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,complete genome,0% - 20% (optimum 5%),Moderate
+58,Aphanothece halophytica (coccochloris elabens),Chroococcales,Cyanophyceae,Cyanobacteria,Bacteria,complete genome,"3% - 21%, 27%",Extreme
+59,Halobacillus halophilus,Bacillales,Bacilli,Firmicutes,Bacteria,complete genome,"11.6% - 17.5%, optimum 3% - 5%",Moderate 
+60,Halobacillus locisalis,Bacillales,Bacilli,Firmicutes,Bacteria,no,<=24% (optimum 10%),Moderate 
+61,Halobacillus salinus,Bacillales,Bacilli,Firmicutes,Bacteria,no,<23% (optimum 2% - 10%),Moderate 
+62,Halobacillus campisalis,Bacillales,Bacilli,Firmicutes,Bacteria,no,0% - 22% (optimum 8%),Moderate 
+63,Alteribacillus bidgolensis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,0.5% - 12.5% (optimum 5% - 7.5%),Moderate 
+64,Halobacillus aidingensis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,0.5% - 20%,Moderate 
+66,Halobacillus yeomjeoni,Bacillales,Bacilli,Firmicutes,Bacteria,no,0.5% - 22% (optimum 3% - 5%),Moderate 
+67,Thalassobacillus cyri,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,1% - 15% (optimum 8%),Moderate 
+68,Halobacillus naozhouensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,1% - 20% (optimum 6% - 9%),Moderate 
+69,Halobacillus seohaensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,1% - 21% (optimum 8%),Moderate 
+70,Halobacillus salsuginis,Bacillales,Bacilli,Firmicutes,Bacteria,no,1% - 23% (optimum 5% - 10%),Moderate 
+71,Halobacillus sp HQ704870,Bacillales,Bacilli,Firmicutes,Bacteria,no,5% - 20%,Moderate 
+72,Halobacillus sp HQ834853,Bacillales,Bacilli,Firmicutes,Bacteria,no,5% - 20%,Moderate 
+73,Alteribacillus persepolensis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,5% - 20% (optimum 10%),Moderate 
+74,Halobacillus sp HQ426913,Bacillales,Bacilli,Firmicutes,Bacteria,no,5% - 25%,Extreme
+75,Halobacillus sp HQ834847,Bacillales,Bacilli,Firmicutes,Bacteria,no,5% - 25%,Extreme
+76,Pontibacillus halophilus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"2% - 25%, optimum 5% - 10%",Moderate
+77,Virgibacillus sp HQ426915,Bacillales,Bacilli,Firmicutes,Bacteria,no,5% - 25%,Extreme
+78,Virgibacillus sp HQ834848,Bacillales,Bacilli,Firmicutes,Bacteria,no,5% - 25%,Extreme
+79,Halobacillus alkaliphilus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0.5% - 20%, optimum 10%",Moderate 
+80,Sediminibacillus halophilus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,0% - 20% (optimum 5% - 7.5%),Moderate 
+81,Halobacillus dabanensis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,0.5% - 25%,Extreme
+82,Halobacillus trueperi,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,0.5% - 30% (optimum 10%),Extreme
+83,Oceanobacillus iheyensis,Bacillales,Bacilli,Firmicutes,Bacteria,complete genome,0% - 21% (optimum 3%),Moderate 
+84,Nitrosococcus halophilus,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,complete genome,9.40E-02,Moderate 
+85,Lamprobacter modestohalophilus,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,no,0.09,Moderate 
+86,Desulfobacter halotolerans,Desulfobacterales,Deltaproteobacteria,Proteobacteria,Bacteria,no,0.13,Moderate 
+87,Desulfohalobium retbaense,Desulfovibrionales,Deltaproteobacteria,Proteobacteria,Bacteria,complete genome,"24%, up to 24% (optimum 10%)",Extreme
+88,Desulfovibrio halophilus,Desulfovibrionales,Deltaproteobacteria,Proteobacteria,Bacteria,no,optimum 6% - 7% (max 18%),Moderate 
+89,Desulfovibrio gabonensis,Desulfovibrionales,Deltaproteobacteria,Proteobacteria,Bacteria,no,"1% - 17%, optimum 5% - 6%",Moderate 
+90,Desulfovibrio oxyclinae,Desulfovibrionales,Deltaproteobacteria,Proteobacteria,Bacteria,shotgun,"optimum 5% - 10% (max 22.5%), up to 18% - 22.5%",Moderate 
+91,Spiribacter salinus,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,complete genome,"10% - 25%, optimum 15%",Extreme
+92,Ectothiorhodospira abdelmalekii,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"5% - 25%, optimum 14% - 16%",Moderate 
+93,Ectothiorhodospira haloalkaliphila,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,>12%,Moderate 
+94,Ectothiorhodospira halochloris,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,complete genome,">10%, optimum 14% - 27%",Extreme
+95,Halorhodospira halophila (Ectothiorhodospira halophila),Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,complete genome,NaCl saturation,Extreme
+96,Ectothiorhodospira mobilis,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"1% - 20%, optimum 3% - 8%",Moderate 
+98,Chlorogloea fritschii,Chroococcales,Cyanophyceae,Cyanobacteria,Bacteria,shotgun,3% - 18%,Moderate 
+99,Halothermothrix orenii,Halanaerobiales,Clostridia,Firmicutes,Bacteria,complete genome,4% - 20% (optimum 5% - 10%),Moderate 
+100,Halanaerobium praevalens,Halanaerobiales,Clostridia,Firmicutes,Bacteria,complete genome,"5% - 25%, optimum 13%",Moderate
+101,Halanaerobium hydrogeniformans,Halanaerobiales,Clostridia,Firmicutes,Bacteria,complete genome,optimum 7%,Moderate 
+102,Halanaerobium sehlinense,Halanaerobiales,Clostridia,Firmicutes,Bacteria,no,5% - 30% (optimum 20%),Extreme
+103,Halarsenatibacter silvermanii,Halanaerobiales,Clostridia,Firmicutes,Bacteria,shotgun,min 20%,Moderate 
+104,Haloanaerobium alcaliphilum,Halanaerobiales,Clostridia,Firmicutes,Bacteria,no,"2.5% - 25%, optimum 10%",Moderate 
+105,Acetohalobium arabaticum,Halanaerobiales,Clostridia,Firmicutes,Bacteria,complete genome,"25%, 10% - 25% (optimum 20% - 25%)",Extreme
+106,Halonatronum saccharophilum,Halanaerobiales,Clostridia,Firmicutes,Bacteria,shotgun,3% - 17% (optimum 7% - 12%),Moderate 
+107,Halobacteroides halobius,Halanaerobiales,Clostridia,Firmicutes,Bacteria,complete genome,8.1% - 16.3% (optimum 8.7% - 14.6%),Moderate 
+108,Selenihalanaerobacter shriftii,Halanaerobiales,Clostridia,Firmicutes,Bacteria,shotgun,10% - 24% (optimum 21%),Extreme
+109,Natroniella acetigena,Halanaerobiales,Clostridia,Firmicutes,Bacteria,no,10% - 26% (optimum 12% - 15%),Extreme
+110,Halanaerobaculum tunisiense,Halanaerobiales,Clostridia,Firmicutes,Bacteria,no,14% - 30% (optimum 20% - 22%),Extreme
+111,Orenia salinaria,Halanaerobiales,Clostridia,Firmicutes,Bacteria,no,2% - 30% (optimum 5% - 10%),Extreme
+112,Orenia sivashensis,Halanaerobiales,Clostridia,Firmicutes,Bacteria,no,5% - 25% (optimum 7% - 10%),Extreme
+113,Sporohalobacter (Clostridium) lortetii,Halanaerobiales,Clostridia,Firmicutes,Bacteria,no,5.8% - 11.6%,Moderate 
+114,Halanaerocella petrolearia,Halanaerobiales,Clostridia,Firmicutes,Bacteria,no,6% - 26% (optimum 15%),Extreme
+115,Halanaerobacter jeridensis,Halanaerobiales,Clostridia,Firmicutes,Bacteria,no,6% - 30% (optimum 15%),Extreme
+116,Chromohalobacter beijerinckii,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,0.35% - 25% (optimum 8% - 10%),Extreme
+117,Halomonas halodenitrificans,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,5.80E-02,Moderate 
+118,Halomonas elongata,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,complete genome,0.32,Extreme
+119,Halomonas subterranea,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,0% - 15% (optimum 1% - 5%),Moderate 
+120,Halomonas arcis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,0% - 20% (optimum 1% - 5%),Moderate 
+121,Halomonas saccharevitans,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,0.5% - 15% (optimum 3% - 7.5%),Moderate 
+122,Halomonas ventosae,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,1% - 15% (optimum 8%),Moderate 
+123,Halomonas halophila (Deleya halophila),Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,2% - 30% (optimum 7.5%),Extreme
+124,Halomonas meridiana,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,optimum 3% - 10%,Moderate 
+125,Chromohalobacter salexigens,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,complete genome,"0.9% - 25%, optimum 7.5% - 10%",Moderate 
+126,Halomonas titanicae,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,2% - 8%,Moderate 
+127,Chromohalobacter japonicus,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"5% - 25%, optimum 7.5% - 12.5%",Moderate
+129,Halothiobacillus halophilus,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,no,optimum (4.6% - 5.8%) max 23.3%,Moderate 
+130,Halomicronema excentricum,Synechococcales,Cyanophyceae,Cyanobacteria,Bacteria,no,"3.2% - 12%, up to 15% tolerance",Moderate 
+131,Leibleinia epiphytica,Synechococcales,Cyanophyceae,Cyanobacteria,Bacteria,no,polyhalobes (ph),Extreme
+132,Aphanocapsa salina,Synechococcales,Cyanophyceae,Cyanobacteria,Bacteria,no,7.1% - 18%,Moderate 
+133,Microcoleus chthonoplastes,Oscillatoriales,Cyanophyceae,Cyanobacteria,Bacteria,shotgun,"<=11.7%, 6% - 12.5%",Moderate 
+134,Natranaerobius thermophilus,Natranaerobiales,Clostridia,Firmicutes,Bacteria,complete genome,"18% - 30%, optimum 19% - 23%",Extreme
+135,Nocardiopsis halotolerans,Streptosporangiales,Actinobacteria,Actinobacteria,Bacteria,shotgun,0.1,Moderate 
+136,Lyngbya martensiana,Oscillatoriales,Cyanophyceae,Cyanobacteria,Bacteria,no,0.1,Moderate 
+137,Phormidium frigidum,Oscillatoriales,Cyanophyceae,Cyanobacteria,Bacteria,no,0.1,Moderate 
+138,Phormidium hypersalinum,Oscillatoriales,Cyanophyceae,Cyanobacteria,Bacteria,no,3% - 19.2%,Moderate 
+139,Phormidium hypolimneticum,Oscillatoriales,Cyanophyceae,Cyanobacteria,Bacteria,no,4.9% - 21%,Moderate 
+140,Cellulosimicrobium cellulans,Micrococcales,Actinobacteria,Actinobacteria,Bacteria,shotgun,7.90E-02,Moderate 
+141,Saccharomonospora halophila,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,shotgun,"10% - 30%, optimum 10%",Moderate
+142,Salinibacter ruber,Bacteroidetes Order II. Incertae sedis,not assigned,Bacteroidetes,Bacteria,complete genome,"min 15% - 37%, optimum 15% - 30%",Extreme
+143,Salisaeta longa,Bacteroidetes Order II. Incertae sedis,not assigned,Bacteroidetes,Bacteria,shotgun,"5% - 20%, optimum 10%",Moderate 
+144,Schizothrix arenaria,Pseudanabaenales,Cyanophyceae,Cyanobacteria,Bacteria,no,25% - 33%,Extreme
+145,Halospirulina tapeticola,Spirulinales,Cyanophyceae,Cyanobacteria,Bacteria,no,3% - 20%,Moderate 
+146,Spirulina subsalsa,Spirulinales,Cyanophyceae,Cyanobacteria,Bacteria,shotgun,"3% - 15.1%, 17.5%, 20.5%",Moderate 
+147,Salinicoccus sp HQ704873,Bacillales,Bacilli,Firmicutes,Bacteria,no,5% - 20%,Moderate 
+148,Salinicoccus sp HQ704871,Bacillales,Bacilli,Firmicutes,Bacteria,no,5% - 25%,Extreme
+149,Staphylococcus sp HQ426917,Bacillales,Bacilli,Firmicutes,Bacteria,no,5% - 25%,Extreme
+150,Streptomyces radiopugnans,Streptomycetales,Actinobacteria,Actinobacteria,Bacteria,shotgun,0.05,Moderate 
+151,Salinivibrio costicola (Vibrio costicola),Vibrionales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,5.80E-02,Moderate 
+152,Aspergillus sp,Eurotiales,Eurotiomycetes,Ascomycota,Eukarya,no,>=15% (desert oil) 20%-25% (marine),Extreme
+153,Acanthoecopsis unguiculata,Acanthoecida,Choanoflagellatea,Choanozoa,Eukarya,no,16.5% - 22.8%,Moderate 
+154,Achnanthes brevipes,Mastogloiales,Bacillariophyceae,Bacillariophyta,Eukarya,no,up to 6.4%,Moderate 
+155,Trematosoma bocqueti,Endogenida,Phyllopharyngea,Ciliophora,Eukarya,no,0.192,Moderate 
+156,Acineta foetida,Endogenida,Phyllopharyngea ,Ciliophora,Eukarya,no,2.5% -8%,Moderate 
+157,Acineta linguifera,Endogenida,Phyllopharyngea,Ciliophora,Eukarya,no,6% - 9%,Moderate 
+158,Aeschnidae anax,Odonata,Insecta,Arthropoda,Eukarya,no,3.50E-02,Slight
+159,Halocnemum strobilaceum,Caryophyllales,not assigned,Streptophyta,Eukarya,no,0.06,Moderate 
+160,Salicornia bigelovii,Caryophyllales,not assigned,Streptophyta,Eukarya,chloroplast genome,0% - 8%,Moderate 
+161,Artemia urmiana,Anostraca,Branchiopoda,Arthropoda,Eukarya,mitochondrial genome,10% - 18%,Moderate 
+162,Artemia tibetiana,Anostraca,Branchiopoda,Arthropoda,Eukarya,mitochondrial genome,5.5% - 6%,Moderate 
+163,Artemia franciscana,Anostraca,Branchiopoda,Arthropoda,Eukarya,mitochondrial genome,up to 34%,Extreme
+164,Artemia persimilis,Anostraca,Branchiopoda,Arthropoda,Eukarya,no,0.09,Moderate 
+165,Artemia parthenogenetica,Anostraca,Branchiopoda,Arthropoda,Eukarya,no,10.5% - 22%,Extreme
+166,Artemia monica,Anostraca,Branchiopoda,Arthropoda,Eukarya,no,7.6% - 16.8%,Moderate 
+167,Artemia salina,Anostraca,Branchiopoda,Arthropoda,Eukarya,no,9% - 34%,Extreme
+168,Artemia sinica,Anostraca,Branchiopoda,Arthropoda,Eukarya,no,9% - 34%,Extreme
+169,Penicillium chrysogenum (penicillium notatum),Eurotiales,Eurotiomycetes,Ascomycota,Eukarya,complete genome,25% - 30%,Extreme
+170,Aspergillus pseudoglaucus (eurotium repens),Eurotiales,Eurotiomycetes,Ascomycota,Eukarya,no,0.25,Extreme
+171,Aspergillus repens,Eurotiales,Eurotiomycetes,Ascomycota,Eukarya,no,>=25%,Extreme
+172,Penicillium sp,Eurotiales,Eurotiomycetes,Ascomycota,Eukarya,no,20% - 25%,Extreme
+173,Aspergillus ochraceus,Eurotiales,Eurotiomycetes,Ascomycota,Eukarya,no,satd,Extreme
+174,Aspergillus penicilloides,Eurotiales,Eurotiomycetes,Ascomycota,Eukarya,no,satd,Extreme
+175,Aspergillus wentii,Eurotiales,Eurotiomycetes,Ascomycota,Eukarya,no,satd,Extreme
+176,Polypaecilum pisci (polypaecilium pisce),Eurotiales,Eurotiomycetes,Ascomycota,Eukarya,no,0.25,Extreme
+177,Basipetospora halophila,Eurotiales,Eurotiomycetes,Ascomycota,Eukarya,no,satd,Extreme
+178,Aspidisca cicada (Aspidisca costata),Euplotida,Spirotrichea,Ciliophora,Eukarya,no,12% - saturation,Extreme
+179,Asplanchna girodi,Ploima,Monogononta,Rotifera,Eukarya,no,0.5% - 11.2%,Moderate 
+180,Atherina boyeri,Atheriniformes,Actinopteri,Chordata,Eukarya,no,1.1% - 8%,Moderate 
+181,Craterocephalus fluviatilis,Atheriniformes,Actinopteri,Chordata,Eukarya,no,6.20E-02,Moderate 
+182,Aureobasidium pullulans,Dothideales,Dothideomycetes,Ascomycota,Eukarya,shotgun,<=17%,Moderate 
+183,Nitzschia epithemioides,Bacillariales,Bacillariophyceae,Bacillariophyta,Eukarya,no,0.09,Moderate 
+184,Nitzschia hummii,Bacillariales,Bacillariophyceae,Bacillariophyta,Eukarya,no,0.15,Moderate 
+185,Nitzschia rostellata,Bacillariales,Bacillariophyceae,Bacillariophyta,Eukarya,no,3% - 18%,Moderate 
+186,Nitzschia palea,Bacillariales,Bacillariophyceae,Bacillariophyta,Eukarya,no,7.5% - 12.5%,Moderate 
+187,Nitzschia communis,Bacillariales,Bacillariophyceae,Bacillariophyta,Eukarya,no,7.5% - 15%,Moderate 
+188,Nitzschia denticula,Bacillariales,Bacillariophyceae,Bacillariophyta,Eukarya,no,8.20E-02,Moderate 
+189,Nitzschia frustulum,Bacillariales,Bacillariophyceae,Bacillariophyta,Eukarya,no,"9%, 7.5% - 12.5%",Moderate 
+190,Nitzschia rostellata,Bacillariales,Bacillariophyceae,Bacillariophyta,Eukarya,no,9.26E-02,Moderate 
+191,Nitzschia longissima var. reversa,Bacillariales,Bacillariophyceae,Bacillariophyta,Eukarya,no,up to 6.4%,Moderate 
+192,Nitzschia sigma,Bacillariales,Bacillariophyceae,Bacillariophyta,Eukarya,no,up to 6.4%,Moderate 
+193,Blepharisma halophila,Heterotrichida,Spirotrichea,Ciliophora,Eukarya,no,16.5% - 31%,Extreme
+194,Rhynchomonas nasuta,Bodonida,Kinetoplastea,Euglenophyta,Eukarya,no,15% - 20%,Moderate 
+195,Bodo caudatus,Bodonida,Kinetoplastea,Euglenophyta,Eukarya,no,0.202,Moderate 
+196,Bodo saltans,Bodonida,Kinetoplastea,Euglenophyta,Eukarya,no,6% - saturation,Extreme
+197,Keratella quadrata,Ploima,Monogononta,Rotifera,Eukarya,no,0.5% - 10.5%,Moderate 
+198,Brachionus plicatilis,Ploima,Monogononta,Rotifera,Eukarya,mitochondrial genome,"8% - 9%, 5% - 14.6%",Moderate 
+199,Brachysira aponina,Naviculales,Bacillariophyceae,Bacillariophyta,Eukarya,no,3% - 10%,Moderate 
+200,Branchinecta orientalis,Anostraca,Branchiopoda,Arthropoda,Eukarya,no,0.48% - 1.27%,Slight
+201,Parartemia longicaudata,Anostraca,Branchiopoda,Arthropoda,Eukarya,no,4% - 23%,Moderate 
+202,Parartemia zietziana,Anostraca,Branchiopoda,Arthropoda,Eukarya,no,4.1% - 29.8%,Extreme
+203,Parartemia boomeranga,Anostraca,Branchiopoda,Arthropoda,Eukarya,no,5% - 12%,Moderate 
+204,Parartemia informis,Anostraca,Branchiopoda,Arthropoda,Eukarya,no,5% - 8.8%,Moderate 
+205,Parartemia serventyi,Anostraca,Branchiopoda,Arthropoda,Eukarya,no,6% - 13%,Moderate 
+206,Parartemia veronicae,Anostraca,Branchiopoda,Arthropoda,Eukarya,no,7.4% - 22.5%,Extreme
+207,Parartemia contracta,Anostraca,Branchiopoda,Arthropoda,Eukarya,no,7.5% - 24%,Extreme
+208,Branchipodopsis affinis,Anostraca,Branchiopoda,Arthropoda,Eukarya,no,0.64% - 0.67%,Slight
+209,Amphora coffeiformis,Thalassiophysales,Bacillariophyceae,Bacillariophyta,Eukarya,no,3% - 18%,Moderate 
+210,Amphora holsatica,Thalassiophysales,Bacillariophyceae,Bacillariophyta,Eukarya,no,"9.26%, 3.8% - 14.9%",Moderate 
+211,Amphora ventricosa,Thalassiophysales,Bacillariophyceae,Bacillariophyta,Eukarya,no,up to 15%,Moderate 
+212,Boeckella poopoensis,Calanoida,Maxillopoda,Arthropoda,Eukarya,no,0.1% - 9%,Moderate 
+213,Calamoecia clitellata,Calanoida,Maxillopoda,Arthropoda,Eukarya,no,3% - 12.7%,Moderate 
+214,Calamoecia trilobata,Calanoida,Maxillopoda,Arthropoda,Eukarya,no,"3.5% - 24%, 24%",Extreme
+215,Calamoecia salina,Calanoida,Maxillopoda,Arthropoda,Eukarya,no,3.7% - 11%,Moderate 
+216,Branchinectella media,Anostraca,Branchiopoda,Arthropoda,Eukarya,no,0.47% - 2.1%,Slight
+217,Chironomus salinarius,Diptera,Insecta,Arthropoda,Eukarya,no,1.3% - 3.2%,Slight
+218,Chironomus Aprilinus,Diptera,Insecta,Arthropoda,Eukarya,no,1.40E-02,Slight
+219,Clunio marinus,Diptera,Insecta,Arthropoda,Eukarya,no,1.5% - 3.5%,Slight
+220,Thalassomya frauenfeldi,Diptera,Insecta,Arthropoda,Eukarya,no,halophilic species,Moderate 
+221,Halocladius millenarius,Diptera,Insecta,Arthropoda,Eukarya,no,halophilic species,Moderate 
+222,Thalassosmittia atlantica,Diptera,Insecta,Arthropoda,Eukarya,no,halophilic species,Moderate 
+223,Tanytarsus kharaensis,Diptera,Insecta,Arthropoda,Eukarya,no,1.60E-02,Slight
+224,Alona floessneri,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,0.3% - 6.1%,Slight
+225,Coronatella rectangula,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,0.3% - 0.7%,Slight
+226,Chydorus sphaericus,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,0.3% - 0.8%,Slight
+227,Cladosporium sp,Capnodiales,Dothideomycetes,Ascomycota,Eukarya,no,0.36,Extreme
+228,Cletocamptus (Mastigodiaptomus) albuquerquensis,Harpacticoida,Maxillopoda,Arthropoda,Eukarya,no,"2% - 12.5%, 12.6%",Moderate 
+229,Cletocamptus retrogressus,Harpacticoida,Maxillopoda,Arthropoda,Eukarya,no,"2% - 7.4%, 19.8% - 36%",Extreme
+230,Cocconeis placentula,Achnanthales,Bacillariophyceae,Bacillariophyta,Eukarya,no,up to 15%,Moderate 
+231,Cocconeis scutellum,Achnanthales,Bacillariophyceae,Bacillariophyta,Eukarya,no,up to 15%,Moderate 
+232,Cocconeis pediculus,Achnanthales,Bacillariophyceae,Bacillariophyta,Eukarya,no,up to 6.4%,Moderate 
+233,Cocconeis stauroneiformis,Achnanthales,Bacillariophyceae,Bacillariophyta,Eukarya,no,up to 6.4%,Moderate 
+234,Monosiga spp,not assigned,not assigned,Opisthokonta,Eukarya,no,17% - 23%,Extreme
+235,Chondylostoma sp,Heterotrichida,Polyhymenophora,Ciliophora,Eukarya,no,22% - 31.1%,Extreme
+236,Ctenocladus circinnatus,Chlorellales,Trebouxiophyceae,Chlorophyta,Eukarya,no,"5% - 10%, min 20%",Moderate 
+237,Ochlerotatus detritus (aedes detritus),Diptera,Insecta,Arthropoda,Eukarya,no,0% - 6%,Moderate 
+238,(Ochlerotatus taeniorhynchus) Aedes taenionrhynchus,Diptera,Insecta,Arthropoda,Eukarya,no,150% SW (sea water) or 52.5ppt or 5.25%,Moderate 
+239,Ochlerotatus caspius,Diptera,Insecta,Arthropoda,Eukarya,no,1% - 3%,Slight
+242,Megacyclops viridis,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,0.3% - 2%,Slight
+243,Metacyclops arnaudi,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,0.6% - 24%,Extreme
+244,Eucyclops dumonti,Cyclopidae,Maxillopoda,Arthropoda,Eukarya,no,0.3% - 1.1%,Slight
+246,Thermocyclops kawamurai,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,"0.4% - 1.5%, 11.8%",Moderate
+247,Metacyclops minutus,Cyclopoida,not assigned,Arthropoda,Eukarya,no,6.00E-03,Slight
+248,Metacyclops gracilis,Cyclopoida,not assigned,Arthropoda,Eukarya,no,2.10E-02,Slight
+249,Cyclops mongolensis,Cyclopoida,not assigned,Arthropoda,Eukarya,no,3.00E-03,Slight
+250,Microcyclops varicans,Cyclopoida,not assigned,Arthropoda,Eukarya,no,3.00E-03,Slight
+251,Ruppia tuberosa,Alismatales,Liliopsida,Streptophyta,Eukarya,no,1% - 10.8% - 23%,Moderate 
+252,Cyprideis torosa,Podocopida,Ostracoda,Arthropoda,Eukarya,no,1.1% - 1.7%,Slight
+253,Eucypris inflata,Podocopida,Ostracoda,Arthropoda,Eukarya,no,"32.5%, 11%, 1.1% - 1.7%",Extreme
+254,Australocypris insularis,Podocopida,Ostracoda,Arthropoda,Eukarya,no,2.1% - 12.7%,Moderate 
+255,Diacypris whitei,Podocopida,Ostracoda,Arthropoda,Eukarya,no,"2.8% - 14.9%, 9.2% - 14.6%",Moderate 
+256,Australocypris bennetti,Podocopida,Ostracoda,Arthropoda,Eukarya,no,3.5% - 24%,Extreme
+257,Diacypris fodiens,Podocopida,Ostracoda,Arthropoda,Eukarya,no,4.8% - 16%,Moderate 
+258,Diacypris phoxe,Podocopida,Ostracoda,Arthropoda,Eukarya,no,6.1% - 7.5%,Moderate 
+259,Reticypris pinguis,Podocopida,Ostracoda,Arthropoda,Eukarya,no,4% - 12%,Moderate 
+260,Cyprinodon macularius,Cyprinodontiformes,Actinopteri,Chordata,Eukarya,no,maximum 9%,Moderate 
+261,Cyprinodon atrorus,Cyprinodontiformes,Actinopteri,Chordata,Eukarya,no,tolerrated 9.5%,Moderate 
+262,Cyprinodon macularius eggs,Cyprinodontiformes,Actinopteri,Chordata,Eukarya,no,up to 7%,Moderate 
+263,Aphanius dispar,Cyprinodontiformes,Actinopteri,Chordata,Eukarya,no,isosmotic point 1.7%,Slight
+264,Eocyzicus davidi,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,6.70E-03,Slight
+265,Ceriodaphnia reticulata,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,3.40E-03,Slight
+266,Daphniopsis (Daphnia) similis,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,0% - 10%,Moderate 
+267,Daphniopsis (daphnia) pusilla,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,"0.2% - 7.1%, 4.1% - 8.1%",Moderate 
+268,Daphnia thomsoni,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,0.01,Slight
+269,Daphnia atkinsoni,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,0.02,Slight
+270,Daphnia carinata,Diplostraca,Branchiopoda,Arthropoda,Eukarya,mitochondrial genome,0.3% - 0.5%,Slight
+271,Daphnia magna,Diplostraca,Branchiopoda,Arthropoda,Eukarya,shotgun,0.38% - 1.3%,Slight
+272,Daphnia mediterranea,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,0.8% - 3.1%,Slight
+273,Daphnia longispina var. turbinata,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,8.70E-03,Slight
+274,Daphnia menucoensis,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,"2.4%, 1% - 1.5%",Slight
+275,Debaryomyces hansenii,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,complete genome,0.24,Extreme
+276,Debaryomyces tyrocola,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,0.15,Moderate 
+277,Debaryomyces subglobosus,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,22% - 24%,Moderate 
+278,Debaryomyces kloeckeri,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,22% - 24%,Extreme
+279,Schwanniomyces (Pichia) etchellsii,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,0.2,Moderate 
+280,Meyerozyma guilliermondii,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,shotgun,0.24,Extreme 
+281,Debaryomyces membranaefactiens var hollandicus,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,0.24,Extreme
+282,Candida tropicalis,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,shotgun,0.18,Moderate 
+283,Candida parapsilosis,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,shotgun,0.2,Moderate 
+284,Arctodiaptomus (recti)spinosus,Calanoida,Maxillopoda,Arthropoda,Eukarya,no,0.4% - 6.1%,Moderate 
+285,Arctodiaptomus salinus,Calanoida,Maxillopoda,Arthropoda,Eukarya,no,"0.3% - 2.95%, 13%, 28%, 30%",Extreme
+286,Metadiaptomus asiaticus,Calanoida,Maxillopoda,Arthropoda,Eukarya,no,0.4% - 6.1%,Moderate
+287,Diaptomus (Leptodiaptomus) connexus,Calanoida,Maxillopoda,Arthropoda,Eukarya,no,"0.9% - 8.2%, >5%",Moderate 
+288,Arctodiaptomus wierzjeskii,Calanoida,Maxillopoda,Arthropoda,Eukarya,no,0.5% - 0.6%,Slight
+289,Hemidiaptomus ignatovi,Calanoida,Maxillopoda,Arthropoda,Eukarya,no,0.6% - 0.8%,Slight
+290,Dunaliella viridis,Chlamydomonadales,Chlorophyceae,Chlorophyta,Eukarya,mitochondrial genome,"max 24.8% (optimum 5.8% - 8.9%), 19% - 28%",Moderate 
+291,Dunaliella salina,Chlamydomonadales,Chlorophyceae,Chlorophyta,Eukarya,no,0.265,Extreme
+292,Dunaliella parva,Chlamydomonadales,Chlorophyceae,Chlorophyta,Eukarya,no,8.70E-02,Moderate 
+293,Necterosoma penicillatum (adults),Coleoptera,Insecta,Arthropoda,Eukarya,no,"0% - 13%, 0.5% - 13%",Moderate 
+294,Necterosoma penicillatum (lavrae),Coleoptera,Insecta,Arthropoda,Eukarya,no,7.70E-02,Moderate 
+295,Rhopalophrya salina,Haptorida,Gymnostomatea,Ciliophora,Eukarya,no,17% - 33.2%,Extreme
+296,Ephydra auripes,Diptera,Insecta,Arthropoda,Eukarya,no,<2.5%,Moderate 
+297,Ephydra gracillis,Diptera,Insecta,Arthropoda,Eukarya,no,>2.5%,Moderate 
+298,Ephydra hians,Diptera,Insecta,Arthropoda,Eukarya,no,>2.5%,Moderate 
+299,Ephydra riparia lavrae,Diptera,Insecta,Arthropoda,Eukarya,no,0.08,Moderate 
+300,Ephydra cinerea,Diptera,Insecta,Arthropoda,Eukarya,no,0.3,Extreme
+301,Ephydra packardi,Diptera,Insecta,Arthropoda,Eukarya,no,4% - 5%,Moderate 
+302,Ephydra macellaria,Diptera,Insecta,Arthropoda,Eukarya,no,optimum 18%,Moderate 
+303,Euplotes sp,Euplotida,Hypotrichea,Ciliophora,Eukarya,no,0.29,Extreme
+304,Fabrea salina,Heterotrichida,Heterotrichea,Ciliophora,Eukarya,no,0.165,Moderate 
+305,Ptygura melicerta,Flosculariacea,Monogononta,Rotifera,Eukarya,no,5.57E-02,Moderate 
+306,Frontonia marina,Peniculida,Oligohymenophorea,Ciliophora,Eukarya,no,">8%, 0.05% - 18%",Moderate 
+307,Lucania parva,Cyprinodontiformes,Actinopteri,Chordata,Eukarya,no,"2% - 4%, 6%",Moderate 
+308,Glomus ethunicatus,Glomerales,Glomeromycetes,Glomeromycota,Eukarya,no,>=10%,Moderate 
+309,Glomus mosseae,Glomerales,Glomeromycetes,Glomeromycota,Eukarya,no,>=11%,Moderate 
+310,Glomus fasciculatum,Glomerales,Glomeromycetes,Glomeromycota,Eukarya,no,>=13%,Moderate 
+311,Grammatophora oceanica,Striatellales,Fragilariophyceae,Bacillariophyta,Eukarya,no,up to 11.9%,Moderate 
+312,Halteria grandinella,Sporadotrichida,Spirotrichea,Ciliophora,Eukarya,no,"8% - 18%, 5% - 10% - 18%",Moderate 
+313,Amoeba limax,Amoebida,Lobosa,Protozoa,Eukarya,no,0.23,Extreme
+314,Hexarthra intermedia,Flosculariacea,Monogononta,Rotifera,Eukarya,no,0.06,Moderate 
+315,Hexarthra fennica,Flosculariacea,Monogononta,Rotifera,Eukarya,no,0.5% - 7.5%,Moderate 
+316,Hexarthra polyodonta,Flosculariacea,Monogononta,Rotifera,Eukarya,no,2.5% - 8%,Moderate 
+317,Berosus (Enoplurus) munitipennis (larvae),Coleoptera,Insecta,Arthropoda,Eukarya,no,0.06,Moderate 
+318,Enochrus blazquezae,Coleoptera,Insecta,Arthropoda,Eukarya,no,mean 4.56% max 6.8%,Moderate 
+319,Enochrus risii,Coleoptera,Insecta,Arthropoda,Eukarya,no,mean 4.85% max 5.1%,Moderate 
+320,Enochrus falcarius,Coleoptera,Insecta,Arthropoda,Eukarya,no,mean 5.5% max 9.7%,Moderate 
+321,Archaphanostoma (Mecynostomum) agile,Acoela,not assigned,Xenacoelomorpha,Eukarya,no,8% - 9%,Moderate 
+322,Lecane grandis,Ploima,Monogononta,Rotifera,Eukarya,no,0.18,Moderate 
+323,Leptodora kindtii,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,4.60E-03,Slight
+324,Litonotus lamella,Pleurostomatida,Gymnostomatea,Ciliophora,Eukarya,no,2.9% - 37%,Extreme
+325,Macrothrix hirsuticornis,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,0.4% - 0.9%,Slight
+326,Macrothrix laticornis,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,0.3% - 0.4%,Slight
+327,Mastogloia erythraea,Mastogloiales,Bacillariophyceae,Bacillariophyta,Eukarya,no,6.40E-02,Moderate 
+328,Mastogloia pumila,Mastogloiales,Bacillariophyceae,Bacillariophyta,Eukarya,no,6.40E-02,Moderate 
+329,Mastogloia baldjikiana,Mastogloiales,Bacillariophyceae,Bacillariophyta,Eukarya,no,up to 6.4%,Moderate 
+330,Metacystis truncata,Prostomatida,Prostomatea,Ciliophora,Eukarya,no,>8%,Moderate 
+331,Palmarella salina,Amophorida,Spirotrichea,Ciliophora,Eukarya,no,0.278,Extreme
+332,Metschnikowia bicuspidata var. australis,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,>=12%,Moderate 
+333,Candida mogii,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,>=18%,Moderate 
+334,Schizopera clandestina,Harpacticoida,Maxillopoda,Arthropoda,Eukarya,no,5.30E-02,Moderate 
+335,Moina salina,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,0.5% - 6.1%,Moderate 
+336,Moina hutchinsoni,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,2% - 5%,Moderate 
+337,Moina brachiata,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,0.4% - 1.3%,Slight
+338,Moina macrocopa,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,0.6% - 3.2%,Slight
+339,Moina mongolica,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,0.7% - 2.8%,Slight
+340,Moina belli,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,1.40E-02,Slight
+341,Moina eugeniae,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,"3.1%, 0.5% - 2%",Slight
+342,Trimmatostroma salinum,Capnodiales,Dothideomycetes,Ascomycota,Eukarya,no,3% - 35%,Extreme
+343,Nassula sp,Nassulida,Nassophorea,Ciliophora,Eukarya,no,5% - 21.3%,Moderate 
+344,Navicula cincta,Naviculales,Bacillariophyceae,Bacillariophyta,Eukarya,no,1% - 10%,Moderate 
+345,Navicula complanata,Naviculales,Bacillariophyceae,Bacillariophyta,Eukarya,no,3% - 10%,Moderate 
+346,Navicula ramosissima,Naviculales,Bacillariophyceae,Bacillariophyta,Eukarya,no,3% - 17%,Moderate 
+347,Navicula avenacea,Naviculales,Bacillariophyceae,Bacillariophyta,Eukarya,no,6.40E-02,Moderate 
+348,Navicula crucialis,Naviculales,Bacillariophyceae,Bacillariophyta,Eukarya,no,7.5% - 12.5%,Moderate 
+349,Navicula longirostris,Naviculales,Bacillariophyceae,Bacillariophyta,Eukarya,no,8.20E-02,Moderate 
+350,Navicula mollis,Naviculales,Bacillariophyceae,Bacillariophyta,Eukarya,no,9.26E-02,Moderate 
+351,Navicula ramosissima,Naviculales,Bacillariophyceae,Bacillariophyta,Eukarya,no,up to 15%,Moderate 
+352,Gyrosigma balticum,Naviculales,Bacillariophyceae,Bacillariophyta,Eukarya,no,up to 6.4%,Moderate 
+353,Fusarium sp,Hypocreales,Sordariomycetes,Ascomycota,Eukarya,no,20% - 25%,Extreme
+354,Phallocryptus spinosa,Anostraca,Branchiopoda,Arthropoda,Eukarya,no,3% - 30%,Extreme
+355,Candida (Mycoderma) vini,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,0.21,Moderate 
+356,Hortaea (exophiala) werneckii,Dothideales,Dothideomycetes,Ascomycota,Eukarya,shotgun,"0% - 29.8%, satd",Extreme 
+357,Phaeotheca triangularis,not assigned,not assigned,Ascomycota,Eukarya,no,22% - 28%,Extreme
+358,Rhodotorula glutinis,Sporidiobolales,Microbotryomycetes,Basidiomycota,Eukarya,no,0.23,Extreme
+359,Rhodotorula mucilaginosa (Rhodotorula rubra),Sporidiobolales,Microbotryomycetes,Basidiomycota,Eukarya,shotgun,>=16%,Moderate 
+360,Daphnia triquetra,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,0.5% - 1%,Slight
+361,Torulopsis colliculosa,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,0.13,Moderate 
+362,Torulopsis dattila,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,0.15,Moderate 
+363,Torulopsis candida,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,0.18,Moderate 
+364,Torulopsis versatilis,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,0.18,Moderate 
+365,Torulopsis etchellsii,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,0.21,Extreme
+366,Torulopsis famata (Candida famata),Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,">=12%, 19%",Moderate 
+367,Torulopsis sp,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,>=18%,Moderate 
+368,Wallemia sebi,Wallemiales,Wallemiomycetes,Basidiomycota,Eukarya,no,satd,Extreme
+369,Wallemia ichthyophaga,Wallemiales,Wallemiomycetes,Basidiomycota,Eukarya,shotgun,min 10%,Moderate 
+370,Galaziella murae,Anostraca,Branchiopoda,not assigned,Eukarya,no,0.65% - 0.82%,Slight
+371,Staurophora caljonii,Cymbellales,Bacillariophyceae,Bacillariophyta,Eukarya,no,6.00E-03,Slight
+372,Cladotricha sigmoidea,Stichotrichida,Hypotrichea,Ciliophora,Eukarya,no,<20%,Moderate 
+373,Tachysoma sp,Sporadotrichida,Spirotrichea,Ciliophora,Eukarya,no,8% - 18%,Moderate 
+374,Parauronema virginianum,Philasterida,Oligohymenophorea,Ciliophora,Eukarya,no,8% - 18%,Moderate 
+375,Wickerhamomyces (Willia) sp,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,0.21,Moderate 
+376,Mycoderma decolorans,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,0.15,Moderate 
+377,Pichia (Hansenula) sp,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,>=15%,Moderate 
+378,Pichia membranaefactiens,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,15% (food brines) 24% (marine),Moderate 
+379,Chilophrya (Prorodon) utahensis,Prorodontida,Prostomatea,Ciliophora,Eukarya,no,0.23,Extreme
+380,Drechslera sp,Pleosporales,Dothideomycetes,Ascomycota,Eukarya,no,>=5%,Moderate 
+381,Ulocladium sp,Pleosporales,Dothideomycetes,Ascomycota,Eukarya,no,>=5%,Moderate 
+382,Platichthys flesus,Pleuronectiformes,Actinopteri,Chordata,Eukarya,no,1.1% - 16%,Moderate 
+383,Podophrya sp,Suctorida,Kinetofragminophora,Ciliophora,Eukarya,no,16.5% - 23.2%,Extreme
+384,Coxiella exsposita,Littorinimorpha,Gastropoda,Mollusca,Eukarya,no,0.5% - 13%,Moderate 
+385,Coxiella striatula,Littorinimorpha,Gastropoda,Mollusca,Eukarya,no,0.5% - 12%,Moderate 
+386,Coxiella glabra,Littorinimorpha,Gastropoda,Mollusca,Eukarya,no,0.8% - 12.5%,Moderate 
+387,Coxiella gilesi,Littorinimorpha,Gastropoda,Mollusca,Eukarya,no,2% - 6%,Moderate 
+388,Coxiella glauerti,Littorinimorpha,Gastropoda,Mollusca,Eukarya,no,8.80E-02,Moderate 
+389,Prorodon (chiliophrya) utahensis,Prorodontida,Prostomatea,Ciliophora ,Eukarya,no,0.278,Extreme
+390,Phyllomitus sp,Protozoa,Protozoa,Protozoa,Eukarya,no,27.8% - saturated,Extreme
+391,Pseudocohnilembus marinus,Philasterida,Oligohymenophorea,Ciliophora,Eukarya,no,2.9% - 37%,Extreme
+392,Rhopalodia gibberula,Rhopalodiales,Bacillariophyceae,Bacillariophyta,Eukarya,no,0.1% - 1%,Slight
+393,Uroleptus packii,Urostylida,Hypotrichea,Ciliophora,Eukarya,no,20% - 26%,Extreme
+394,Saccharomyces cerevisiae,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,complete genome,0.12,Moderate 
+395,Saccharomyces heterogenicus,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,0.23,Extreme
+396,Zygosaccharomyces (Saccharomyces) rouxii,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,complete genome,">=18%, 20-22%",Extreme
+397,Zygosaccharomyces (Saccharomyces) mellis,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,0.23,Extreme
+398,Zygosaccharomyces sp,Saccharomycetales,Saccharomycetes,Ascomycota,Eukarya,no,>=15%,Moderate 
+399,Sarcobatus vermiculatus,Caryophyllales,Magnoliopsida,Tracheophyta,Eukarya,no,9.82E-02,Moderate 
+400,Haloniscus searlei,Isopoda,Malacostraca,Arthropoda,Eukarya,no,0.5% - 13%,Moderate 
+401,Diaphanosoma mongolianum,Diplostraca,Branchiopoda,Arthropoda,Eukarya,no,0.46% - 0.64%,Slight
+402,Stephanopogon apogon,Pseudociliatida,Percolatea,Percolozoa,Eukarya,no,8% - 18%,Moderate 
+403,Surirella fastuosa,Surirellales,Bacillariophyceae,Bacillariophyta,Eukarya,no,6.40E-02,Moderate 
+404,Tetramitus cosmopolitus,Schizopyrenida,Heterolobosea,Percolozoa,Eukarya,no,12% - saturation,Extreme
+405,Tetramitus salinus,Schizopyrenida,Heterolobosea,Percolozoa,Eukarya,no,up to 22.3%,Extreme 
+406,Tetramitus sp,Schizopyrenida,Heterolobosea,Percolozoa,Eukarya,no,up to saturated,Extreme
+407,Labyrinthuloides minuta,Thraustochytriida,Labyrinthulea,Bigyra,Eukarya,no,0.12,Moderate 
+408,Trachelocerca conifer,Protostomatida,Karyorelictea,Ciliophora,Eukarya,no,16.5% - 22.3%,Extreme
+409,Enchelyodon trepida,Haptorida,Litostomatea,Ciliophora,Eukarya,no,8% - 18%,Moderate 
+410,Triops numidicus,Notostraca,Branchiopoda,Arthropoda,Eukarya,no,0.5% - 0.67%,Slight
+411,Tabularia fasciculata,Licmophorales,Fragilariophyceae,Bacillariophyta,Eukarya,no,4.2% - 15%,Moderate 
+412,Opephora martyi,Licmophorales,Fragilariophyceae,Bacillariophyta,Eukarya,no,up to 11.9%,Moderate 
+413,Synedra crystallina,Licmophorales,Fragilariophyceae,Bacillariophyta,Eukarya,no,up to 11.9%,Moderate 
+414,Synedra laevigata var. hyalina,Licmophorales,Fragilariophyceae,Bacillariophyta,Eukarya,no,up to 6.4%,Moderate 
+415,Ulva torta,Ulvales,Ulvophyceae,Chlorophyta,Eukarya,no,polyhalobes (ph),Extreme
+416,Uronema marinum,Philasterida,Oligohymenophorea,Ciliophora,Eukarya,no,15% - 17.3%,Moderate 
+417,Uronema sp,Philasterida,Oligohymenophorea,Ciliophora,Eukarya,no,15% - 17.3%,Moderate 
+418,Uronema nigricans,Scuticociliatida,Oligohymenophorea,Ciliophora,Eukarya,no,hypersaline 0.05% - 18%,Moderate 
+419,Uronychia transfuga,Euplotida,Spirotrichea,Ciliophora,Eukarya,no,9.60E-02,Moderate 
+420,Holosticha diademata,Urostylida,Spirotrichea,Ciliophora,Eukarya,no,2.9% - 37%,Moderate 
+421,Nagleria sp,Amoebida,Lobosa,Cercozoa,Eukarya,no,up to saturated,Extreme
+422,Heteramoeba sp,Schizopyrenida,Heterolobosea,Percolozoa,Eukarya,no,12.5% - 21%,Moderate 
+423,Vorticella nebulifera,Peritrichida,Oligohymenophorea,Ciliophora,Eukarya,no,0% - 8%,Moderate 
+424,Zoothamnium mucedo,Peritrichida,Oligohymenophorea,Ciliophora,Eukarya,no,6% - 9%,Moderate 
+425,Ilyocypris biplicata,Podocopida,Ostracoda,Arthropoda,Eukarya,no,>15%,Moderate
+426,Leucocythere mirabilis,Podocopida,Ostracoda,Arthropoda,Eukarya,no,>15%,Moderate
+427,Halococcus sediminicola,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,"15%–30% (optimum, 20%)",Extreme
+428,Halalkalicoccus tibetensis,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,0.1986,Moderate
+431,Halalkalicoccus paucihalophilus,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,"min 6%, optimum 20-25 %, max 35%",Extreme
+432,Haladaptatus paucihalophilus,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,"5% - 30%, optimum 15% - 18%",Moderate
+433,Haladaptatus pallidirubidus,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,6% - 35% (optimum 18%),Moderate
+434,Haladaptatus litoreus,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,"10% - 30%, optimum 20%",Extreme
+435,Haladaptatus cibarius,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,"10% - 30%, optimum 15%",Extreme
+436,Halanaeroarchaeum sulfurireducens,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,complete genome,17.5% - 29.2%,Extreme
+437,Halapricum salinum,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,15% - 30% (optimum 20%),Extreme
+438,Halarchaeum grantii,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,15% - 27% (optimum 24%),Extreme
+439,Halarchaeum acidiphilum,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,min 17.53%,Moderate
+440,Halarchaeum nitratireducens,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,9% - 30% (optimum 18% - 21%),Extreme
+441,Halarchaeum rubridurum,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,9% - 30% (optimum 18%),Extreme
+442,Halarchaeum salinum,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,12% - 30 % (optimum 18 %),Extreme
+443,Halarchaeum solikamskense,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,15% - 30% (optimum 20% – 22%) ,Extreme
+444,Haloarchaeobius amylolyticus,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,5.2% - 28% (optimum 18.1%),Extreme
+445,Haloarchaeobius baliensis,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,0.152,Moderate
+446,Haloarchaeobius iranensis,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,"min 11.6%, optimum 20.4%",Extreme
+447,Haloarchaeobius litoreus,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,8.1% - 28% (optimum 15.1%),Extreme
+448,Haloarchaeobius salinus,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,8.1% - 28% (optimum 11.6%),Extreme
+450,Haloarcula salaria,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,20% - 25%,Extreme
+451,Haloarcula tradensis,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,20% - 25%,Extreme
+452,Halobaculum magnesiiphilum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,"min 5%, optimum 9% - 12%",Moderate
+453,Halobellus clavatus,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,3% - 10% (optimum 15%),Moderate
+454,Halorientalis regularis,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,15% - 30% (optimum 18% - 20%),Extreme
+455,Halobellus inordinatus,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,min 10%,Moderate
+456,Halobellus limi,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,8.1% - 29.8% (optimum 15.1% - 22.7%),Extreme
+457,Halobellus salinus,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,15.1% - 29.8% (optimum 19.8%),Extreme
+458,Halobellus litoreus,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,min 5.2%,Moderate
+459,Halobellus ramosii,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,12.5% - 30% (optimum 20%),Moderate
+460,Halobellus rarus,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,min 12.2%,Moderate
+461,Halobellus rufus,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,10%-30 % (optimum 15 %) ,Extreme
+462,Halobiforma haloterrestris,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,"min 12.8% - satur, optimum 20%",Extreme
+463,Halobiforma lacisalsi,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,min 9.9% (optimum 15.1% - 25.1%),Extreme
+464,Halobiforma nitratireducens,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,min 14.6% (optimum 20.4%),Extreme
+465,Halocalculus aciditolerans,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,12% - 30% (optimum 18%),Extreme
+466,Halococcus agarilyticus,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,24% - 30% (optimum 27%),Extreme
+467,Halococcus dombrowskii,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,0.1,Moderate
+468,Halococcus hamelinensis,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,"12.5% - 30%, optimum 15%",Moderate
+469,Halococcus qingdaonensis,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,"min 10%, optimum 18%",Moderate
+470,Halococcus thailandensis,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,20% - 30%,Extreme
+471,Haloferax alexandrinus,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,"min 10% - satr, optimum 25%",Extreme
+472,Haloferax chudinovii,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,7% - 27% (optimum 15% - 18%),Extreme
+473,Haloferax larsenii,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,5.8% - 28% (optimum 12.8% - 19.8%),Extreme
+474,Haloferax lucentense,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,10.5% - 29.8% (optimum 25.1%),Extreme
+475,Haloferax prahovense,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,14.6% - 30.3% (optimum 20.4%),Extreme
+476,Halogeometricum limi,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,optimum 22.7%,Extreme
+477,Halogeometricum pallidum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,optimum 18.1%,Moderate
+478,Halogeometricum rufum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,12.2% - 29.8% (optimum 22.7%),Extreme
+479,Halogranum amylolyticum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,8.1% - 29.8% (optimum 19.8% - 22.7%),Extreme
+480,Halogranum gelatinilyticum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,8.1% - 29.8% (optimum 19.8% - 22.7%),Extreme
+481,Halogranum rubrum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,15.1% - 25.1% (optimum 22.7%),Extreme
+482,Halogranum salarium,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,8.1% - 29.8% (optimum 15.1% - 22.7%),Extreme
+483,Halohasta litorea,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,min 12%,Moderate
+484,Halohasta litchfieldiae,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,min 12%,Moderate
+485,Halolamina pelagica,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,8.1% - 29.8% (optimum 19.8% - 22.7%),Extreme
+486,Halolamina rubra,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,15% - 30%,Extreme
+487,Halolamina salifodinae,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,"9.3% - 31.5%, min 9%, optimum 19.8% - 22.7%",Extreme
+488,Halolamina salina,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,"11.1% - 31.5%, min 8%, optimum 19.8%",Extreme
+489,Halolamina sediminis,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,"15% - 30%, min 10%, optimum 20% - 25%",Extreme
+490,Halomarina oriensis,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,"10% - 30%, optimum 16%",Moderate
+491,Halomicroarcula limicola,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,"min 5%, 5.2% - 28%, optimum 12.2%",Extreme
+492,Halomicroarcula pellucida,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,20% - 30 % (optimum 25 %),Extreme
+493,Halomicroarcula salina,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,5.2% - 28% (optimum 12.2%),Extreme
+494,Halomicrobium katesii,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,"20% - 30%, optimum 25%",Extreme
+495,Halomicrobium zhouii,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,"min 8%, 8.1% - 29.8%, optimum (15.1%)",Extreme
+496,Halonotius pteroides,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,"16% - 36%, optimum 18%",Extreme
+497,Haloparvum sedimenti,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,15% - 20%,Moderate
+498,Halopelagius inordinatus,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,15.1% - 28% (optimum 19.8% - 22.7%),Extreme
+499,Halopelagius fulvigenes,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,10% - 30% (optimum 20% - 25%),Extreme
+500,Halopelagius longus,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,"min 8%, 10.5% - 35% (optimum 17.5% - 20.4%)",Extreme
+502,Halopenitus persicus,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,"min 9.9%, optimum 17.5%",Moderate
+503,Halopenitus salinus,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,"min 5%, 5.2% - 28% (optimum 15.1% - 18.1%)",Extreme
+504,Halopiger aswanensis,Natrialbales,Halobacteria,Euryarchaeota,Archaea,no,"min 10%, optimum 22.5% – 25%",Extreme
+505,Halopiger salifodinae,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,min 11.1%,Moderate
+506,Haloplanus aerogenes,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,8.1% - 29.8% (optimum 12.2%),Extreme
+507,Haloplanus litoreus ,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,"min 15%, 15,1% - 28% (optimum 19.8%)",Extreme
+508,Haloplanus ruber,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,"min 12%, 12.2% - 28% (optimum 18.1%)",Extreme
+509,Haloplanus natans,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,15.1% - 25.1% (optimum 17.5%),Extreme
+510,Haloplanus salinus,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,5.2% - 28% (optimum 18.1%),Extreme
+512,Haloplanus vescus,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,"min 12%, 15.1% - 25.1% (optimum 18.1%)",Extreme
+513,Halorhabdus tiamatea,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,complete genome,"10% - 30%, optimum 27%",Extreme
+514,Halorhabdus rudnickae,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,optimum 20%,Extreme
+515,Halorientalis brevis,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,8.1% - 28% (optimum 15.1% - 18.1%),Extreme
+517,Halorubellus litoreus,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,"min 8%, 8.1% - 29.8% (optimum 18.1%)",Extreme
+518,Halorubellus salinus,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,"min 8%, 8.1% - 29.8% (optimum 18.1%)",Extreme
+519,Halorubrum aquaticum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,14.6% - 29.2% (optimum 19.8%),Extreme
+520,Halorubrum aidingense,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,9.9% - 25.1% (optimum 15.1%),Moderate
+521,Halorubrum lipolyticum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,9.9% - 28% (optimum 15.1%),Extreme
+522,Halorubrum alkaliphilum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,10.5% - 30.3% (optimum 22.7% - 25.1%),Extreme
+523,Halorubrum arcis,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,12.8% - 30.3% (optimum 19.8% - 22.7%),Extreme
+524,Halorubrum californiense,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,14.6% - 29.2% (optimum 20.4% - 26.2%),Extreme
+525,Halorubrum chaoviator,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,12% - 30% (optimum 25%),Extreme
+526,Halorubrum cibi,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,15% - 30% (optimum 23% - 25%),Extreme
+527,Halorubrum ejinorense,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,14.6% - 29.2% (optimum 19.8%),Extreme
+528,Halorubrum ezzemoulense ,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,"min 15%, 15% - 25% (optimum 20%)",Extreme
+529,Halorubrum gandharaense,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,17.5% - 30.3% (optimum 18.7% - 19.8%),Extreme
+530,Halorubrum halodurans,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,"min 10%, optimum 25%",Extreme
+531,Halorubrum halophilum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,15% - 30% (optimum 25%),Extreme
+532,Halorubrum kocurii,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,15% - 30% (optimum 20%),Extreme
+533,Halorubrum laminariae,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,9.9% - 28% (optimum 15.1% - 18.1%),Extreme
+534,Halorubrum litoreum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,11.6% - 29.8% (optimum 19.8%),Extreme
+535,Halorubrum luteum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,14.6% - 30.3% (optimum 23.3% - 25.1%),Extreme
+536,Halorubrum orientale,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,14.6% - 29.2% (optimum 19.8%),Extreme
+537,Halorubrum persicum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,"min 12%, 15% - 30% (optimum 20%)",Extreme
+538,Halorubrum rubrum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,"min 8%, 8.1% - 28% (optimum 12.2%)",Extreme
+539,Halorubrum rutilum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,5.2% - 28% (optimum 15.1%),Extreme
+540,Halorubrum salinum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,9.9% - 28% (optimum 15.1%),Extreme
+541,Halorubrum tebenquichense,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,"14.6% - 30.3%, optimum 30%",Extreme
+542,Halorubrum terrestre,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,15% – 30 % (optimum 25%) ,Extreme
+543,Halorubrum tibetense,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,"min 8.7%, optimum 17.5% - 19.8%",Moderate
+544,Halorubrum yunnanense,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,optimum 20%,Extreme
+545,Halorubrum xinjiangense,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,11.6% - 30.3% (optimum 18.1% - 19.8%),Extreme
+546,Halorussus amylolyticus,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,8.1% - 28% (optimum 11.6%),Extreme
+547,Halorussus rarus,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,8.1% - 25.1% (optimum 12.2%),Extreme
+548,Halorussus ruber,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,"min 8%, 8.1% - 28% (optimum 9.9%)",Extreme
+549,Halosiccatus urmianus,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,min 14.6% (optimum 23.3%),Extreme
+550,Halosimplex litoreum,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,5.2% - 28% (optimum 18.1%),Extreme
+551,Halosimplex pelagicum,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,"min 8%, 8.1% - 28% (optimum 19.8%)",Extreme
+552,Halosimplex rubrum,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,5.2% - 19.8% (optimum 18.1%),Extreme
+553,Halostagnicola alkaliphila,Natrialbales,Halobacteria,Euryarchaeota,Archaea,no,20% - 30% (optimum 25%),Extreme
+554,Halostagnicola bangensis,Natrialbales,Halobacteria,Euryarchaeota,Archaea,no,20% - 30% (optimum 25%),Extreme
+555,Halostagnicola kamekurae,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,10% - 30% (optimum 15%),Extreme
+556,Halostagnicola larsenii,Natrialbales,Halobacteria,Euryarchaeota,Archaea,complete genome,"15% - 30%, optimum 20%",Extreme
+557,Halostella salina,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,15% - 30% (optimum 20%),Extreme
+558,Haloterrigena daqingensis,Natrialbales,Halobacteria,Euryarchaeota,Archaea,complete genome,9.9% - 32.1% (optimum 11.6% - 14.6%),Extreme
+559,Haloterrigena hispanica,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,12.8% - 23.3% (optimum 19.8%),Extreme
+560,Haloterrigena jeotgali,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,10% - 30% (optimum 15% - 20%),Extreme
+561,Haloterrigena limicola,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,9.9% - 29.8% (optimum 18.1%),Extreme
+562,Haloterrigena longa,Natrialbales,Halobacteria,Euryarchaeota,Archaea,no,9.9% - 29.8% (optimum 18.1%),Extreme
+563,Haloterrigena saccharevitans,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,min 9.9% (optimum 17.5% - 19.8%),Moderate
+564,Haloterrigena salina,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,14.6% - 29.2% (optimum 19.8%),Extreme
+565,Haloterrigena thermotolerans,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,min 11.6% (optimum 17.5% - 20.4%),Extreme
+566,Halovarius luteus,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,min 14.6% (optimum 23.3%),Extreme
+567,Halovenus aranensis,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,14.6% - 29.2% (optimum 23.3%),Extreme
+568,Halovenus rubra,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,18.1% - 29.8% (optimum 22.7%),Extreme
+569,Halovenus salina,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,15% - 30% (optimum 25%),Extreme
+570,Halovivax asiaticus,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,min 15% (optimum 20%),Extreme
+572,Halovivax cerinus,Natrialbales,Halobacteria,Euryarchaeota,Archaea,no,14.6% - 29.8% (optimum 19.8%),Extreme
+573,Halovivax limisalsi,Natrialbales,Halobacteria,Euryarchaeota,Archaea,no,15% - 30% (optimum 25.1%),Extreme
+574,Natrialba aegyptiaca,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,"min 9.3% - satr, optimum 14.6% - 17.5%",Moderate
+575,Natrialba hulunbeirensis,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,12% - 30% (optimum 20%),Extreme
+576,Natrialba chahannaoensis,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,10% - 30% (optimum 15%),Extreme
+577,Natrialba taiwanensis,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,11.6% - satur (optimum 20.4%),Extreme
+578,Natribaculum breve,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,5.2% - 29.8% (optimum 15.1%),Extreme
+579,Natribaculum longum,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,5.2% - 29.8% (optimum 19.8%),Extreme
+580,Natrinema altunense,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,min 9.9% (optimum 17.5% - 25.1%),Extreme
+581,Natrinema ejinorense,Natrialbales,Halobacteria,Euryarchaeota,Archaea,no,min 10.5% (optimum 19.8%),Extreme
+582,Natrinema gari,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,9.9% - 29.8% (optimum 15.1% - 19.8%),Extreme
+583,Natrinema pallidum,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,min 8.7% (19.8% - 25.1%),Extreme
+584,Natrinema pellirubrum,Natrialbales,Halobacteria,Euryarchaeota,Archaea,complete genome,"min 8.7%, 11.6% (optimum 19.8% - 25.1%)",Extreme
+585,Natrinema salaciae,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,optimum 15.1% - 19.8%,Extreme
+586,Natrinema versiforme,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,min 8.7% (optimum 19.8% - 25.1%),Extreme
+587,Natronoarchaeum mannanilyticum,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,"12% - 31%, optimum 23% - 26%",Extreme
+588,Natronoarchaeum philippinense,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,"14% - 30 % (optimum, 18 %)",Extreme
+589,Natronoarchaeum rubrum,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,"min 8%, 8.1% - 28% (optimum 15.1%)",Extreme
+590,Natronobacterium texcoconense,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,9.9% - 25.1% (optimum 15.1% - 19.8%),Extreme
+591,Natronococcus jeotgali,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,7.5% - 30% (optimum 23% - 25%),Extreme
+592,Natronococcus roseus,Natrialbales,Halobacteria,Euryarchaeota,Archaea,no,15% - 30% (optimum 25% - 30%),Extreme
+593,Natronolimnobius baerhuensis,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,"min 15%, optimum 20%",Extreme
+594,Natronolimnobius innermongolicus,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,min 10% (optimum 15% - 20%),Extreme
+595,Natronomonas gomsonensis,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,"min 18%, optimum 24%",Extreme
+596,Natronomonas moolapensis,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,complete genome,optimum 18% - 20%,Moderate
+597,Natronorubrum aibiense,Natrialbales,Halobacteria,Euryarchaeota,Archaea,no,"12% - 25%, optimum 15% - 18%",Moderate
+598,Natronorubrum bangense,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,min 12%,Moderate
+599,Natronorubrum tibetense,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,min 12%,Moderate
+600,Natronorubrum sediminis,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,"min 14.6%, optimum 19.8%",Moderate
+601,Natronorubrum sulfidifaciens,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,"min 12%, optimum 18.1%",Moderate
+602,Natronorubrum texcoconense,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,"min 14.6%, optimum 19.8%",Moderate
+603,Salarchaeum japonicum,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,8.7% - 30.9% (optimum 14.6% - 17.5%),Extreme
+604,Salinarchaeum laminariae,Natrialbales,Halobacteria,Euryarchaeota,Archaea,no,8.1% - 29.8% (optimum 18.1% - 25.1%),Extreme
+605,Salinigranum rubrum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,8.1% - 28% (optimum 18.1%),Extreme
+606,Salinarubrum litoreum,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,optimum 15.1%,Moderate
+607,Halocella cellulosilytica,Halanaerobiales,Clostridia,Firmicutes,Bacteria,no,5% - 20% (optimum 15%),Moderate
+608,Halanaerobium salsuginis,Halanaerobiales,Clostridia,Firmicutes,Bacteria,shotgun,6% - 24% (optimum 9%),Moderate
+609,Haloanaerobium fermentans,Halanaerobiales,Clostridia,Firmicutes,Bacteria,no,"max 25%, optimum 10%",Moderate
+610,Haloanaerobium lacusroseus,Halanaerobiales,Clostridia,Firmicutes,Bacteria,no,"1% - satr, optimum 20%",Extreme
+611,Halanaerobium acetethylicum,Halanaerobiales,Clostridia,Firmicutes,Bacteria,no,5% - 22%,Extreme
+612,Haloanaerobium kushneri,Halanaerobiales,Clostridia,Firmicutes,Bacteria,shotgun,15% - 20% (optimum 12%),Moderate
+613,Halanaerobium congolense,Halanaerobiales,Clostridia,Firmicutes,Bacteria,shotgun,"4% - 24%, optimum 10%",Moderate
+614,Halanaerobium saccharolyticum,Halanaerobiales,Clostridia,Firmicutes,Bacteria,shotgun,3% - 30% (optimum 10%),Extreme
+615,Natroniella sulfidigena,Halanaerobiales,Clostridia,Firmicutes,Bacteria,no,9% - 23% (optimum 17%),Moderate
+616,Orenia marismortui,Halanaerobiales,Clostridia,Firmicutes,Bacteria,shotgun,3% - 17% (optimum 3% - 12%),Moderate
+617,Haloanaerobacter chitinovorans,Halanaerobiales,Clostridia,Firmicutes,Bacteria,no,3% - 29% (optimum 12% - 17%),Moderate
+618,Haloanaerobacter salinarius,Halanaerobiales,Clostridia,Firmicutes,Bacteria,no,5% - 30% (optimum 14% - 15%),Extreme
+619,Halanaerobacter lacunarum,Halanaerobiales,Clostridia,Firmicutes,Bacteria,no,no records available,Extreme
+620,Tamilnaduibacter salinus,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"min 1%, max 20%",Moderate
+621,Psychroflexus salarius,Flavobacteriales,Flavobacteriia,Bacteroidetes,Bacteria,shotgun,1% - 10%,Moderate
+622,Neptuniibacter halophilus,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% – 6.0 %, optimum 2% - 4%",Slight
+623,Mongoliicoccus alkaliphilus,Cytophagales,Cytophagia,Bacteroidetes,Bacteria,no,0% - 5%,Slight
+624,Litoribacter alkaliphilus,Cytophagales,Cytophagia,Bacteroidetes,Bacteria,no,0% - 5%,Slight
+626,Halomonas garicola,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"3% - 22.5%, optimum 10%",Moderate
+627,Oceanobacillus picturae,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,0% - 22%,Moderate
+628,Piscibacillus salipiscarius,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"2% - 30%, optimum 10% - 20%",Moderate
+629,Microbulbifer rhizosphaerae,Cellvibrionales,Gammaproteobacteria,Proteobacteria,Bacteria,no,1% - 6%,Moderate
+630,Zhihengliuella somnathii,Micrococcales,Actinobacteria,Actinobacteria,Bacteria,no,"15% max, optimum 4%",Moderate
+631,Gynuella sunshinyii,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,complete genome,"1% - 7%, optimum 1% - 4%",Moderate
+632,Actinotalea suaedae,Micrococcales,Actinobacteria,Actinobacteria,Bacteria,no,"0% - 5%, optimum 3%",Slight
+633,Labrenzia suaedae,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,shotgun,"0% - 9%, optimum 0% - 5%",Moderate
+634,Martelella endophytica,Rhizobiales,Alphaproteobacteria,Proteobacteria,Bacteria,complete genome,"0% - 9%, optimum 4% - 5%",Moderate
+635,Modestobacter roseus,Geodermatophilales,Actinobacteria,Actinobacteria,Bacteria,no,"0% - 10%, optimum 3%",Moderate
+636,Hoeflea suaedae,Rhizobiales,Alphaproteobacteria,Proteobacteria,Bacteria,no,"0% - 9.5%, opimum 0% - 7%",Moderate
+637,Kineococcus endophytica,Kineosporiales,Actinobacteria,Actinobacteria,Bacteria,no,0% - 5%,Slight
+638,Pseudonocardia nantongensis,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,no,"0% - 15%, optimum 3%",Moderate
+639,Gracilibacillus kimchii,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0% - 25%, optimum 10% - 15%",Extreme
+640,Lentibacillus kimchii,Bacillales,Bacilli,Firmicutes,Bacteria,no,"10% - 30%, optimum 15% - 20%",Extreme
+641,Bacillus pseudoflexus,Bacillales,Bacilli,Firmicutes,Bacteria,no,"2% - 11%, optimum 5%",Moderate
+642,Halobacillus salicampi,Bacillales,Bacilli,Firmicutes,Bacteria,no,"1% - 20%, optimum 9%",Moderate
+643,Haloferax namakaokahaiae,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,"2.9% - 31%, optimum 10%",Extreme
+644,Oceanobacillus jeddahense,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,optimum 10%,Moderate
+645,Halomonas urumqiensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,optimum 8%,Moderate
+646,Oceanobacillus halophilus,Bacillales,Bacilli,Firmicutes,Bacteria,no,"3% - 15%, optimum 7.5%",Moderate
+647,Halorhabdus rudnickae,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,"5% - 30%, optimum 20%",Extreme
+648,Egicoccus halophilus,Egicoccales,Nitriliruptoria,Actinobacteria,Bacteria,no,"0% - 9%, optimum 3.5%",Moderate
+649,Lentibacillus amyloliquefaciens,Bacillales,Bacilli,Firmicutes,Bacteria,complete genome,"5% - 25%, optimum 7% - 12%",Extreme
+650,Egibacter rhizosphaerae,Egibacterales,Nitriliruptoria,Actinobacteria,Bacteria,no,"8% - 25%, optimum 10% - 12%",Extreme
+652,Streptomonospora tuzyakensis,Streptosporangiales,Actinobacteria,Actinobacteria,Bacteria,no,"4% - 20%, optimum 10%",Moderate
+653,Halopeptonella vilamensis,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"7.5% - 25%, optimum 10% - 15%",Extreme
+654,Halobacillus sediminis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"1% - 20%, optimum 10%",Moderate
+655,Idiomarina aquatica,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,optimum 5% - 10%,Moderate
+656,Spiribacter curvatus,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,complete genome,"5% - 20%, optimum 10%",Moderate
+657,Halobellus ramosii,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,"12.5% - 30%, optimum 20%",Extreme
+658,Spirochaeta sinaica,Spirochaetales,Spirochaetia,Spirochaetes,Bacteria,no,"2% - 12%, optimum 7%",Moderate
+659,Paraglycomyces xinjiangensis,Glycomycetales,Actinobacteria,Actinobacteria,Bacteria,no,optimum 8% - 13%,Moderate
+660,Salininema proteolyticum,Glycomycetales,Actinobacteria,Actinobacteria,Bacteria,no,"3% - 15%, optimum 7%",Moderate
+661,Amycolatopsis flava,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,no,"1% - 30%, optimum 5%",Extreme
+662,Marinobacter halophilus,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0% - 20%, optimum 4% - 8%",Moderate
+663,Oceanobacillus arenosus,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0% - 8%, optimum 2%",Moderate
+664,Halovarius luteus,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,"14.5% - 30%, optimum 23%",Extreme
+665,Halomonas heilongjiangensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 14%, optimum 7% - 10%",Moderate
+666,Bounagaea algeriensis,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,no,15% - 25%,Extreme
+667,Marinobacter nitratireducens,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"max 6%, optimum 2%",Moderate
+668,Longimonas halophila,Bacteroidetes Order II. Incertae sedis,not assigned,Bacteroidetes,Bacteria,no,"4% - 25%, optimum 6% - 8%",Extreme
+669,Halobacillus andaensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"3% - 15%, optimum 8%",Moderate
+670,Bacillus rigiliprofundi,Bacillales,Bacilli,Firmicutes,Bacteria,no,"max 12%, optimum 5% - 6%",Moderate
+671,Prauserella isguenensis,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,no,"5% - 25%, optimum 7% - 15%",Extreme
+672,Melghiribacillus thermohalophilus,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0.5% - 17%, optimum 7% - 10%",Moderate
+673,Idiomarina halophila,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 11%, optimum 2% - 3%",Moderate
+674,Aquisalimonas lutea,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"5% - 20%, optimum 7.5%",Moderate
+675,Kushneria pakistanensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 30%, optimum 3% - 9%",Extreme
+676,Planococcus dechangensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"2% - 10%, optimum 4%",Moderate
+677,Marinobacter shengliensis,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 18%, optimum 3% - 6%",Moderate
+678,Marinobacter piscensis,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 15%, optimum 10%",Moderate
+679,Fodinicurvata halophila,Rhodospirillales,Alphaproteobacteria,Proteobacteria,Bacteria,no,"5% - 20%, optimum 10%",Moderate
+680,Actinopolyspora biskrensis,Actinopolysporales,Actinobacteria,Actinobacteria,Bacteria,no,"10% - 30%, optimum 15% - 20%",Extreme
+681,Pontibacillus salicampi,Bacillales,Bacilli,Firmicutes,Bacteria,no,"1% - 20%, optimum 7%",Moderate
+682,Sporohalobacter salinus,Halanaerobiales,Clostridia,Firmicutes,Bacteria,no,"5% - 30%, optimum 20%",Extreme
+683,Salinithrix halophila,Bacillales,Bacilli,Firmicutes,Bacteria,no,"1% - 15%, optimum 3% - 5%",Moderate
+684,Celeribacter indicus,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,complete genome,"0.5% - 12%, optimum 3%",Moderate
+685,Seohaeicola nanhaiensis,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,no,"0% - 8%, optimum 6%",Moderate
+686,Aquibacillus halophilus,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0.5% - 20%, optimum 10%",Moderate
+687,Mzabimyces algeriensis,not assigned,not assigned,Actinobacteria,Bacteria,no,"7% - 30%, optimum 10% - 20%",Extreme
+688,Halovivax limisalsi,Natrialbales,Halobacteria,Euryarchaeota,Archaea,no,"15% - 30%, optimum 25%",Extreme
+689,Saccharopolyspora halotolerans,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,no,"3% - 20%, optimum 10%",Moderate
+690,Pseudomonas salegens,Pseudomonadales,Gammaproteobacteria,Proteobacteria,Bacteria,chromosome,"1% - 10%, optimum 3%",Moderate
+691,Glycocaulis albus,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,no,"1% - 5%, optimum 1% - 3%",Slight
+692,Bacillus oryzaecorticis,Bacillales,Bacilli,Firmicutes,Bacteria,no,0% - 9%,Moderate
+693,Streptomonospora algeriensis,Streptosporangiales,Actinobacteria,Actinobacteria,Bacteria,no,"7% - 20%, optimum 10% - 15%",Moderate
+694,Aquisalimonas halophila,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"3% - 23%, optimum 10% - 11%",Moderate
+695,Bacillus daqingensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0% - 16%, optimum 3%",Moderate
+696,Aliicoccus persicus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0.5% - 12.5%, optimum 7.5%",Moderate
+697,Alkalibacillus almallahensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"7.5% - 30%, optimum 15%",Extreme
+698,Methanohalophilus levihalophilus,Methanosarcinales,Methanomicrobia,Euryarchaeota,Archaea,no,"1% - 7.5%, optimum 2%",Moderate
+699,Halomonas songnenensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.2% - 15%, optimum 4%",Moderate
+700,Oceanobacillus aidingensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0% - 21%, optimum 6% - 8%",Moderate
+701,Oceanobacillus halophilum,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0.5% - 12%, optimum 3% - 5%",Moderate
+702,Oceanobacillus limi,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"2.5% - 10%, optimum 7.5%",Moderate
+703,Aliidiomarina shirensis,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 15%, optimum 1% - 10%",Moderate
+704,Salinifilum ghardaiensis,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,no,"7% - 32%, optimum 15% - 25%",Extreme
+705,Halomonas huangheensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,complete genome,"1% - 20%, optimum 7% - 10%",Moderate
+706,Halorientalis persicus,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,shotgun,"15% - 30%, optimum 25%",Extreme
+707,Cyclobacterium halophilum,Cytophagales,Cytophagia,Bacteroidetes,Bacteria,shotgun,"1% - 10%, optimum 2.5% - 3%",Moderate
+708,Bacillus shacheensis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0.5% - 20%, optimum 5% - 10%",Moderate
+709,Salinibacillus xinjiangensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"max 21%, optimum 9% - 12%",Moderate
+710,Halomonas olivaria,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0% - 25%, optimum 7%",Extreme
+711,Haloplanus salinus,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,"5% - 28%, optimum 18%",Extreme
+712,Gracilimonas mengyeensis,Balneolales,Balneolia,Rhodothermaeota,Bacteria,no,"2% - 15%, optimum 5% - 9%",Moderate
+713,Halomonas zhaodongensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0% - 15%, optimum 3%",Moderate
+714,Actinopolyspora dayingensis,Actinopolysporales,Actinobacteria,Actinobacteria,Bacteria,no,"10% - 20%, optimum 13%",Moderate
+715,Bacillus oceani,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0% - 10%, optimum 3%",Moderate
+716,Marinobacter persicus,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"5% - 20%, optimum 7.5% - 10%",Moderate
+717,Fabibacter pacificus,Cytophagales,Cytophagia,Bacteroidetes,Bacteria,shotgun,"0.5% - 10%, optimum 2%",Moderate
+718,Actinopolyspora mzabensis,Actinopolysporales,Actinobacteria,Actinobacteria,Bacteria,shotgun,"7% - 32%, optimum 10% - 28%",Extreme
+719,Halopenitus malekzadehii,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,"10% - 30%, optimum 20%",Extreme
+720,Marinococcus tarijensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"3% - 20%, optimum 5%",Moderate
+721,Bacillus salsus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0.5% - 7.5%, optimum 3%",Moderate
+722,Actinopolyspora righensis,Actinopolysporales,Actinobacteria,Actinobacteria,Bacteria,shotgun,"0% - 35%, optimum 15% - 25%",Extreme
+723,Streptomyces chilikensis,Streptomycetales,Actinobacteria,Actinobacteria,Bacteria,shotgun,"2% - 12%, optimum 8%",Moderate
+724,Bacillus halosaccharovorans,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0.5% - 25%, optimum 5% - 15%",Extreme
+725,Aliifodinibius roseus,Balneolales,Balneolia,Rhodothermaeota,Bacteria,shotgun,"4% - 20%, optimum 6% - 10%",Moderate
+726,Aliifodinibius sediminis,Balneolales,Balneolia,Rhodothermaeota,Bacteria,no,"4% - 16%, optimum 6% - 10%",Moderate
+727,Actinopolyspora lacussalsi,Actinopolysporales,Actinobacteria,Actinobacteria,Bacteria,no,"10% - 20%, optimum 12%",Moderate
+728,Salinisphaera japonica,Salinisphaerales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 30%, optimum 7.5% - 10%",Extreme
+729,Halomonas nanhaiensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 20%, optimum 3% - 4%",Moderate
+730,Virgibacillus natechei,Bacillales,Bacilli,Firmicutes,Bacteria,no,"1% - 20%, optimum 10%",Moderate
+731,Limimonas halophila,Rhodospirillales,Alphaproteobacteria,Proteobacteria,Bacteria,shotgun,"15% - 30%, optimum 20%",Extreme
+732,Actinopolyspora saharensis,Actinopolysporales,Actinobacteria,Actinobacteria,Bacteria,shotgun,"10% - 30%, optimum 15% - 20%",Extreme
+733,Ornithinibacillus halophilus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0.5% - 12.5%, optimum 5% - 7.5%",Moderate
+734,Corallomonas stylophorae,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 7%, optimum 3% - 4%",Extreme
+735,Salinicola zeshunii,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0% - 20%, optimum 6% - 12%",Moderate
+737,Halomonas smyrnensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"3% - 25%, optimum 10%",Extreme
+738,Saliterribacillus persicus,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0.5% - 22.5%, optimum 7.5%",Extreme
+739,Halomonas ramblicola,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 30%, optimum 5% - 7.5%",Extreme
+740,Virgibacillus albus,Bacillales,Bacilli,Firmicutes,Bacteria,no,"1% - 17%, optimum 5% - 10%",Moderate
+741,Pseudonocardia nantongensis,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,no,"0% - 15%, optimum 3%",Moderate
+742,Oceanicella actignis,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,no,"1% - 9%, optimum 2% - 5%",Moderate
+743,Arhodomonas recens,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"2% - 25%, optimum 10% - 12%",Extreme
+744,Amphibacillus cookii,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0.6% - 26%, optimum 5%",Extreme
+745,Salisediminibacterium halotolerans,Bacillales,Bacilli,Firmicutes,Bacteria,no,"3% - 30%, optimum 9%",Extreme
+746,Salinisphaera halophila,Salinisphaerales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"6% - 29%, optimum 14% - 19%",Extreme
+747,Desulfohalophilus alkaliarsenatis,Desulfovibrionales,Deltaproteobacteria,Proteobacteria,Bacteria,no,"5.5% - 33%, optimum 20%",Extreme
+748,Actinopolyspora algeriensis,Actinopolysporales,Actinobacteria,Actinobacteria,Bacteria,no,7% - 32%,Extreme
+749,Gracilibacillus bigeumensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"1% - 22%, optimum 7%",Extreme
+750,Roseivivax sediminis,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,no,"1% - 15%, optimum 5% - 10%",Moderate
+751,Rhizobium halophytocola,Rhizobiales,Alphaproteobacteria,Proteobacteria,Bacteria,no,"0% - 7.5%, optimum 4% - 5%",Slight
+752,Gracilibacillus kekensis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0% - 22%, optimum 3%",Moderate
+753,Desulfonatronovibrio halophilus,Desulfovibrionales,Deltaproteobacteria,Proteobacteria,Bacteria,no,"1% - 12%, optimum 3%",Moderate
+754,Alteribacillus iranensis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"2.5% - 15%, optimum 5% - 7.5%",Moderate
+755,Salinactinospora qingdaonensis,Streptosporangiales,Actinobacteria,Actinobacteria,Bacteria,no,"1% - 23%, optimum 9% - 12%",Moderate
+756,Natribacillus halophilus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"7% - 23%, optimum 10% - 15%",Moderate
+757,Fodinibius salinus,Balneolales,Balneolia,Rhodothermaeota,Bacteria,no,"4% - 23%, optimum 10% - 15%",Moderate
+758,Alkalibacillus weihaiensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"2% - 25%, optimum 5% - 20%",Moderate
+759,Alkalibacillus huanghaiensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"1% - 20%, optimum 10%",Moderate
+760,Tetragenococcus osmophilus,Lactobacillales,Bacilli,Firmicutes,Bacteria,no,0% - 25%,Moderate
+764,Tetragenococcus halophilus,Lactobacillales,Bacilli,Firmicutes,Bacteria,complete genome,0% - 25%,Moderate
+765,Halomonas xianhensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"0.05% - 27.5%, optimum 5% - 8%",Moderate
+766,Celeribacter halophilus,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,shotgun,0.5% - 11%,Moderate
+767,Bacillus hemicentroti,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0.5% - 25%, optimum 5% - 8%",Moderate
+768,Alkalibacterium subtropicum,Lactobacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0% - 17%, optimum 1% - 2%",Moderate
+769,Marinobacter daqiaonensis,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"1% - 15%, optimum 5% - 10%",Moderate
+770,Halomonas rifensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 20%, optimum 5% - 7.5%",Moderate
+771,Halomonas stenophila,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"3% - 15%, optimum 5% - 10%",Moderate
+772,Halomonas qijiaojingensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 23%, optimum 5% - 7%",Moderate
+773,Halomonas flava,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 23%, optimum 5% - 7%",Moderate
+774,Salimicrobium salexigens,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"3% - 25%, optimum 7.5% - 12.5%",Moderate
+775,Bacillus xiaoxiensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0.5% - 20%, optimum 2% - 4%",Slight
+776,Marinobacter oulmenensis,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 15%, optimum 5% - 7.5%",Moderate
+777,Bacillus alkalisediminis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"2% - 10%, optimum 5%",Moderate
+778,Halomonas daqiaonensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"2% - 15%, optimum 7% - 8%",Moderate
+779,Actinopolyspora alba,Actinopolysporales,Actinobacteria,Actinobacteria,Bacteria,shotgun,"10% - 25%, optimum 15%",Moderate
+780,Actinopolyspora erythraea,Actinopolysporales,Actinobacteria,Actinobacteria,Bacteria,shotgun,"10% - 25%, optimum 15%",Moderate
+781,Jeotgalicoccus halophilus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0.1% - 16%, optimum 2% - 3%",Slight
+782,Streptohalobacillus salinus,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0% - 20%, optimum 7%",Moderate
+783,Thalassobacillus pellis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0.5% - 25%, optimum 10%",Moderate
+784,Saccharopolyspora lacisalsi,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,no,"5% - 25%, optimum 15%",Moderate
+785,Kangiella spongicola,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,2% - 10%,Moderate
+786,Bacillus hunanensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0.5% - 15%, optimum 2% - 4%",Slight
+787,Halomonas aidingensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 25%, optimum 2% - 10%",Moderate
+788,Halomonas alkalitolerans,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 23%, optimum 7%",Moderate
+789,Actinopolyspora egyptensis,Actinopolysporales,Actinobacteria,Actinobacteria,Bacteria,no,"5% - 25%, optimum 15% - 20%",Moderate
+790,Sporosalibacterium faouarense,Clostridiales,Clostridia,Firmicutes,Bacteria,no,"up to 15%, optimum 4%",Slight
+791,Haloactinopolyspora alba,Jiangellales,Actinobacteria,Actinobacteria,Bacteria,no,"7% - 23%, optimum 10% - 15%",Moderate
+792,Virgibacillus subterraneus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0% - 25%, optimum 9%",Moderate
+793,Hwanghaeicola aestuarii,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,no,"1.5% - 6%, optimum 2% - 3%",Slight
+794,Alkaliphilus halophilus,Clostridiales,Clostridia,Firmicutes,Bacteria,no,"0.5% - 15%, optimum 7.5%",Moderate
+795,Terribacillus aidingensis,Bacillales,Bacilli,Firmicutes,Bacteria,complete genome,"0.5% - 21%, optimum 3% - 7%",Moderate
+796,Actinopolyspora lacussalsi,Actinopolysporales,Actinobacteria,Actinobacteria,Bacteria,no,"10% - 20%, optimum 12%",Moderate
+797,Marinimicrobium haloxylanilyticum,Cellvibrionales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"2% - 22%, optimum 7% - 11%",Moderate
+798,Salinicoccus kekensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"2% - 20%, optimum 8%",Moderate
+799,Salinimicrobium marinum,Flavobacteriales,Flavobacteriia,Bacteroidetes,Bacteria,no,"0.5% - 15%, optimum 4%",Slight
+801,Virgibacillus siamensis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"1% - 20%, optimum 5%",Moderate
+802,Haloactinobacterium album,Micrococcales,Actinobacteria,Actinobacteria,Bacteria,shotgun,"2% - 16%, optimum 7% - 10%",Moderate
+803,Haloechinothrix alba,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,no,"9% - 23%, optimum 15%",Moderate
+804,Aestuariibacter aggregatus,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"0.5% - 10%, optimum 4% - 6%",Moderate
+805,Kushneria sinocarnis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 20%, optimum 10%",Moderate
+806,Zhihengliuella salsuginis,Micrococcales,Actinobacteria,Actinobacteria,Bacteria,no,"0.5% - 20%, optimum 5% - 10%",Moderate
+807,Nocardiopsis terrae,Streptosporangiales,Actinobacteria,Actinobacteria,Bacteria,no,"1% - 15%, optimum 3% - 5%",Slight
+808,Georgenia halophila,Micrococcales,Actinobacteria,Actinobacteria,Bacteria,no,"1% - 15%, optimum 5% - 10%",Moderate
+809,Salsuginibacillus halophilus,Bacillales,Bacilli,Firmicutes,Bacteria,no,"9% - 30%, optimum 19%",Moderate
+810,Bacillus chungangensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0% - 15%, optimum 5%",Moderate
+811,Lentibacillus persicus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"3% - 25%, optimum 7.5% - 10%",Moderate
+812,Bacillus halochares,Bacillales,Bacilli,Firmicutes,Bacteria,no,"6% - 23%, optimum 15%",Moderate
+814,Oceanobacillus manasiensis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"2.5% - 15%, optimum 5% - 10%",Moderate
+815,Halomonas jeotgali,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"5% - 25%, optimum 10%",Moderate
+816,Lentibacillus jeotgali,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"3% - 20%, optimum 10% - 15%",Moderate
+817,Desulfosalsimonas propionicica,Desulfobacterales,Deltaproteobacteria,Proteobacteria,Bacteria,no,"up to 20%, optimum 6%",Moderate
+818,Amycolatopsis halophila,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,shotgun,"1% - 15%, optimum 5%",Moderate
+819,Halomonas andesensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 20%, optimum 1% - 3%",Slight
+820,Geomicrobium halophilum,Bacillales,Bacilli,Firmicutes,Bacteria,no,"5% - 25%, optimum 10% - 15%",Moderate
+821,Psychroflexus lacisalsi,Flavobacteriales,Flavobacteriia,Bacteroidetes,Bacteria,no,"0.5% - 15%, optimum 5.8% - 7%",Moderate
+822,Cobetia crustatorum,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"3.5% - 11.5%, optimum 6.5%",Extreme
+823,Salinicoccus carnicancri,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0% - 20%, optimum 12%",Moderate
+824,Thiohalobacter thiocyanaticus,not assigned,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 17%, optimum 3%",Slight
+825,Virgibacillus salinus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"3% - 20%, optimum 10%",Moderate
+826,Aidingimonas halophila,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"1% - 25%, optimum 5% - 10%",Moderate
+827,Piscibacillus halophilus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"1% - 20%, optimum 10%",Moderate
+828,Halobacillus hunanensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"2% - 25%, optimum 5% - 10%",Moderate
+829,Nocardiopsis litoralis,Streptosporangiales,Actinobacteria,Actinobacteria,Bacteria,no,"1% - 15%, optimum 5% - 7%",Moderate
+830,Halomonas zhanjiangensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"1% - 20%, optimum 3% - 5%",Moderate
+831,Alteromonas halophila,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 20%, optimum 5% - 10%",Moderate
+833,Virgibacillus litoralis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"2% - 25%, optimum 5% - 10%",Moderate
+834,Streptomonospora amylolytica,Streptosporangiales,Actinobacteria,Actinobacteria,Bacteria,no,"5% - 20%, optimum 10%",Moderate
+835,Streptomonospora flavalba,Streptosporangiales,Actinobacteria,Actinobacteria,Bacteria,no,"5% - 25%, optimum 10%",Moderate
+836,Saccharopolyspora qijiaojingensis ,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,no,"6% - 22%, optimum 10% - 15%",Moderate
+837,Virgibacillus arcticus,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0% - 20%, optimum 5%",Moderate
+838,Paracoccus saliphilus ,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,shotgun,"1% - 15%, optimum 8%",Moderate
+839,Natranaerobius trueperi,Natranaerobiales,Clostridia,Firmicutes,Bacteria,no,"18% - 31%, optimum 22%",Extreme
+840,Natronovirga wadinatrunensis,Natranaerobiales,Clostridia,Firmicutes,Bacteria,no,"18% - 31%, optimum 23%",Extreme
+841,Virgibacillus sediminis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"1% - 20%, optimum 5% - 10%",Moderate
+842,Gracilibacillus saliphilus ,Bacillales,Bacilli,Firmicutes,Bacteria,no,"1% - 22%, optimum 10% - 15%",Moderate
+843,Sediminibacillus albus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0% - 22%, optimum 7%",Moderate
+844,Marinobacter lacisalsi,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"3% - 15%, optimum 7.5%",Moderate
+845,Halomonas fontilapidosi,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"3% - 20%, optimum 5% - 7.5%",Moderate
+846,Haloglycomyces albus,Glycomycetales,Actinobacteria,Actinobacteria,Bacteria,shotgun,"3% - 18%, optimum 8% - 12%",Moderate
+847,Ectothiorhodospira variabilis,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"2% - 20%, optimum 5% - 8%",Moderate
+848,Salinicoccus albus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"1% - 30%, optimum 10%",Moderate
+849,Saccharopolyspora halophila,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,no,"3% - 20%, optimum 10% - 15%",Moderate
+850,Halomonas ilicicola,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"2% - 17.5%, optimum 10%",Moderate
+851,Bacillus aidingensis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"8% - 33%, optimum 12%",Moderate
+852,Halomonas salifodinae,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 20%, optimum 3%",Slight
+853,Halomonas daqingensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 15%, optimum 5% - 10%",Moderate
+854,Marinobacter mobilis,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"0.5% - 10%, optimum 3% - 5%",Moderate
+855,Thiohalorhabdus denitrificans,not assigned,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"9% - 23%, optimum 18%",Moderate
+856,Halomonas sediminis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 15%, optimum 2% - 4%",Slight
+857,Halomonas korlensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"0.5% - 25%, optimum 6% - 10%",Moderate
+858,Gracilibacillus lacisalsi,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"1% - 18%, optimum 5% - 7%",Moderate
+859,Gracilibacillus halophilus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"7% - 30%, optimum 15%",Moderate
+860,Virgibacillus salarius,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0.5% - 25%, optimum 7% - 10%",Moderate
+861,Microbulbifer halophilus,Cellvibrionales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 20%, optimum 10%",Moderate
+862,Halomonas lutea,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"1% - 20%, optimum 5% - 10%",Moderate
+863,Haloactinospora alba,Streptosporangiales,Actinobacteria,Actinobacteria,Bacteria,no,"9% - 21%, optimum 15%",Moderate
+864,Halolactibacillus alkaliphilus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0.5% - 30%, optimum 2.5%",Slight
+865,Lentibacillus salis ,Bacillales,Bacilli,Firmicutes,Bacteria,no,"5% - 15%, optimum 10%",Moderate
+866,Aquisalibacillus elongatus,Bacillales,Bacilli,Firmicutes,Bacteria,no,"3% - 20%, optimum 10%",Moderate
+867,Salinicoccus halodurans,Bacillales,Bacilli,Firmicutes,Bacteria,complete genome,"0% - 24%, optimum 8%",Moderate
+868,Streptomonospora halophila,Streptosporangiales,Actinobacteria,Actinobacteria;,Bacteria,no,"5% - 20%, optimum 10%",Moderate
+869,Thiohalospira halophila,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"12% - 29%, optimum 15%- 18%",Moderate
+870,Thiohalospira alkaliphila,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"3% - 23%, optimum 12%",Moderate
+871,Nesterenkonia halophila,Micrococcales,Actinobacteria,Actinobacteria,Bacteria,no,"0.5% - 30%, optimum 10%",Moderate
+872,Thioalkalibacter halophilus,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"3% - 20%, optimum 6%",Moderate
+873,Salinivibrio proteolyticus,Vibrionales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"1% - 17%, optimum 5%",Moderate
+874,Halomonas caseinilytica,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 15%, optimum 3% - 5%",Moderate
+875,Marinobacter guineae,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,1% - 15%,Moderate
+876,Halomonas cerina,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"7.5% - 20%, optimum 7.5% - 10%",Moderate
+877,Bacillus aurantiacus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,optimum 3% - 7%,Moderate
+878,Bacillus coahuilensis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0.5% - 10%, optimum 5%",Moderate
+879,Salinicoccus salitudinis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"1% - 25%, optimum 10% - 12%",Moderate
+880,Saccharomonospora saliphila,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,shotgun,optimum 10%,Moderate
+881,Spongiibacter marinus,Cellvibrionales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"1% - 7%, optimum 3%",Slight
+882,Marinobacter pelagius,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"0.5% - 15%, optimum 5%",Moderate
+883,Virgibacillus kekensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0% - 25%, optimum 10%",Moderate
+884,Virgibacillus chiguensis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0% - 30%, optimum 5% - 10%",Moderate
+885,Salinimicrobium xinjiangense,Flavobacteriales,Flavobacteriia,Bacteroidetes,Bacteria,shotgun,"0.5% - 10%, optimum 2% - 3%",Slight
+886,Salinimicrobium catena,Flavobacteriales,Flavobacteriia,Bacteroidetes,Bacteria,no,"0.1% - 10%, optimum 1% - 4%",Slight
+887,Halomonas sabkhae,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"5% - 25%, optimum 7.5%",Moderate
+888,Clostridiisalibacter paucivorans,Clostridiales,Clostridia,Firmicutes,Bacteria,shotgun,"1% - 10%, optimum 5%",Moderate
+889,Bacillus polygoni,Bacillales,Bacilli,Firmicutes,Bacteria,no,"3% - 14%, optimum 5%",Moderate
+890,Halobacillus mangrovi,Bacillales,Bacilli,Firmicutes,Bacteria,no,"5% - 20%, optimum 10%",Moderate
+891,Salinicoccus iranensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"1% - 25%, optimum 7.5% - 10%",Moderate
+892,Bacillus isabeliae,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0% - 16%, optimum 4% - 6%",Moderate
+893,Halomonas sinaiensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"up to 30%, optimum 5% - 15%",Moderate
+894,Chromohalobacter nigrandesensis ,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 25%, optimum 7.5%",Moderate
+895,Halomonas kribbensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 14%, optimum 5%",Moderate
+896,Modicisalibacter tunisiensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 25%, optimum 10%",Moderate
+897,Salinicoccus kunmingensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0.5% - 25%, optimum 8% - 10%",Moderate
+898,Salsuginibacillus kocurii,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"3% - 20%, optimum 10%",Moderate
+899,Salimicrobium luteum,Bacillales,Bacilli,Firmicutes,Bacteria,no,"2% - 27%, optimum 10%",Moderate
+900,Salimicrobium album,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"5% - 20%, optimum 5% - 15%",Moderate
+901,Salimicrobium halophilum,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"3% - 30%, optimum 15%",Moderate
+902,Marinobacter segnicrescens,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"1% - 15%, optimum 4% - 8%",Moderate
+903,Bacillus chagannorensis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"3% - 20%, optimum 7%",Moderate
+904,Desulfovibrio marinus,Desulfovibrionales,Deltaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 11%, optimum 2.5% - 5%",Slight
+905,Marinobacterium halophilum,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,3% - 12%,Moderate
+906,Thiohalomonas denitrificans,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"6% - 18%, optimum 9% - 12%",Moderate
+907,Thiohalomonas nitratireducens,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"6% - 15%, optimum 6%",Moderate
+908,Virgibacillus halophilus,Bacillales,Bacilli,Firmicutes,Bacteria,no,0.18,Moderate
+909,Thiohalophilus thiocyanoxidans,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"6% - 23%, optimum 9%",Moderate
+910,Halomonas shengliensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"0% - 15%, optimum 5% - 15%",Moderate
+911,Salinicola halophilus,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"3% - 25%, optimum 7.5% - 10%",Moderate
+912,Halobacillus profundi,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0.5% - 30%, optimum 10%",Moderate
+914,Halobacillus kuroshimensis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0.5% - 25%, optimum 6%",Moderate
+915,Salinicola socius,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"0.5% - 30%, optimum 3% - 10%",Moderate
+916,Alkalibacillus halophilus,Bacillales,Bacilli,Firmicutes,Bacteria,no,"5% - 30%, optimum 10% - 20%",Moderate
+917,Halalkalibacillus halophilus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"5% - 25%, optimum 10% - 15%",Moderate
+918,Aquisalimonas asiatica,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"1% - 20%, optimum 7% - 10%",Moderate
+919,Halomonas gomseomensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 20%, optimum 8% - 12%",Moderate
+920,Halomonas janggokensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 20%, optimum 10% - 15%",Moderate
+921,Halomonas denitrificans,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"2% - 20%, optimum 8% - 10%",Moderate
+922,Salinicola salarius,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"2% - 20%, optimum 8% - 10%",Moderate
+923,Alkalibacillus silvisoli,Bacillales,Bacilli,Firmicutes,Bacteria,no,"5% - 25%, optimum 10% - 15%",Moderate
+924,Lentibacillus halodurans,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"5% - 30%, optimum 8% - 12%",Moderate
+925,Kushneria indalinina,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"3% - 25%, optimum 7.5% - 10%",Moderate
+926,Petrotoga halophila,Petrotogales,Thermotogae,Thermotogae,Bacteria,no,"0.5% - 9%, optimum 4% - 6%",Moderate
+927,Terribacillus saccharophilus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0% - 16%, optimum 1% - 5%",Moderate
+928,Halomonas alkaliantarctica,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"up to 22%, optimum 10%",Moderate
+929,Halocafeteria seosinensis,Bicosoecida,not assigned,Ochrophyta,Eukarya,no,"7.5% - 36%, optimum 15%",Moderate
+930,Salinicoccus salsiraiae,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0% - 22%, optimum 4%",Slight
+931,Bacillus taeanensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0% - 12%, optimum 2% - 5%",Slight
+932,Halobacillus blutaparonensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0% - 20%, optimum 2% - 4%",Slight
+933,Marinobacter vinifirmus ,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0% - 20%, optimum 3% - 6%",Moderate
+934,Salicola salis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"10% - 25%, optimum 15% - 20%",Moderate
+935,Thiomicrospira halophila,Thiotrichales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"3% - 20%, optimum 9%",Moderate
+936,Desulfohalobium utahense,Desulfovibrionales,Deltaproteobacteria,Proteobacteria,Bacteria,no,"2% - 24%, optimum 8% - 10%",Moderate
+937,Lentibacillus halophilus,Bacillales,Bacilli,Firmicutes,Bacteria,no,"12% - 30%, optimum 20% - 26%",Extreme
+938,Salicola marasensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"10% - 30%, optimum 15%",Moderate
+939,Nesterenkonia aethiopica,Micrococcales,Actinobacteria,Actinobacteria,Bacteria,no,"3% - 12%, optimum 3%",Slight
+941,Photobacterium ganghwense,Vibrionales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"1% - 7%, optimum 2%",Slight
+942,Oceanisphaera donghaensis,Aeromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,0.5% - 8%,Moderate
+943,Halovibrio denitrificans,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"12% - 29%, optimum 12% - 15%",Moderate
+944,Halospina denitrificans,not assigned,Gammaproteobacteria,Proteobacteria,Bacteria,no,"12% - 29%, optimum 15% - 18%",Moderate
+945,Gracilibacillus orientalis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"1% - 20%, optimum 10%",Moderate
+946,Desulfovermiculus halophilus,Desulfovibrionales,Deltaproteobacteria,Proteobacteria,Bacteria,shotgun,"3% - 23%, optimum 8% - 10%",Moderate
+947,Bacillus salarius,Bacillales,Bacilli,Firmicutes,Bacteria,no,"3% - 20%, optimum 10% - 12%",Moderate
+948,Alteromonas hispanica,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"7.5% - 15%, optimum 7.5% - 10%",Moderate
+949,Halolactibacillus halophilus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0% - 24%, optimum 2% - 3%",Slight
+950,Halolactibacillus miurensis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0% - 25.5%, optimum 2.5% - 3%",Slight
+951,Palleronia marisminoris,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,shotgun,"0.5% - 15%, optimum 5%",Moderate
+952,Thalassobacillus devorans,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0.5% - 20%, optimum 7.5% - 10%",Moderate
+953,Methylohalobius crimeensis,Methylococcales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"1.2% - 15%, optimum 5.8% - 8.7%",Moderate
+954,Alkalibacillus haloalkaliphilus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"5% - 10%, 20%",Moderate
+955,Alkalibacillus salilacus,Bacillales,Bacilli,Firmicutes,Bacteria,no,"5% - 20%, optimum 10% - 12%",Moderate
+956,Halomonas almeriensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"5% - 25%, optimum 7.5%",Moderate
+958,Halomonas taeanensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"1% - 25%, optimum 10% - 12%",Moderate
+959,Desulfovibrio brasiliensis,Desulfovibrionales,Deltaproteobacteria,Proteobacteria,Bacteria,shotgun,"1% - 15%, optimum 3% - 10%",Moderate
+960,Pontibacillus marinus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"1% - 9%, optimum 2% - 5%",Moderate
+961,Arcobacter halophilus,Campylobacterales,Epsilonproteobacter,Proteobacteria,Bacteria,no,"0.5% - 13%, optimum 3.5%",Slight
+962,Bacillus oshimensis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0% - 20%, optimum 7%",Moderate
+963,Salinibacillus aidingensis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,5% - 20%,Moderate
+964,Salinibacillus kushneri,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,1% - 30%,Moderate
+965,Tenuibacillus multivorans,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"1% - 20%, optimum 5% - 8%",Moderate
+966,Pontibacillus chungwhensis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"1% - 15%, optimum 2% - 5%",Slight
+967,Salinimonas chungwhensis,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"requires Nacl, max 15%, optimum 2% - 5%",Moderate
+968,Gramella echinicola,Flavobacteriales,Flavobacteriia,Bacteroidetes,Bacteria,shotgun,1% - 15%,Moderate
+969,Chromohalobacter sarecensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0% - 25%, optimum 8%",Moderate
+970,Halomonas koreensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 20%, optimum 1% - 12%",Moderate
+971,Shewanella marisflavi,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0% - 9%, optimum 2% - 3%",Slight
+972,Desulfovibrio bastinii,Desulfovibrionales,Deltaproteobacteria,Proteobacteria,Bacteria,shotgun,"1% - 12%, optimum 4%",Moderate
+973,Desulfovibrio gracilis,Desulfovibrionales,Deltaproteobacteria,Proteobacteria,Bacteria,shotgun,"2% - 12%, optimum 5% - 6%",Moderate
+974,Paracoccus haeundaensis,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,complete genome,"0% - 8%, optimum 1% - 6%",Moderate
+975,Halomonas organivorans,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1.5% - 30%, optimum 7.5% - 10%",Moderate
+976,Salipiger mucosus,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,shotgun,"0.5% - 20%, optimum 3% - 6%, optimum with sea s",Moderate
+977,Algoriphagus aquimarinus,Cytophagales,Cytophagia,Bacteroidetes,Bacteria,shotgun,0% - 10%,Moderate
+978,Algoriphagus chordae,Cytophagales,Cytophagia,Bacteroidetes,Bacteria,no,1% - 10%,Moderate
+979,Algoriphagus winogradskyi,Cytophagales,Cytophagia,Bacteroidetes,Bacteria,no,1% - 10%,Moderate
+980,Algoriphagus halophilus,Cytophagales,Cytophagia,Bacteroidetes,Bacteria,shotgun,0% - 8%,Moderate
+981,Marinobacter flavimaris,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0% - 21%, optimum 2% - 6%",Moderate
+982,Marinobacter daepoensis,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"0% - 19%, optimum 2% - 6%",Moderate
+983,Nocardiopsis salina,Streptosporangiales,Actinobacteria,Actinobacteria,Bacteria,shotgun,"3% - 20%, optimum 10%",Moderate
+984,Thialkalivibrio halophilus,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"1% - 29%, optimum 12%",Moderate
+985,Alteromonas litorea,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 14%, optimum 2% - 3%",Slight
+986,Jeotgalibacillus campisalis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0.5% - 15%, optimum 2% - 3%",Slight
+987,Halomonas boliviensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"0% - 25%, optimum 5%",Moderate
+988,Psychroflexus tropicus,Flavobacteriales,Flavobacteriia,Bacteroidetes,Bacteria,shotgun,"1% - 20%, optimum 7.5% - 10%",Moderate
+989,Shewanella gaetbuli,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0% - 8%, optimum 2%",Slight
+990,Aestuariibacter salexigens,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"1% - 10%, optimum 2% - 6%",Moderate
+991,Aestuariibacter halophilus,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 10%, optimum 2% - 3%",Slight
+992,Halomonas neptunia,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 27%, optimum 2% - 3%",Slight
+993,Halomonas sulfidaeris,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 24%, optimum 2% - 3%",Slight
+994,Halomonas axialensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"0.5% - 24%, optimum 4%",Slight
+995,Halomonas hydrothermalis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"0.5% - 22%, optimum 4% - 7%",Moderate
+996,Marinospirillum insulare,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"0.5% - 10%, optimum 2% - 3%",Slight
+997,Idiomarina loihiensis,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,complete genome,"0.5% - 20%, optimum 7.5% - 10%",Moderate
+998,Oceanisphaera litoralis,Aeromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 10%, optimum 1% - 3%",Slight
+999,Marinobacter lipolyticus,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"1% - 15%, optimum 7.5%",Moderate
+1000,Streptomonospora alba,Streptosporangiales,Actinobacteria,Actinobacteria,Bacteria,shotgun,"5% - 25%, optimum 10% - 15%",Moderate
+1001,Prauserella halophila,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,no,"5% - 25%, optimum 10% - 15%",Moderate
+1002,Prauserella alba,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,no,"0% - 25%, optimum 10% - 15%",Moderate
+1003,Saccharomonospora paurometabolica,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,shotgun,optimum 10%,Moderate
+1004,Paramaledivibacter caminithermalis,Clostridiales,Clostridia,Firmicutes,Bacteria,shotgun,"1% - 5%, optimum 3%",Slight
+1005,Methylophaga natronica,Thiotrichales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.05% - 10%, optimum 2% - 3%",Slight
+1006,Halobacillus karajensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"1% - 24%, optimum 10%",Moderate
+1007,Erythrobacter flavus,Sphingomonadales,Alphaproteobacteria,Proteobacteria,Bacteria,no,"1% - 14%, optimum 2% - 5%",Moderate
+1008,Bacillus aeolius,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0.5% - 5%, optimum 2%",Slight
+1009,Marinilactibacillus psychrotolerans,Lactobacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0% - 20.5%, optimum 2% - 3.75%",Slight
+1010,Marinobacter litoralis,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 18%, optimum 2% - 7%",Moderate
+1011,Salinisphaera shabanensis,Salinisphaerales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"1% - 28%, optimum 10%",Moderate
+1012,Microbulbifer salipaludis,Cellvibrionales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 10%, optimum 2% - 3%",Slight
+1013,Methylophaga alcalica,Thiotrichales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.05% - 10%, optimum 3% - 4%",Slight
+1014,Nocardiopsis xinjiangensis,Streptosporangiales,Actinobacteria,Actinobacteria,Bacteria,shotgun,optimum 10%,Moderate
+1015,Lentibacillus salicampi,Bacillales,Bacilli,Firmicutes,Bacteria,no,"1% - 23%, optimum 4% - 8%",Moderate
+1016,Paraliobacillus ryukyuensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0% - 22%, optimum 0.75% - 3%",Slight
+1017,Psychromonas marina,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 7%, optimum 3% - 5%",Moderate
+1018,Psychrobacter submarinus,Pseudomonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,1% - 15%,Moderate
+1019,Psychrobacter marincola,Pseudomonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,1% - 15%,Moderate
+1020,Halomicronema excentricum,Synechococcales,not assigned,Cyanobacteria,Bacteria,no,"3.2% - 15%, optimum 3.2% - 12%",Moderate
+1021,Salinicoccus alkaliphilus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0% - 25%, optimum 10%",Moderate
+1022,Haliangium ochraceum,Myxococcales,Deltaproteobacteria,Proteobacteria,Bacteria,complete genome,"0.5% - 6%, optimum 1% - 3%",Slight
+1023,Haliangium tepidum,Myxococcales,Deltaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 6%, optimum 1% - 3%",Slight
+1024,Enterovibrio calviensis,Vibrionales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"1.5% - 12%, optimum 2.5% - 3.5%",Slight
+1025,Alkalilimnicola halodurans,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0% - 28%, optimum 3% - 8%",Moderate
+1026,Halomonas maura,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 15%, optimum 7.5% - 10%",Moderate
+1027,Natrialba asiatica,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,"12% - satr, optimum 23%",Extreme
+1028,Kushneria marisflavi,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 27%, optimum 0.5% - 12%",Moderate
+1029,Filobacillus milosensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"2% - 23%, optimum 8% - 14%",Moderate
+1030,Methylarcula marina,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,no,"0.05% - 12%, optimum 3% - 8%",Moderate
+1031,Nocardiopsis kunsanensis,Streptosporangiales,Actinobacteria,Actinobacteria,Bacteria,shotgun,"1% - 24%, optimum 10%",Moderate
+1032,Haloanaerobium fermentans,Halanaerobiales,Clostridia,Firmicutes,Bacteria,no,"7% - 25%, optimum 10%",Moderate
+1033,Thermohalobacter berrensis,Clostridiales,Clostridia,Firmicutes,Bacteria,no,"2% - 15%, optimum 5%",Moderate
+1034,Halobium palmae,not assigned,not assigned,Euryarchaeota,Archaea,no,"min 10%, optimum 15%",Moderate
+1035,Halomonas sediminicola,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 20%, optimum 10%",Moderate
+1036,Pontibacillus salipaludis,Bacillales,Bacilli,Firmicutes,Bacteria,no,optimum 2% - 3%,Slight
+1037,Aliifodinibius halophilus,Balneolales,Balneolia,Rhodothermaeota,Bacteria,no,"2% - 18%, optimum 6% - 10%",Moderate
+1038,Oceanobacillus longus,Bacillales,Bacilli,Firmicutes,Bacteria,no,"1% - 20%, optimum 5%",Moderate
+1039,Larsenimonas suaedae,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.6% - 20%, optimum 5% - 6%",Moderate
+1040,Halorubrum pallidum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,optimum 20%,Extreme
+1041,Acanthocyclops sp.,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,0.21,Extreme
+1042,Acanthocyclops americanus,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,0.08,Moderate
+1043,Apocyclops dengizicus,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,"0.4% - 8.1%, 4% - 13%",Moderate
+1044,Apocyclops cf. dengizicus,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,0.13,Moderate
+1045,Apocyclops panamensis,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,4.20E-02,Slight
+1046,Apocyclops royi,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,4.9% - 5%,Moderate
+1047,Cyclops sp.,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,3.8% - 31%,Extreme
+1048,Cyclops furcifer,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,0.15,Moderate
+1049,Cyclops furcifer borealis,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,>10%,Moderate
+1050,Cyclops strenuus,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,7.90E-02,Moderate
+1051,Diacyclops sp.,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,0.15,Moderate
+1052,Diacyclops bicuspidatus,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,10% - 10.7%,Moderate
+1053,Diacyclops bisetosus,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,"5%, 10%, 15%",Moderate
+1054,Diacyclops odessanus,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,0.06,Moderate
+1055,Diacyclops thomasi,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,"0.5% - 7%, 7.2%",Moderate
+1056,Eucyclops sp.,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,0.15,Moderate
+1057,Eucyclops serrulatus,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,5.50E-02,Moderate
+1058,Halicyclops ambiguus,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,6.20E-02,Moderate
+1059,Halicyclops cf. ambiguus,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,3.70E-02,Slight
+1060,Halicyclops spinifer,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,3.30E-02,Slight
+1061,Meridiecyclops baylyi,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,"1% - 24%, 24%",Extreme
+1062,Meridiecyclops platypus,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,"7.8%, 8.1%, 20%",Moderate
+1063,Metacyclops sp.,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,"5%, 9.5%, 11.8%",Moderate
+1064,Microcyclops sp.,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,"14.3%, 14.4%, 15.2%, 17%",Moderate
+1065,Neocyclops salinarum,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,"8.1%, >9%",Moderate
+1066,Oithona nana,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,5.30E-02,Moderate
+1067,Pescecyclops arnaudi,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,"6.8%, 9.3%, 14.7%",Moderate
+1068,Pescecyclops laurentiisae,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,0.123,Moderate
+1069,Thermocyclops dybowskii,Cyclopoida,Maxillopoda,Arthropoda,Eukarya,no,0.04,Slight
+1070,Canuella perplexa,Harpacticoida,Maxillopoda,Arthropoda,Eukarya,no,0.1,Moderate
+1071,Cletocamptus confluens,Harpacticoida,Maxillopoda,Arthropoda,Eukarya,no,>10%,Moderate
+1072,Mesochra nr. flava,Harpacticoida,Maxillopoda,Arthropoda,Eukarya,no,0.13,Moderate
+1073,Mesochra lilljeborgii,Harpacticoida,Maxillopoda,Arthropoda,Eukarya,no,0.24,Extreme
+1074,Mesochra rapiens,Harpacticoida,Maxillopoda,Arthropoda,Eukarya,no,0.24,Extreme
+1075,Mesochra rostrata,Harpacticoida,Maxillopoda,Arthropoda,Eukarya,no,0.24,Extreme
+1076,Metis ignea,Harpacticoida,Maxillopoda,Arthropoda,Eukarya,no,"8.9%, 26%",Extreme
+1077,Nitokra spinipes,Harpacticoida,Maxillopoda,Arthropoda,Eukarya,no,0.24,Extreme
+1078,Acartia tonsa,Calanoida,Maxillopoda,Arthropoda,Eukarya,no,5.50E-02,Moderate
+1079,Leptodiaptomus siciloides,Calanoida,Maxillopoda,Arthropoda,Eukarya,no,0.107,Moderate
+1080,Methylarcula terricola,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,no,"0.05% - 14%, optimum 3% - 6%",Moderate
+1081,Alcanivorax jadensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"0.5% - 15%, optimum 3%",Slight
+1082,Virgibacillus marismortui,Bacillales,Bacilli,Firmicutes,Bacteria,no,"5% - 25%, optimum 10%",Moderate
+1083,Desulfocella halophila,Desulfobacterales,Deltaproteobacteria,Proteobacteria,Bacteria,no,"2% - 19%, optimum 4% - 5%",Moderate
+1084,Desulfotomaculum halophilum ,Clostridiales,Clostridia,Firmicutes,Bacteria,no,"1% - 14%, optimum 6%",Moderate
+1085,Psychromonas antarctica,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0% - 4%, optimum 3%",Slight
+1086,Tetragenococcus muriaticus ,Lactobacillales,Bacilli,Firmicutes,Bacteria,shotgun,"1% - 25%, optimum 7% - 10%",Moderate
+1087,Virgibacillus salexigens,Bacillales,Bacilli,Firmicutes,Bacteria,no,"7% - 20%, optimum 10%",Moderate
+1088,Dethiosulfovibrio peptidovorans,Synergistales,Synergistia,Synergistetes,Bacteria,shotgun,"1% - 11%, optimum 3%",Slight
+1089,Methylophaga limanica,Thiotrichales,Gammaproteobacteria,Proteobacteria,Bacteria,no,optimum 3% - 5%,Moderate
+1090,Ruegeria lacuscaerulensis,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,shotgun,"1% - 7%, optimum 3.5% - 4%",Slight
+1091,Halochromatium glycolicum,Chromatiaceae,Chromatiales,Gammaproteobact,Bacteria,no,"2% - 20%, optimum 4% - 5%",Moderate
+1092,Desulfovibrio vietnamensis,Desulfovibrionales,Deltaproteobacteria,Proteobacteria,Bacteria,no,"0% - 10%, optimum 5%",Moderate
+1093,Halobacillus litoralis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0.5% - 25%, optimum 10%",Moderate
+1094,Actinopolyspora iraqiensis,Actinomycetales,Actinobacteria,Actinobacteria,Bacteria,shotgun,"1% - 24%, optimum 10% - 15%",Moderate
+1095,Nocardiopsis halophila,Streptosporangiales,Actinobacteria,Actinobacteria,Bacteria,shotgun,"0% - 20%, optimum 5% - 15%",Moderate
+1096,Arhodomonas aquaeolei,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"6% - 20%, optimum 15%",Moderate
+1097,Halomonas salina,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"2.5% - 20%, optimum 5%",Moderate
+1098,Thiohalocapsa halophila,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"3% - 20%, optimum 7%",Moderate
+1099,Actinopolyspora mortivallis,Actinopolysporales,Actinobacteria,Actinobacteria,Bacteria,shotgun,"5% - 30%, optimum 10% - 15%",Moderate
+1100,Halomonas eurihalina,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5% - 25%, optimum 7.5%",Moderate
+1101,Salinicoccus roseus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0.9% - 25%, optimum 10%",Moderate
+1102,Virgibacillus halodenitrificans,Bacillales,Bacilli,Firmicutes,Bacteria,complete genome,"2% - 25%, optimum 3% - 8%",Moderate
+1103,Halomonas variabilis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"7% - 29%, optimum 9%",Moderate
+1104,Pseudomonas halophila (Halomonas utahensis),Pseudomonadales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"0.1% - 19%, optimum 4.6%",Slight
+1105,Halochromatium salexigens,Chromatiales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"4% - 20%, optimum 10%",Moderate
+1106,Rhodothermus marinus,Sphingobacteriales,Sphingobacteria,Bacteroidetes,Bacteria,complete genome,"up to 6%, optimum 2%",Slight
+1107,Halomethanococcus doii,Methanosarcinales,Methanomicrobia,Euryarchaeota,Archaea,no,"10% - 21%, optimum 17.5%",Moderate
+1108,Rhodovibrio salinarum,Rhodospirillales,Alphaproteobacteria,Proteobacteria,Bacteria,shotgun,2% - 18%,Moderate
+1109,Marinococcus halophilus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,optimum 5% - 15%,Moderate
+1110,Actinopolyspora halophila,Actinopolysporales,Actinobacteria,Actinobacteria,Bacteria,shotgun,"10% - satr, optimum 15% - 20%",Moderate
+1111,Marinococcus salis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0% - 19%, optimum 5%",Moderate
+1112,Marinococcus halotolerans,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0% - 25%, optimum 10%",Moderate
+1113,Wallemia hederae,Wallemiales,Wallemiomycetes,Basidiomycota,Eukarya,no,4% - 25%,Extreme
+1114,Actinopolyspora salinaria,Actinopolysporales,Actinobacteria,Actinobacteria,Bacteria,no,0.15,Moderate
+1115,Paludifilum halophilum,Bacillales,Bacilli,Firmicutes,Bacteria,no,optimum 10%,Moderate
+1116,Lentibacillus populi,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0% - 15%, optimum 7% - 8%",Moderate
+1117,Labrenzia salina,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,no,1% - 11%,Moderate
+1118,Halomonas lutescens,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0% - 20%, optimum 7.5%",Moderate
+1119,Balneicella halophila,Bacteroidales,Bacteroidia,Bacteroidetes,Bacteria,no,"up to 8.5%, optimum 2.5%",Moderate
+1120,Wukongibacter Baidiensis,Clostridiales,Clostridia,Firmicutes,Bacteria,no,optimum 3% - 4%,Slight
+1121,Virgibacillus ainsalahensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0.5% - 25%, optimum 5% - 10%",Moderate
+1122,Photobacterium halotolerans,Vibrionales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,0% - 8%,Moderate
+1123,Haloprofundus marisrubri,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,min 7%,Extreme
+1124,Marinobacter salinus,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,complete genome,"0.5%-15 %, optimum, 3%-6%",Moderate
+1125,Marinobacter halotolerans,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"0.5%-20 %, optimum 3 %",Slight
+1126,Salicola mahdashtensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"17.5% - 30%, optimum 20%",Extreme
+1127,Altererythrobacter salegens,Sphingomonadales,Alphaproteobacteria,Proteobacteria,Bacteria,no,optimum 3%-8 %,Slight
+1128,Rhodohalobacter halophilus,Balneolales,Balneolia,Balneolaeota,Bacteria,shotgun,"2% - 16%, optimum 8% - 10%",Moderate
+1129,Haloterrigena mahii,Natrialbales,Halobacteria,Euryarchaeota,Archaea,shotgun,optimum 20.4% - 29.2%,Extreme
+1130,Sporosalibacterium tautonense,Clostridiales,Clostridia,Firmicutes,Bacteria,no,0.5% - 10%,Moderate
+1131,Salipaludibacillus agaradhaerens,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,0.5% - 16%,Moderate
+1132,Bacillus clarkii,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,0.5% - 16%,Moderate
+1133,Alkalicoccus saliphilus,Bacillales,Bacilli,Firmicutes,Bacteria,no,"0% - 25%, optimum 16%",Moderate
+1134,Alkalicoccus halolimnae,Bacillales,Bacilli,Firmicutes,Bacteria,no,"4.3% - 24.2%, optimum 8.2% - 12.2%",Moderate
+1135,Halorubrum trueperi,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,optimum 20%,Extreme
+1136,Salibacter halophilus,Flavobacteriales,Flavobacteriia,Bacteroidetes,Bacteria,no,"2% - 18%, optimum 6%",Moderate
+1137,Salinicola tamaricis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,optimum 5%,Slight
+1138,Natrinema soli,Natrialbales,Halobacteria,Euryarchaeota,Archaea,no,optimum 23.4%,Extreme
+1139,Aliifodinibius salicampi,Balneolales,Balneolia,Balneolaeota,Bacteria,no,"3% - 25%, optimum 10%",Moderate
+1140,Marinobacter aquaticus,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"5% - 25%, optimum 10%",Moderate
+1141,Nesterenkonia pannonica,Micrococcales,Actinobacteria,Actinobacteria,Bacteria,no,5% - 7%,Moderate
+1142,Saliphagus infecundisoli,Natrialbales,Halobacteria,Euryarchaeota,Archaea,no,"5% - 35%, optimum 20%",Extreme
+1143,Salinifilum aidingensis,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,no,optimum 12%,Moderate
+1144,Salinifilum proteinilyticum,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,no,"12% - 25 %, optimum 15% - 20%",Extreme
+1145,Gracilibacillus aidingensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,"5% - 20%, optimum 10%",Moderate
+1146,Halorubrum salsamenti,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,"15% - 30%, optimum 20%",Extreme
+1147,Halomonas aestuarii,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,complete genome,optimum 3% - 10%,Moderate
+1148,Ponticoccus marisrubri,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,shotgun,optimum 9% - 12%,Moderate
+1149,Haloplanus salinarum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,"14.6% - 26.3%, optimum 18.1%",Extreme
+1150,Gracilimonas halophila,Balneolales,Balneolia,Balneolaeota,Bacteria,no,2% - 16% (optimum 6% - 8%),Moderate
+1151,Bacillus kiskunsagensis,Bacillales,Bacilli,Firmicutes,Bacteria,no,optimum 7%,Moderate
+1152,Prauserella oleivorans,Pseudonocardiales,Actinobacteria,Actinobacteria,Bacteria,no,0% - 12.5% (optimum 3% - 5%),Slight
+1153,Virgibacillus kimchii,Bacillales,Bacilli,Firmicutes,Bacteria,no,0% - 25% (optimum 10% - 15%),Moderate
+1154,Schmidingerothrix salinarum,Stichotrichida,Spirotrichea,Ciliophora,Eukarya,no,1% - 21% (optimum 9%),Moderate
+1155,Gracilibacillus eburneus,Bacillales,Bacilli,Firmicutes,Bacteria,no,2% - 24% (optimum 7-10%),Extreme
+1156,Salibacterium lacus,Bacillales,Bacilli,Firmicutes,Bacteria,no,8% - 28 % (optimum at 24 %),Extreme
+1157,Pseudogracilibacillus endophyticus,Bacillales,Bacilli,Firmicutes,Bacteria,no,0% - 8 % (optimum 4 %),Slight
+1158,Halorubrum aethiopicum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,15% - 30 % (optimum 20%-25 %),Extreme
+1159,Natronolimnobius aegyptiacus,Natrialbales,Halobacteria,Euryarchaeota,Archaea,no,15% - satur (optimum 19% - 27%),Extreme
+1160,Planococcus salinus,Bacillales,Bacilli,Firmicutes,Bacteria,no,3% - 15 % (optimum 3%-5 %),Moderate
+1161,Aidingibacillus halophilus,Bacillales,Bacilli,Firmicutes,Bacteria,no,5% - 20% (optimum 10%),Moderate
+1162,Palleronia abyssalis,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,no,0% - 13% (optimum 2% - 5%),Moderate
+1163,Halomonas anticariensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,0.5% - 15% (optimum 7.5%),Moderate
+1164,Idiomarina fontislapidosi,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,0.5% - 25% (optimum 3% - 5%),Moderate
+1165,Alteromonas hispanica,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,7.5% - 15% (optimum 7.5% - 10%),Moderate
+1166,Salinivenus iranica,Rhodothermales,Rhodothermia,Rhodothermaeota,Bacteria,shotgun,11.6% - 29.2% (optimum 17.5%),Extreme
+1167,Salinivenus lutea,Rhodothermales,Rhodothermia,Rhodothermaeota,Bacteria,shotgun,11.6% - 29.2% (optimum 17.5%),Extreme
+1168,Marinobacter gelidimuriae,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,no,0.8% - 15%,Moderate
+1169,Desulfovibrio salinus,Desulfovibrionales,Deltaproteobacteria,Proteobacteria,Bacteria,no,1% - 12% (optimum 3%),Moderate
+1170,Ornithinibacillus salinisoli,Bacillales,Bacilli,Firmicutes,Bacteria,no,3% - 17% (optimum 10% - 15%),Moderate
+1171,Haloferax massiliensis,Haloferacales,Halobacteria,Euryarchaeota,Archaea,shotgun,optimum 15%,Moderate
+1172,Halorubrum depositum,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,10% - 30% (optimum 20%),Extreme
+1173,Halomonas saliphila,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,0% - 17 % (optimum 10% - 15 %),Moderate
+1174,Virgibacillus phasianinus,Bacillales,Bacilli,Firmicutes,Bacteria,complete genome,0% - 20% (optimum 10%),Moderate
+1175,Salinivirga fredricksonii,Marinilabiliales,Bacteroidia,Bacteroidetes,Bacteria,no,unavailable,Moderate
+1177,Roseovarius ramblicola,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,no,0.5% - 10 % (optimum 3 %),Moderate
+1178,Virgibacillus indicus,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,unavailable,Moderate
+1179,Virgibacillus profundi,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,unavailable,Moderate
+1180,Saliniramus fredricksonii,Rhizobiales,Alphaproteobacteria,Proteobacteria,Bacteria,no,0.6% - 8.2%,Moderate
+1181,Halomonas tabrizica,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"1% - 22%, optimum 10%",Extreme
+1182,Sediminibacillus massiliensis,Bacillales,Bacilli,Firmicutes,Bacteria,shotgun,"0% - 20%, optimum 5% - 7.5%",Moderate
+1183,Salinivibrio sharmensis,Vibrionales,Gammaproteobacteria,Proteobacteria,Bacteria,no,"6% - 16%, optimum 10%",Moderate
+1184,Salinivibrio kushneri,Vibrionales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,"5% - 21%, optimum 7.5%",Moderate
+1185,Kushneria phyllosphaerae,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,0.5% - 25%,Extreme
+1186,Kushneria endophytica,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,0.5% - 25%,Extreme
+1187,Halomonas beimenensis,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,complete genome,0% - 15% (optimum 5% - 10%),Moderate
+1188,Haloplanus rallus,Haloferacales,Halobacteria,Euryarchaeota,Archaea,no,10% - 30% (optimum 15%),Extreme
+1189,Roseovarius tibetensis,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,no,1% - 20% (optimum 4% - 8%),Moderate
+1190,Marinobacter bohaiensis,Alteromonadales,Gammaproteobacteria,Proteobacteria,Bacteria,shotgun,6% - 10%,Moderate
+1191,Salicibibacter kimchii,Rhodobacterales,Alphaproteobacteria,Proteobacteria,Bacteria,complete genome,0% - 25% (optimum 10%),Extreme
+1192,Halococcus salsus,Halobacteriales,Halobacteria,Euryarchaeota,Archaea,no,optimum 20%,Extreme
+1193,Halomonas litopenaei,Oceanospirillales,Gammaproteobacteria,Proteobacteria,Bacteria,no,0.5% - 22%,Extreme
+1194,Microbacterium halophytorum,Micrococcales,Actinobacteria,Actinobacteria,Bacteria,no,up to 15%,Moderate
+1195,Natronolimnobius aegyptiacus,Natrialbales,Halobacteria,Euryarchaeota,Archaea,complete genome,15% - 27% (optimum 19% - 27%),Extreme
