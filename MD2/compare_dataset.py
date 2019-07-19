@@ -27,28 +27,16 @@ def count_values(values, all_variables):
     x=defaultdict(float)
     for var in all_variables:
         if var not in x:
-            x[var] = 0
+            x[var] == 0/len(values)
+    for var in values:
         if var in x:
             x[var] += 1/len(values)
-    """
-    for element in range(0,len(variables)):
-        for i in values:
-            if i == variables[element]:
-                x[i] += 1./len(values)    
-    """
     return x
         
 
-    #value_being_compared = variables[1]
-    #x = 0 
-    #for element in values:
-     #   if element == value_being_compared:
-       #     x+=1
-   # x = x/len(values)
-    #return x,1-x
-
 def compare_categorical(value_being_compared, values_in_taxa_list_1, values_in_taxa_list_2):
-    all_variables= (values_in_taxa_list_1 + values_in_taxa_list_2).unique()
+    all_variables= set(values_in_taxa_list_1) | set(values_in_taxa_list_2)
+    print(all_variables)
     stats1 = count_values(values_in_taxa_list_1, all_variables)
     print("Original Dictionary:")
     print(stats1)
@@ -69,47 +57,10 @@ def compare_categorical(value_being_compared, values_in_taxa_list_1, values_in_t
     })
 
 
-#def compare_categorical(value_being_compared, values_in_taxa_list_1, values_in_taxa_list_2):
- #   """Return a Pandas Series with [abundance-in, abundance-out, p-value]."""
-  #  stats1 = count_values(values_in_taxa_list_1)
-   # print("Original Dictionary:")
-    #print(stats1)
-    #stats1 = pd.Series(stats1)
-  #  print("Converted series:")
-   # print(stats1)
-    #stats2 = count_values(values_in_taxa_list_2)
-    #print("Original Dictionary:")
-#    print(stats2)
- #   stats2 = pd.Series(stats2)
-  #  print("Converted Series:")
-   # print(stats2)
-    #a = chisquare(stats1, stats2)
-   # values_in_taxa_list_1.to_frame(name=values_in_taxa_list_1)
-   # values_in_taxa_list_2.to_frame(name=values_in_taxa_list_2)
-   # return pd.Series({
-    #    'abundance_in': stats1,
-     #   'abundance_out': stats2,
-      #  'p-value': a.pvalue, # TODO
-   # })
-
-
 def compare_numeric(values_in_taxa_list_1, values_in_taxa_list_2):
     """Retun a Pandas Series with [abundance-in, abundance-out, p-value]."""
-#    len1 = len(values_in_taxa_list_1)
-#    len2 = len(values_in_taxa_list_2)
     mean1 = values_in_taxa_list_1.mean()
     mean2 = values_in_taxa_list_2.mean()
-#    var_1 = values_in_taxa_list_1.var(ddof=1)
-#    var_2 = values_in_taxa_list_2.var(ddof=1)
-#    meantot = (len1*mean1+len2*mean2)/(len1+len2)
-#    s = (len1*(var_1+(mean1-meantot)**2)+len2*(var_2+(mean2-meantot)**2))/(len1+len2)
-    """
-    s = var_1/len1 + var_2/len2
-    t = (mean1 - mean2)/np.sqrt(s)
-    denom = (var_1/len1)**2/(len1-1) + (var_2/len2)**2/(len2-1)
-    df = s*s/denom
-    #p = 1 - stats.t.cdf(t,df=df)
-    """
     a = stats.ttest_ind(values_in_taxa_list_1, values_in_taxa_list_2, equal_var=False)
     return pd.Series({
         'abundance_in': mean1, 
