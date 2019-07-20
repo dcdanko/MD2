@@ -137,21 +137,21 @@ python setup.py install
 ```
 
 ## Building NCBI taxonomic table
-From source	
+Command line usage	
 ```	
 MD2 filter-microbes <output-file>	
 ```
 The following outputs the taxonomy of all available Bacteria and Viruses from the NCBI dmp files. The table consists of the scientific name and classification from phylum-species level along with the unique taxonomic id.
 
 ## Merging NCBI files with all given datasets
-From source	
+Command line usage	
 ```	
 MD2 annotate-taxa <file-path>	
 ```
 The following outputs individual files for Bacteria, Viruses and Fungi merging NCBI unique taxonomic id, scientific name and the rank with the above mentioned databases. The file path for the following should be a folder containing all the databases intended to be merged. The dataset folder contains the merged databases.
 
 ## Cleaning the file
-From source	
+Command line usage	
 ```	
 MD2 clean-file <input-file> <output-file>	
 ```
