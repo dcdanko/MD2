@@ -13,7 +13,7 @@ REGEX_COLUMN = [
     'kingdom', 
     'organism', 
     'unnamed',
-    'id',
+    ' id',
     'citation',
     'evidence',
     ]
@@ -22,6 +22,7 @@ REGEX_TAXANOMY = [
     'eubacterium',
     'bacterium ',
     'sp.',
+    'phytoplasma',
     'uncultured',
     'unidentified',
     'symbiont',
@@ -37,21 +38,38 @@ REGEX_TAXANOMY = [
     'sect.',
     'aff.',
     'strain',
+    '16Sr',
+	'str.',
+    'culture',
+    'enrichment',
+    'human',
+    'diazotroph',
+    ' of ',
+    'et al.',
+    'planctomycete ',
+    ' bacterium',
+    'phytoplasma'
     ]
 
-def reduce_col(file):
+def reduce_col(isvirus, file):
     """Remove empty columns, ids and taxonomy columns"""
     drop_col = file.dropna(axis='columns', how='all')
     drop_col.columns = map(str.lower, drop_col.columns)
-    col_names = ['class']
+    col_names = ['class', 'pmid', 'id']
     for reg in REGEX_COLUMN:
         col_names.extend(list(drop_col.filter(regex=reg)))
-    col_names.remove('taxonomic_id')
-    drop_col = drop_col.drop(columns=col_names, axis=1)		 
-    return drop_col
+    if isvirus == 'True': 
+        col_names.remove('id')
+    drop_col = drop_col.drop(columns=col_names, axis=1)
+    drop_col.columns = rename_col(drop_col)	
+    final_file = rename_MD1_tables(drop_col)
+    return final_file
 
-def reduce_row(file):
+def reduce_row(isvirus, file):
     """Remove duplicate rows and subspecies"""
+    if isvirus == 'True': 
+        REGEX_TAXANOMY.remove('bacterium ')
+        REGEX_TAXANOMY.remove('human')
     for reg in REGEX_TAXANOMY:
         filter = file['scientific_name'].str.contains(reg)
         file = file[~filter]
@@ -64,7 +82,16 @@ def rename_col(file):
     return file.columns
 
 def rename_MD1_tables(file):
-    """"""
-    pass
+    """Replace numeric entries from MD1"""
+    file['gram_stain'] = file['gram_stain'].replace([0, 1, 2], ['Negative', 'Positive', 'Intermediate'])
+    file['extreme_environment'] = file['extreme_environment'].replace([0, 1], ['Mesophiles', 'Extremophile'])
+    file['antimicrobial_susceptibility'] = file['antimicrobial_susceptibility'].replace([0, 1], ['No', 'Yes'])
+    file['biofilm_forming'] = file['biofilm_forming'].replace([0, 1], ['No', 'Yes'])
+    file['animal_pathogen'] = file['animal_pathogen'].replace([0, 1], ['No', 'Yes'])
+    file['plant_pathogen'] = file['plant_pathogen'].replace([0, 1], ['No', 'Yes'])
+    file['microbiome_location'] = file['microbiome_location'].replace([0, 1], ['No', 'Yes'])
+    file['spore_forming'] = file['spore_forming'].replace([0, 1], ['No', 'Yes'])
+    file = file.rename(columns={'microbiome_location': 'human_disease_causing'})
+    return file
 
 
