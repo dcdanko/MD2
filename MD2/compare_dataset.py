@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pdi
 import numpy as np
 from scipy.stats import chisquare
 from scipy import stats
@@ -59,7 +59,18 @@ def compare_numeric(values_in_taxa_list_1, values_in_taxa_list_2):
         'abundance_out': mean2,
         'p-value': a.pvalue,
     })
-
+"""
+def create_df():
+    df = create_df()
+    data = {'variable': [numbers],
+            'dataset': [values_in_taxa_list_1],
+            'value': [mean],
+            'abundance_in': [mean1],
+            'abundance_out': [mean2],
+            'p-value': [a.pvalue]}
+    df = pd.DataFrame(data)
+    return df
+"""
 
 
 if __name__ == '__main__':
