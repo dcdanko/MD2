@@ -2,7 +2,12 @@ import click
 import pandas as pd
 import csv
 from .taxa_tree import NCBITaxaTree
-
+from .clean_table import (
+    reduce_col,
+    reduce_row,
+    rename_col,
+    rename_MD1_tables,
+	)
 
 @click.group()
 def main():
@@ -53,6 +58,19 @@ def annotate(microbes, file_path):
     annotated = pd.DataFrame.from_dict(fungi, columns =col_names, orient='index')
     annotated = taxa_tree.data_table(file_path, annotated)
     annotated.to_csv("NCBI_Fungi_rank.csv")
+	
+@main.command('clean-file')
+@click.option('--isvirus', default=False, help='Whether the file contains virus')
+@click.argument('file', type=click.File('r'))
+@click.argument('out', type=click.File('w'))
+def clean_file(isvirus, file, out):
+    """Clean up data-table to be used for Microbe Directory 2.0 and above"""
+    file_name = pd.read_csv(file, index_col=False)
+    header = list(file_name.columns.values)
+    remove_col_file = reduce_col(isvirus, file_name)  
+    remove_row_file = reduce_row(isvirus, remove_col_file)
+    remove_row_file = remove_row_file.replace('nan', '')   
+    remove_row_file.to_csv(out)
     
 	
 
