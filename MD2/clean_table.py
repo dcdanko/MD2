@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 
-
 REGEX_COLUMN = [
     'specie',
     'genus', 
@@ -30,6 +29,9 @@ REGEX_TAXANOMY = [
     'clinical sample',
     'isolate',
     'clone',
+    'like',
+    'degrading',
+    'bacerium',
     'associated',
     'vouchered',
     'fungal endophyte',
@@ -48,7 +50,12 @@ REGEX_TAXANOMY = [
     'et al.',
     'planctomycete ',
     ' bacterium',
-    'phytoplasma'
+    'phytoplasma',
+    'obligately',
+    'soil',
+    'marine',
+    '\'',
+    '\['
     ]
 
 def reduce_col(isvirus, file):
@@ -71,7 +78,11 @@ def reduce_row(isvirus, file):
         REGEX_TAXANOMY.remove('bacterium ')
         REGEX_TAXANOMY.remove('human')
     for reg in REGEX_TAXANOMY:
+        non_null = file.count(axis = 1) 
         filter = file['scientific_name'].str.contains(reg)
+        for index, values in filter.items():
+            if values == True and non_null[index] > 3:
+                filter[index] = False
         file = file[~filter]
     new_file = file.groupby(['scientific_name', 'taxonomic_id', 'rank'], as_index=True).agg(lambda x: ( ', '.join( repr(e) for e in list(set(x)))))
     return new_file.replace('nan, ', '', regex=True).replace('\'', '').replace('[', '').replace(']', '').applymap(lambda x: x.replace('\'', ''))
@@ -85,12 +96,12 @@ def rename_MD1_tables(file):
     """Replace numeric entries from MD1"""
     file['gram_stain'] = file['gram_stain'].replace([0, 1, 2], ['Negative', 'Positive', 'Intermediate'])
     file['extreme_environment'] = file['extreme_environment'].replace([0, 1], ['Mesophiles', 'Extremophile'])
-    file['antimicrobial_susceptibility'] = file['antimicrobial_susceptibility'].replace([0, 1], ['No', 'Yes'])
-    file['biofilm_forming'] = file['biofilm_forming'].replace([0, 1], ['No', 'Yes'])
-    file['animal_pathogen'] = file['animal_pathogen'].replace([0, 1], ['No', 'Yes'])
-    file['plant_pathogen'] = file['plant_pathogen'].replace([0, 1], ['No', 'Yes'])
-    file['microbiome_location'] = file['microbiome_location'].replace([0, 1], ['No', 'Yes'])
-    file['spore_forming'] = file['spore_forming'].replace([0, 1], ['No', 'Yes'])
+    file['antimicrobial_susceptibility'] = file['antimicrobial_susceptibility'].replace([0, 1], ['Maybe Not', 'Sometimes'])
+    file['biofilm_forming'] = file['biofilm_forming'].replace([0, 1], ['Never', 'Always'])
+    file['animal_pathogen'] = file['animal_pathogen'].replace([0, 1], ['Maybe Not', 'Sometimes'])
+    file['plant_pathogen'] = file['plant_pathogen'].replace([0, 1], ['Maybe Not', 'Sometimes'])
+    file['microbiome_location'] = file['microbiome_location'].replace([0, 1], ['Maybe', 'Sometimes'])
+    file['spore_forming'] = file['spore_forming'].replace([0, 1], ['Never', 'Always'])
     file = file.rename(columns={'microbiome_location': 'human_disease_causing'})
     return file
 
