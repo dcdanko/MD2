@@ -48,7 +48,7 @@ TMD aims to:
 
 ---
 
-## <c name="third">Phenotypic and Ecologic features</c>
+## <c name="third">Features</c>
 
 Since microbial communities are phenotypic and genetically diverse, microbial features are stipulated by kingdom.
 
