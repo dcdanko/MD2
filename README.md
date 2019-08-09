@@ -50,9 +50,12 @@ TMD aims to:
 * [Microbial community composition in a lowland tropical rain forest- Costa Rica](https://doi.org/10.1016/j.soilbio.2010.08.011): Plot-scale manipulations of organic matter inputs to soils correlate with shifts in microbial community composition in a lowland tropical rain forest.
 * [Microbial communities on money](https://qiita.ucsd.edu/study/description/375)
 * [National Ecological Observatory Network (NEON) microbe prototype project](https://qiita.ucsd.edu/study/description/808): Soil samples from Alaska, Florida,Utah, and Hawaii representing gradients in ecosystems.
+* [Soil Microbiome Influences Grapevine-Associated Microbiota](10.1128/mBio.02527-14):  Microbial diversity associated with the bulk soil, rhizosphere, roots, leaves, flowers and grapes from vine clonal varieties in the North Fork region of Long Island.
+* [Beach sand microbiome from Calvert Island Canada](https://qiita.ucsd.edu/study/description/10145)
+
 ---
 
-## <c name="third">Features</c>
+## <x name="third">Features</x>
 
 Since microbial communities are phenotypic and genetically diverse, microbial features are stipulated by kingdom.
 
