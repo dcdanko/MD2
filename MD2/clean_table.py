@@ -105,4 +105,22 @@ def rename_MD1_tables(file):
     file = file.rename(columns={'microbiome_location': 'human_disease_causing'})
     return file
 
+def metasub_process(filename, metadata_filename, feature_name):
+    metasub_merged = {}
+    tbl = pd.read_csv(filename, index_col=0) 
+    #metasub_merged['species'] = list(tbl.columns.values)
+    metadata = pd.read_csv(metadata_filename, index_col=0)
+    metadata = metadata.loc[tbl.index]
+    feature = metadata[feature_name]
+    factorized, name_map = pd.factorize(feature)
+    for i in range(0, len(name_map)):
+        metasub_df = tbl[factorized == i]
+        species_count = metasub_df.count()
+        species_array = species_count.values/metasub_df.shape[0]
+        if i == 0:
+            data = np.reshape(species_array, (len(species_array)),1)
+            metasub_merged = pd.DataFrame(data, index = list(tbl.columns.values), columns=[str('metasub_' + name_map[i])]) 
+        else:
+            metasub_merged[str('metasub_' + name_map[i])] = np.reshape(species_array, (len(species_array)),1)
+    return metasub_merged
 
