@@ -7,6 +7,7 @@ from .clean_table import (
     reduce_row,
     rename_col,
     rename_MD1_tables,
+    metasub_process,
 	)
 
 @click.group()
@@ -49,13 +50,13 @@ def annotate(microbes, file_path):
                 elif rank == 'Fungi':
                     fungi[taxon] = tax_rank							
     col_names = ['scientific name', 'taxonomic_id', 'rank']
-    annotated = pd.DataFrame.from_dict(viruses, columns =col_names, orient='index')
+    annotated = pd.DataFrame.from_dict(viruses, columns=col_names, orient='index')
     annotated = taxa_tree.data_table(file_path, annotated)
     annotated.to_csv("NCBI_Virus_rank.csv")
-    annotated = pd.DataFrame.from_dict(bacteria, columns =col_names, orient='index')
+    annotated = pd.DataFrame.from_dict(bacteria, columns=col_names, orient='index')
     annotate = taxa_tree.data_table(file_path, annotated)
     annotate.to_csv("NCBI_Bacteria_rank.csv")
-    annotated = pd.DataFrame.from_dict(fungi, columns =col_names, orient='index')
+    annotated = pd.DataFrame.from_dict(fungi, columns=col_names, orient='index')
     annotated = taxa_tree.data_table(file_path, annotated)
     annotated.to_csv("NCBI_Fungi_rank.csv")
 	
@@ -73,6 +74,16 @@ def clean_file(isvirus, file, out):
     remove_row_file.to_csv(out)
     
 	
+@main.command('metasub-preprocessing')
+@click.option('--feature-name', default='city', help='The feature to consider')
+@click.argument('file', type=click.File('r'))
+@click.argument('metadata-file', type=click.File('r'))
+@click.argument('out', type=click.File('w'))
+def metasub_preprocess(feature_name, file, metadata_file, out):
+    """Construct a table to integrate MetaSUB data based on chosen feature"""
+    compiled_metasub = metasub_process(file, metadata_file, feature_name)
+    compiled_metasub.to_csv(out)
+    
 
 if __name__ == '__main__':
     main()
