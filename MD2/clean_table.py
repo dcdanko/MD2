@@ -108,7 +108,6 @@ def rename_MD1_tables(file):
 def metasub_process(filename, metadata_filename, feature_name):
     metasub_merged = {}
     tbl = pd.read_csv(filename, index_col=0) 
-    #metasub_merged['species'] = list(tbl.columns.values)
     metadata = pd.read_csv(metadata_filename, index_col=0)
     metadata = metadata.loc[tbl.index]
     feature = metadata[feature_name]
@@ -116,11 +115,15 @@ def metasub_process(filename, metadata_filename, feature_name):
     for i in range(0, len(name_map)):
         metasub_df = tbl[factorized == i]
         species_count = metasub_df.count()
-        species_array = species_count.values/metasub_df.shape[0]
+        species_array = (species_count.values/metasub_df.shape[0]) * 100
         if i == 0:
             data = np.reshape(species_array, (len(species_array)),1)
             metasub_merged = pd.DataFrame(data, index = list(tbl.columns.values), columns=[str('metasub_' + name_map[i])]) 
         else:
             metasub_merged[str('metasub_' + name_map[i])] = np.reshape(species_array, (len(species_array)),1)
+    metasub_merged[metasub_merged.apply(lambda x: (x>0) & (x<=25))] = 2
+    metasub_merged[metasub_merged.apply(lambda x: (x>25) & (x<75))] = 3
+    metasub_merged[metasub_merged.apply(lambda x: (x>=75) & (x<100))] = 4
+    metasub_merged = metasub_merged.replace([0, 2, 3, 4, 100], ['Never Observed', 'Rarely Observed', 'Fairly Observed', 'Mostly Observed', 'Always Observed'])
     return metasub_merged
 
