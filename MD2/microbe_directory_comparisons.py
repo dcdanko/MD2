@@ -5,7 +5,6 @@ from scipy import stats
 from collections import Counter, defaultdict
 import csv
 
-
 MICROBE_DIRECTORY = pd.read_csv(r'microbe-directory.csv', index_col=7)
 CATEGORICAL_LIST = ["gram_stain", "microbiome_location", "antimicrobial_susceptibility", "extreme_environment", "biofilm_forming", "animal_pathogen", "spore_forming", "plant_pathogen"]
 NUMERICAL_LIST = ["optimal_temperature", "optimal_ph", "pathogenicity"]
@@ -49,11 +48,6 @@ def compare_numeric(values_in_taxa_list_1, values_in_taxa_list_2):
     })
 
 
-df = pd.DataFrame(MICROBE_DIRECTORY.iloc[0:5, 7:30])
-df4 = pd.DataFrame(MICROBE_DIRECTORY.iloc[9:14, 7:30])
-taxa_list_1 = MICROBE_DIRECTORY.iloc[0:5].index.tolist()
-taxa_list_2 = MICROBE_DIRECTORY.iloc[9:14].index.tolist()
-
 def compare_microbe_directory_dataframes(values_in_taxa_list_1, values_in_taxa_list_2):
     df_final = pd.DataFrame(columns = ['variable', 'type', 'dataset', 'value', 'abundance_in', 'abundance_out', 'p-value'])
     for column_name in CATEGORICAL_LIST:
@@ -68,11 +62,8 @@ def compare_microbe_directory_dataframes(values_in_taxa_list_1, values_in_taxa_l
         df_final = df_final.append({'variable': column_name, 'type': 'numerical', 'dataset': 'df', 'value': 'mean', 'abundance_in': numeric[0], 'abundance_out': numeric[1], 'p-value': numeric[2]}, ignore_index = True)
     return df_final 
 
-def compare_taxa_lists(values_in_taxa_list_1, values_in_taxa_list_2):
-    df1 = MICROBE_DIRECTORY.loc[values_in_taxa_list_1]
-    df2 = MICROBE_DIRECTORY.loc[values_in_taxa_list_2]
-    return compare_microbe_directory_dataframes(df1, df2)
 
+def compare_taxa_lists(values_in_taxa_list_1, values_in_taxa_list_2):
     """Return a Pandas DataFrame listing differences between two taxa lists.
     
     The DataFrame should have the following columns:
@@ -89,6 +80,10 @@ def compare_taxa_lists(values_in_taxa_list_1, values_in_taxa_list_2):
     This is a long format dataframe which means some of the data may
     be repeated.
     """
+    df1 = MICROBE_DIRECTORY.loc[values_in_taxa_list_1]
+    df2 = MICROBE_DIRECTORY.loc[values_in_taxa_list_2]
+    return compare_microbe_directory_dataframes(df1, df2)
+
 
 if __name__ == '__main__':
     # Run some simple tests
@@ -114,13 +109,13 @@ if __name__ == '__main__':
     print(numeric_test)
 
     dataframe_test = compare_microbe_directory_dataframes(
-        df,
-        df4,
+        pd.DataFrame(MICROBE_DIRECTORY.iloc[0:5, 7:30]),
+        pd.DataFrame(MICROBE_DIRECTORY.iloc[9:14, 7:30]),
     )
     print(dataframe_test)
 
     taxa_list_test = compare_taxa_lists(
-        taxa_list_1,
-        taxa_list_2,
+        MICROBE_DIRECTORY.iloc[0:5].index.tolist(),
+        MICROBE_DIRECTORY.iloc[9:14].index.tolist(),
     )
     print(taxa_list_test)
