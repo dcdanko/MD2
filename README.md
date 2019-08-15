@@ -9,8 +9,8 @@ Microbes include all unicellular organisms and so are extremely rich and diverse
 TMD aims to:
 
 >* Provide a curated list of microbes from three kingdoms: Archaea, Bacteria and Eukarya
->* Compile microbial data from different [databases](#first) into a single one
->* Give a phenotypic and ecologic description of microbial species [features](#second).
+>* Compile microbial data from different [databases](#first) and [studies](#second) into a single one
+>* Give a phenotypic and ecologic description of microbial species [features](#third).
 >* Make microbial data handy to everyone!
 
 ---
@@ -24,10 +24,38 @@ TMD aims to:
 * [BioCyc Database Collection](https://biocyc.org) a collection of Pathway/Genome Databases for Bacteria.
 * [ISHAM Barcoding Database](http://its.mycologylab.org) a database for human/animal pathogenic fungal species.
 * [FungiDB](https://fungidb.org/fungidb/) an integrated genomic and functional genomic database for Fungi. Includes experimental and environmental isolate sequence data.
+* [RefSoil](https://www.nature.com/articles/ismej2016168#Sec6): A soil microbiome database
+* [TARA Oceans](http://ocean-microbiome.embl.de/companion.html):  Metagenomic data from 243 Tara Oceans samples from 68 locations in epipelagic and mesopelagic waters across the globe.
 
 ---
 
-## <b name="second">Phenotypic and Ecologic features</b>
+## <b name="second">Studies</b>
+
+* [Protist diversity in a permanently ice-covered Antarctic Lake during the polar night transition](10.1038/ismej.2011.23): Microbial eukaryotes from McMurdo Dry Valleys of Antarctica.
+* [Great Lake Microbiome](https://qiita.ucsd.edu/study/description/1041): Microbial diversity analysis at different depths and stations in great lakes of the US.
+* [Rees Vulcano Island](https://qiita.ucsd.edu/study/description/889): Impact of elevated CO2 from volcanic vents on the phytoplankton in local seawater populations of nearshore waters of the Island of Vulcano, Italy.
+* [Global Coral Microbiome Project](https://qiita.ucsd.edu/study/description/10895): A worldwide collection of coral samples to identify the factors most strongly associated with the distribution of individual microbial lineages across coral diversity.
+* [Serpentinite-hosted subsurface microbial communities](http://dx.doi.org/10.3389/fmicb.2011.00268): Biogeography of serpentinite-hosted microbial communities.
+* [Polluted Polar Coastal Sediments](https://qiita.ucsd.edu/study/description/1198): Characterization of the structure and function of microbial communities from sediments of four hydrocarbon-polluted cold regions (Potter Cove, Antarctic Peninsula; Ushuaia Bay, Tierra del Fuego Island; Vertahamnen, Baltic Sea; Adventfjord, Svalbard Archipelago).
+* [The role of macrobiota in structuring microbial communities along rocky shores](https://qiita.ucsd.edu/study/description/662): Microbial populations of the rocky intertidal areas of the northeast Pacific.
+* [Environmental metagenomic interrogation of Thar desert microbial communities](https://qiita.ucsd.edu/study/description/829): Soil microbial communities from arid and semiarid regions of the Thar Desert.
+* [Hawaii Kohala Volcanic Soils](https://qiita.ucsd.edu/study/description/1579): Sites along an extreme rainfall gradient ranging from 200 mm to 3500 mm/year due to orographic moisture interception by Kohala Mountain in Hawaii.
+* [Panama Precipitation Gradient Soil](https://qiita.ucsd.edu/study/description/1716): Effect of precipitation in structuring soil microbial communities in lowland tropical rain forests across the Isthmus of Panama.
+* [Soil bacterial and fungal communities across a pH gradient in an arable soil](https://qiita.ucsd.edu/study/description/94): Soils collected across a long-term liming experiment (pH 4.0-8.3), in which variation in factors other than pH have been minimized, were used to investigate the direct influence of pH on the abundance and composition of soil microbial taxa.
+* [Space, time and change: Investigations of soil bacterial diversity and its drivers in the Mongolian steppe](https://qiita.ucsd.edu/study/description/864):  Effects of climate and land-use on Mongolian steppe arid ecosystem. 
+* [The ecology of the phyllosphere](https://qiita.ucsd.edu/study/description/396): Bacterial communities from leaves of 56 tree species in Boulder, Colorado, USA, quantifying the intra- and inter-individual variability in the bacterial communities.
+* [Diversity, host affinity and ecology of foliar endophytic microbes in Amazonian Peru](https://qiita.ucsd.edu/study/description/10245): 2,543 living cultures obtained from 178 leaflets of *Protium subserratum* in the Amazon-Iquitos, Peru.
+* [Arid Soil Microbiome](http://dx.doi.org/10.1128/mSystems.00195-16): Correlations between increasing aridity and soil bacterial and archaeal microbiome-composition along arid to hyperarid transects traversing the Atacama Desert, Chile.
+* [Characterization of Airborne Microbial Communities at a High-Elevation Site and Their Potential To Act as Atmospheric Ice Nuclei](http://dx.doi.org/10.1128/AEM.00447-09): Atmospheric microbial abundance, community composition, and ice nucleation at a high-elevation site in northwestern Colorado.
+* [Microbial community composition in a lowland tropical rain forest- Costa Rica](https://doi.org/10.1016/j.soilbio.2010.08.011): Plot-scale manipulations of organic matter inputs to soils correlate with shifts in microbial community composition in a lowland tropical rain forest.
+* [Microbial communities on money](https://qiita.ucsd.edu/study/description/375)
+* [National Ecological Observatory Network (NEON) microbe prototype project](https://qiita.ucsd.edu/study/description/808): Soil samples from Alaska, Florida,Utah, and Hawaii representing gradients in ecosystems.
+* [Soil Microbiome Influences Grapevine-Associated Microbiota](10.1128/mBio.02527-14):  Microbial diversity associated with the bulk soil, rhizosphere, roots, leaves, flowers and grapes from vine clonal varieties in the North Fork region of Long Island.
+* [Beach sand microbiome from Calvert Island Canada](https://qiita.ucsd.edu/study/description/10145)
+
+---
+
+## <x name="third">Features</x>
 
 Since microbial communities are phenotypic and genetically diverse, microbial features are stipulated by kingdom.
 
