@@ -6,24 +6,9 @@ from collections import Counter, defaultdict
 import csv
 
 
-df3 = pd.read_csv(r'MetaPhlan2_file2.csv')
-
-df5 = pd.read_csv(r'MetaPhlan2_file1.csv')
-
 MICROBE_DIRECTORY = pd.read_csv(r'microbe-directory.csv', index_col=7)
-
-df = pd.DataFrame(MICROBE_DIRECTORY.iloc[0:5, 7:30])
-
-df4 = pd.DataFrame(MICROBE_DIRECTORY.iloc[9:14, 7:30])
-
-taxa_list_1 = MICROBE_DIRECTORY.iloc[0:5].index.tolist()
-
-taxa_list_2 = MICROBE_DIRECTORY.iloc[9:14].index.tolist()
-
 CATEGORICAL_LIST = ["gram_stain", "microbiome_location", "antimicrobial_susceptibility", "extreme_environment", "biofilm_forming", "animal_pathogen", "spore_forming", "plant_pathogen"]
-
 NUMERICAL_LIST = ["optimal_temperature", "optimal_ph", "pathogenicity"]
-
 
 
 def count_values(values, value_being_compared):
@@ -62,6 +47,12 @@ def compare_numeric(values_in_taxa_list_1, values_in_taxa_list_2):
         'abundance_out': mean2,
         'p-value': a.pvalue,
     })
+
+
+df = pd.DataFrame(MICROBE_DIRECTORY.iloc[0:5, 7:30])
+df4 = pd.DataFrame(MICROBE_DIRECTORY.iloc[9:14, 7:30])
+taxa_list_1 = MICROBE_DIRECTORY.iloc[0:5].index.tolist()
+taxa_list_2 = MICROBE_DIRECTORY.iloc[9:14].index.tolist()
 
 def compare_microbe_directory_dataframes(values_in_taxa_list_1, values_in_taxa_list_2):
     df_final = pd.DataFrame(columns = ['variable', 'type', 'dataset', 'value', 'abundance_in', 'abundance_out', 'p-value'])
@@ -122,14 +113,14 @@ if __name__ == '__main__':
 
     print(numeric_test)
 
-    DataFrame_test = compare_microbe_directory_dataframes(
+    dataframe_test = compare_microbe_directory_dataframes(
         df,
         df4,
     )
-    print(DataFrame_test)
+    print(dataframe_test)
 
-    Taxa_List_test = compare_taxa_lists(
+    taxa_list_test = compare_taxa_lists(
         taxa_list_1,
         taxa_list_2,
     )
-    print(Taxa_List_test)
+    print(taxa_list_test)
