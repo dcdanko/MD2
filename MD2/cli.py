@@ -7,9 +7,14 @@ from .clean_table import (
     reduce_row,
     rename_col,
     rename_MD1_tables,
-    metasub_process,
+    modify_dataset_value,
+	clean_count_datasets,
 	)
-
+from .dataset_modification import (
+    metasub_process,
+    convert_taxa_tree,
+	)
+	
 @click.group()
 def main():
     pass
@@ -70,18 +75,32 @@ def clean_file(isvirus, file, out):
     header = list(file_name.columns.values)
     remove_col_file = reduce_col(isvirus, file_name)  
     remove_row_file = reduce_row(isvirus, remove_col_file)
-    remove_row_file = remove_row_file.replace('nan', '')   
+    remove_row_file = remove_row_file.replace('nan', '')
     remove_row_file.to_csv(out)
     
 	
 @main.command('metasub-preprocessing')
 @click.option('--feature-name', default='city', help='The feature to consider')
+@click.option('--subtext', default='metasub', help='Name of Study')
 @click.argument('file', type=click.File('r'))
 @click.argument('metadata-file', type=click.File('r'))
 @click.argument('out', type=click.File('w'))
-def metasub_preprocess(feature_name, file, metadata_file, out):
+def metasub_preprocess(feature_name, subtext, file, metadata_file, out):
     """Construct a table to integrate MetaSUB data based on chosen feature"""
-    compiled_metasub = metasub_process(file, metadata_file, feature_name)
+    file_name = tbl = pd.read_csv(filename, index_col=0) 
+    compiled_metasub = metasub_process(file_name, metadata_file, feature_name, subtext)
+    compiled_metasub.to_csv(out)
+	
+@main.command('dataset-preprocessing')
+@click.option('--feature-name', default='city', help='The feature to consider')
+@click.option('--subtext', default='MetaSUB', help='Name of Study')
+@click.argument('file', type=click.File('r'))
+@click.argument('biom-file', type=click.File('r'))
+@click.argument('metadata-file', type=click.File('r'))
+@click.argument('out', type=click.File('w'))
+def dataset_preprocess(feature_name, subtext, file, biom_file, metadata_file, out):
+    """Construct a table to integrate other datasets based on chosen features"""
+    compiled_metasub = convert_taxa_tree(file, biom_file, metadata_file, feature_name, subtext)
     compiled_metasub.to_csv(out)
     
 

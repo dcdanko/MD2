@@ -90,7 +90,6 @@ def reduce_row(isvirus, file):
             if values == True and non_null[index] > 3:
                 filter[index] = False
         file = file[~filter]
-    file.to_csv("File1.csv")
     file_renamed = modify_dataset_value(file)	
     new_file = file_renamed.groupby(['scientific_name', 'taxonomic_id', 'rank'], as_index=True).agg(lambda x: ( ', '.join( repr(e) for e in list(set(x)))))
     return new_file.replace('nan, ', '', regex=True).replace('\'', '').replace('[', '').replace(']', '').applymap(lambda x: x.replace('\'', ''))
@@ -120,7 +119,6 @@ def modify_dataset_value(file):
         file['low_productivity'] = file['low_productivity'].replace([0, 1], ['Not Observed', 'Observed'])
         file['low_ph'] = file['low_ph'].replace([0, 1], ['Not Observed', 'Observed'])
         file['high_ph'] = file['high_ph'].replace([0, 1], ['Not Observed', 'Observed'])
-    file.to_csv("File2.csv")
     for reg in REGEX_COUNT_COL:
         regex_columns = [cols for cols in file.columns if reg in cols]
         final_file = clean_count_datasets(file, regex_columns)
@@ -137,25 +135,5 @@ def clean_count_datasets(file, regex_list):
         file[reg] = file[reg].replace([0, 2, 3, 4, 100], ['Never Observed', 'Rarely Observed', 'Fairly Observed', 'Mostly Observed', 'Always Observed'])
     return file
 
-def metasub_process(filename, metadata_filename, feature_name):
-    metasub_merged = {}
-    tbl = pd.read_csv(filename, index_col=0) 
-    metadata = pd.read_csv(metadata_filename, index_col=0)
-    metadata = metadata.loc[tbl.index]
-    feature = metadata[feature_name]
-    factorized, name_map = pd.factorize(feature)
-    for i in range(0, len(name_map)):
-        metasub_df = tbl[factorized == i]
-        species_count = metasub_df.count()
-        species_array = (species_count.values/metasub_df.shape[0]) * 100
-        if i == 0:
-            data = np.reshape(species_array, (len(species_array)),1)
-            metasub_merged = pd.DataFrame(data, index = list(tbl.columns.values), columns=[str('metasub_' + name_map[i])]) 
-        else:
-            metasub_merged[str('metasub_' + name_map[i])] = np.reshape(species_array, (len(species_array)),1)
-    metasub_merged[metasub_merged.apply(lambda x: (x>0) & (x<=25))] = 2
-    metasub_merged[metasub_merged.apply(lambda x: (x>25) & (x<75))] = 3
-    metasub_merged[metasub_merged.apply(lambda x: (x>=75) & (x<100))] = 4
-    metasub_merged = metasub_merged.replace([0, 2, 3, 4, 100], ['Never Observed', 'Rarely Observed', 'Fairly Observed', 'Mostly Observed', 'Always Observed'])
-    return metasub_merged
+
 
