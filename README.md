@@ -31,7 +31,7 @@ TMD aims to:
 
 ## <b name="second">Studies</b>
 
-* [Protist diversity in a permanently ice-covered Antarctic Lake during the polar night transition](10.1038/ismej.2011.23): Microbial eukaryotes from McMurdo Dry Valleys of Antarctica.
+* [Protist diversity in a permanently ice-covered Antarctic Lake during the polar night transition](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3160681/): Microbial eukaryotes from McMurdo Dry Valleys of Antarctica.
 * [Great Lake Microbiome](https://qiita.ucsd.edu/study/description/1041): Microbial diversity analysis at different depths and stations in great lakes of the US.
 * [Rees Vulcano Island](https://qiita.ucsd.edu/study/description/889): Impact of elevated CO2 from volcanic vents on the phytoplankton in local seawater populations of nearshore waters of the Island of Vulcano, Italy.
 * [Global Coral Microbiome Project](https://qiita.ucsd.edu/study/description/10895): A worldwide collection of coral samples to identify the factors most strongly associated with the distribution of individual microbial lineages across coral diversity.
@@ -50,7 +50,7 @@ TMD aims to:
 * [Microbial community composition in a lowland tropical rain forest- Costa Rica](https://doi.org/10.1016/j.soilbio.2010.08.011): Plot-scale manipulations of organic matter inputs to soils correlate with shifts in microbial community composition in a lowland tropical rain forest.
 * [Microbial communities on money](https://qiita.ucsd.edu/study/description/375)
 * [National Ecological Observatory Network (NEON) microbe prototype project](https://qiita.ucsd.edu/study/description/808): Soil samples from Alaska, Florida,Utah, and Hawaii representing gradients in ecosystems.
-* [Soil Microbiome Influences Grapevine-Associated Microbiota](10.1128/mBio.02527-14):  Microbial diversity associated with the bulk soil, rhizosphere, roots, leaves, flowers and grapes from vine clonal varieties in the North Fork region of Long Island.
+* [Soil Microbiome Influences Grapevine-Associated Microbiota](https://mbio.asm.org/content/6/2/e02527-14):  Microbial diversity associated with the bulk soil, rhizosphere, roots, leaves, flowers and grapes from vine clonal varieties in the North Fork region of Long Island.
 * [Beach sand microbiome from Calvert Island Canada](https://qiita.ucsd.edu/study/description/10145)
 
 ---
