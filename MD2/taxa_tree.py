@@ -61,6 +61,22 @@ class NCBITaxaTree:
                 return self.nodes_to_name[parent_num]['name']
             parent_num = self.parent_map[parent_num]
         return default
+	
+    def ancestors_list(self, rank, taxon, default=None):
+        """Return the node of the ancestor for a taxon upto a given rank."""
+        rank_list = ['subspecies', 'species', 'species group', 'species subgroup', 'subgenus', 'genus', 'subfamily', 'family', 'suborder', 'order', 
+		            'subclass', 'class', 'subphylum', 'phylum', 'kingdom', 'superkingdom', 'no rank', 'varietas', 'forma', 'tribe']
+        index = rank_list.index(rank)
+        if rank_list.index(self.nodes_to_name[self._node(taxon)]['rank']) > index:
+            return default
+        else:
+            parent_num = self.parent_map[self._node(taxon)]
+            ancestor_name_list = [taxon]
+            while index >= rank_list.index(self.nodes_to_name[parent_num]['rank']):
+                ancestor_name_list.append(self.nodes_to_name[parent_num]['name'])
+                parent_num = self.parent_map[parent_num]  
+            return ancestor_name_list
+        return default
 
     def microbe_taxonomy(self, taxon, default=None):
         """Return the entire taxonomy for Bacteria or Viruses."""
@@ -112,6 +128,7 @@ class NCBITaxaTree:
         if taxon == 'root':
             return default
         return self.microbe_taxonomy(taxon, default=None)
+		
 
     def _tree(self, taxa):
         queue, tree = {self._node(el) for el in taxa}, {}
@@ -180,5 +197,3 @@ class NCBITaxaTree:
                         parent = None
                     parent_map[node] = parent
         return cls(parent_map, names_to_nodes, nodes_to_name), sci_name
-	
-    
