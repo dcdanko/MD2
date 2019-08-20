@@ -27,7 +27,7 @@ def filter_taxa(out):
     taxonomy = {}
     for taxon in sci_name:
         taxon = taxon.strip()
-        if taxa_tree.taxonomic_rank(taxon, default=None) != None:
+        if taxa_tree.taxonomic_tree_species(taxon, default=None) != None:
             taxonomy[taxon] = taxa_tree.taxonomic_tree_species(taxon, default=None).values()
     col_names = ['taxonomic_id', 'species', 'genus', 'family', 'order', 'class', 'phylum']
     annotated = pd.DataFrame.from_dict(taxonomy, columns=col_names, orient='index')
@@ -78,6 +78,26 @@ def clean_file(isvirus, file, out):
     remove_row_file = remove_row_file.replace('nan', '')
     remove_row_file.to_csv(out)
     
+@main.command('fill-column')
+@click.option('--feature', default='gram_stain', help='The column with the trait')
+@click.option('--rank', default='genus', help='The rank at which it is seen')
+@click.argument('file', type=click.File('r'))
+@click.argument('out', type=click.File('w'))
+def filter_taxa(feature, rank, file, out):
+    """Parse NCBI File to fill a column which exhibits certain hierarchical traits"""
+    taxa_tree, sci_name = NCBITaxaTree.parse_files()
+    file_name = pd.read_csv(file)
+    for index, rows in file_name.iterrows():
+        if taxa_tree.ancestors_list(rank, rows['scientific_name'], default=None) != None:
+            ancestors = taxa_tree.ancestors_list(rank, rows['scientific_name'], default=None).copy()
+            df_val = file_name[file_name['scientific_name'].isin(ancestors)]
+            if 'Positive' in df_val[feature].values:
+                file_name.loc[file_name['scientific_name'].isin(ancestors), feature] = 'Positive'
+            elif 'Negative'  in df_val[feature].values:
+                file_name.loc[file_name['scientific_name'].isin(ancestors), feature] = 'Negative'
+        else: 
+            continue
+    file_name.to_csv(out)
 	
 @main.command('metasub-preprocessing')
 @click.option('--feature-name', default='city', help='The feature to consider')
@@ -87,7 +107,7 @@ def clean_file(isvirus, file, out):
 @click.argument('out', type=click.File('w'))
 def metasub_preprocess(feature_name, subtext, file, metadata_file, out):
     """Construct a table to integrate MetaSUB data based on chosen feature"""
-    file_name = tbl = pd.read_csv(filename, index_col=0) 
+    file_name = pd.read_csv(filename, index_col=0) 
     compiled_metasub = metasub_process(file_name, metadata_file, feature_name, subtext)
     compiled_metasub.to_csv(out)
 	
