@@ -73,31 +73,14 @@ def clean_file(isvirus, file, out):
     """Clean up data-table to be used for Microbe Directory 2.0 and above"""
     file_name = pd.read_csv(file, index_col=False)
     header = list(file_name.columns.values)
-    remove_col_file = reduce_col(isvirus, file_name)  
-    remove_row_file = reduce_row(isvirus, remove_col_file)
+    remove_col_file = reduce_col(isvirus, file_name)
+    if isvirus == False:
+	    add_values = filter_taxa(remove_col_file)
+        remove_row_file = reduce_row(isvirus, add_values)
+    else:
+        remove_row_file = reduce_row(isvirus, remove_col_file) 
     remove_row_file = remove_row_file.replace('nan', '')
     remove_row_file.to_csv(out)
-    
-@main.command('fill-column')
-@click.option('--feature', default='gram_stain', help='The column with the trait')
-@click.option('--rank', default='genus', help='The rank at which it is seen')
-@click.argument('file', type=click.File('r'))
-@click.argument('out', type=click.File('w'))
-def filter_taxa(feature, rank, file, out):
-    """Parse NCBI File to fill a column which exhibits certain hierarchical traits"""
-    taxa_tree, sci_name = NCBITaxaTree.parse_files()
-    file_name = pd.read_csv(file)
-    for index, rows in file_name.iterrows():
-        if taxa_tree.ancestors_list(rank, rows['scientific_name'], default=None) != None:
-            ancestors = taxa_tree.ancestors_list(rank, rows['scientific_name'], default=None).copy()
-            df_val = file_name[file_name['scientific_name'].isin(ancestors)]
-            if 'Positive' in df_val[feature].values:
-                file_name.loc[file_name['scientific_name'].isin(ancestors), feature] = 'Positive'
-            elif 'Negative'  in df_val[feature].values:
-                file_name.loc[file_name['scientific_name'].isin(ancestors), feature] = 'Negative'
-        else: 
-            continue
-    file_name.to_csv(out)
 	
 @main.command('metasub-preprocessing')
 @click.option('--feature-name', default='city', help='The feature to consider')
@@ -122,6 +105,27 @@ def dataset_preprocess(feature_name, subtext, file, biom_file, metadata_file, ou
     """Construct a table to integrate other datasets based on chosen features"""
     compiled_metasub = convert_taxa_tree(file, biom_file, metadata_file, feature_name, subtext)
     compiled_metasub.to_csv(out)
+	
+def filter_taxa(file_name):
+    """Parse NCBI File to fill a column which exhibits certain hierarchical traits"""
+    taxa_tree, sci_name = NCBITaxaTree.parse_files()
+    rank_list = ['subspecies', 'species', 'species group', 'species subgroup', 'subgenus', 'genus', 'subfamily', 'family', 'suborder', 'order', 
+		        'subclass', 'class', 'subphylum', 'phylum', 'kingdom', 'superkingdom', 'no rank', 'varietas', 'forma', 'tribe']
+    spore_forming_genus = ['Bacillus', 'Clostridium', 'Sporolactobacillus', 'Sporosarcina']		
+    for index, rows in file_name.iterrows():
+        #Update Spore_Forming in a Top-Down approach based on Genus
+        if rank_list.index(rows['rank']) <= rank_list.index('genus'):
+            if taxa_tree.genus(rows['scientific_name'], default=None) in (spore_forming_genus):
+                file_name.loc[file_name['scientific_name']==rows['scientific_name'], 'spore_forming'] = 'Always'
+        #Update Gram_Stain in a Mixed approach based on Genus
+        if taxa_tree.ancestors_list('genus', rows['scientific_name'], default=None) != None:
+            ancestors = taxa_tree.ancestors_list('genus', rows['scientific_name'], default=None).copy()
+            df_val = file_name[file_name['scientific_name'].isin(ancestors)]
+            if 'Positive' in df_val['gram_stain'].values:
+                file_name.loc[file_name['scientific_name'].isin(ancestors), 'gram_stain'] = 'Positive'
+            elif 'Negative'  in df_val['gram_stain'].values:
+                file_name.loc[file_name['scientific_name'].isin(ancestors), 'gram_stain'] = 'Negative'           
+    return file_name
     
 
 if __name__ == '__main__':
