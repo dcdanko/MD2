@@ -31,6 +31,17 @@ REGEX_TAXANOMY = [
     'uncultured',
     'unidentified',
     'symbiont',
+    'killing',
+    'containing',
+    'primary',
+    'secondary',
+    'alpha',
+    'beta',
+    'gamma',
+    'delta',
+    'endosymbiont',
+    'adapted',
+    'aerobic',
     'methanotroph',
     'clinical sample',
     'isolate',
@@ -60,8 +71,9 @@ REGEX_TAXANOMY = [
     'obligately',
     'soil',
     'marine',
+    'candidate',
     '\'',
-    '\['
+    '\[',
     ]
 
 def reduce_col(isvirus, file):
