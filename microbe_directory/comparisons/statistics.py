@@ -18,7 +18,6 @@ def compare_categorical(value_being_compared, values_in_taxa_list_1, values_in_t
         'p-value': a.pvalue,
     })
 
-
 def compare_numeric(values_in_taxa_list_1, values_in_taxa_list_2):
     """Retun a Pandas Series with [abundance-in, abundance-out, p-value]."""
     mean1 = values_in_taxa_list_1.mean()
@@ -30,7 +29,6 @@ def compare_numeric(values_in_taxa_list_1, values_in_taxa_list_2):
         'p-value': a.pvalue,
     })
 
-
 def count_values(values, value_being_compared):
     x = defaultdict(float)
     for var in [True, False]:
@@ -41,7 +39,6 @@ def count_values(values, value_being_compared):
         else:
             x[False] += 1
     return x
-
 
 def compare_categorical_abundances(value_being_compared, values_in_taxa_list_1, values_in_taxa_list_2):
     all_variables = set(values_in_taxa_list_1) | set(values_in_taxa_list_2)
@@ -62,7 +59,6 @@ def compare_categorical_abundances(value_being_compared, values_in_taxa_list_1, 
         'p-value': a.pvalue,
     })
 
-
 def compare_numeric_abundances(values_in_taxa_list_1, values_in_taxa_list_2):
     """Retun a Pandas Series with [abundance-in, abundance-out, p-value]."""
     mean1 = sum([key * val for key, val in values_in_taxa_list_1.items()])
@@ -79,7 +75,6 @@ def compare_numeric_abundances(values_in_taxa_list_1, values_in_taxa_list_2):
         'abundance_out': mean2,
         'p-value': a.pvalue,
     })
-
 
 def count_values_abundances(values, value_being_compared):
     x = defaultdict(float)
