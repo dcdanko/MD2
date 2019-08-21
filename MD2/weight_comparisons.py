@@ -6,23 +6,24 @@ from collections import Counter, defaultdict
 from random import choices 
 import csv
 
-def count_values(values, value_being_compared):
+def count_values_abundances(values, value_being_compared):
     x = defaultdict(float)
     for var in [True, False]:
         x[var] = 1 / (1000 * 1000)
+    norm = 1./len(values)
     for var in values:
         if var == value_being_compared:
-            x[True] = values.values()
+            x[True] += norm
         else:
-            x[False] = values.values()
+            x[False] += norm
     return x
         
 
 def compare_categorical_abundances(value_being_compared, values_in_taxa_list_1, values_in_taxa_list_2):
     all_variables = set(values_in_taxa_list_1) | set(values_in_taxa_list_2)
-    stats1 = count_values(values_in_taxa_list_1, value_being_compared)
+    stats1 = count_values_abundances(values_in_taxa_list_1, value_being_compared)
     stats1 = pd.Series(stats1)
-    stats2 = count_values(values_in_taxa_list_2, value_being_compared)
+    stats2 = count_values_abundances(values_in_taxa_list_2, value_being_compared)
     stats2 = pd.Series(stats2)
     keyslist1 = list(values_in_taxa_list_1.keys())
     keyslist2 = list(values_in_taxa_list_2.keys())
