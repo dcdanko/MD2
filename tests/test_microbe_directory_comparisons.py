@@ -57,3 +57,15 @@ class TestMicrobeDirectoryComparisons(TestCase):
             MICROBE_DIRECTORY.iloc[0:5].index.tolist(),
             MICROBE_DIRECTORY.iloc[9:14].index.tolist(),
         )
+    def test_compare_categorical_abundances(self):
+        cat_abundances_test = compare_categorical_abundances(
+            'A'
+            {'A':0.2, 'B':0.3, 'C':0.5}
+            {'B':0.25, 'C':0.4, 'D':0.25, 'E':0.1}
+        )
+    def test_compare_numerical_abundances(self):
+        numeric_abundances_test = compare_numerical_abundances(
+            {5:0.2, 6:0.25, 7:0.25, 8:0.1, 9:0.2},
+            {4:0.2, 6:0.125, 7:0.3, 8:0.375},
+        )
+   
