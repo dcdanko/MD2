@@ -3,7 +3,7 @@ import pandas as pd
 from scipy.stats import chisquare
 from scipy import stats
 from collections import defaultdict
-
+from random import choices
 
 def compare_categorical(value_being_compared, values_in_taxa_list_1, values_in_taxa_list_2):
     all_variables = set(values_in_taxa_list_1) | set(values_in_taxa_list_2)
