@@ -31,6 +31,18 @@ def compare_numeric(values_in_taxa_list_1, values_in_taxa_list_2):
     })
 
 
+def count_values(values, value_being_compared):
+    x = defaultdict(float)
+    for var in [True, False]:
+        x[var] = 1 / (1000 * 1000)
+    for var in values:
+        if var == value_being_compared:
+            x[True] += 1
+        else:
+            x[False] += 1
+    return x
+
+
 def compare_categorical_abundances(value_being_compared, values_in_taxa_list_1, values_in_taxa_list_2):
     all_variables = set(values_in_taxa_list_1) | set(values_in_taxa_list_2)
     stats1 = count_values_abundances(values_in_taxa_list_1, value_being_compared)
@@ -67,18 +79,6 @@ def compare_numeric_abundances(values_in_taxa_list_1, values_in_taxa_list_2):
         'abundance_out': mean2,
         'p-value': a.pvalue,
     })
-
-
-def count_values(values, value_being_compared):
-    x = defaultdict(float)
-    for var in [True, False]:
-        x[var] = 1 / (1000 * 1000)
-    for var in values:
-        if var == value_being_compared:
-            x[True] += 1
-        else:
-            x[False] += 1
-    return x
 
 
 def count_values_abundances(values, value_being_compared):
