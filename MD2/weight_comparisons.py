@@ -10,12 +10,12 @@ def count_values_abundances(values, value_being_compared):
     x = defaultdict(float)
     for var in [True, False]:
         x[var] = 1 / (1000 * 1000)
-    norm = 1./len(values)
-    for var in values:
+  #  norm = /len(values)
+    for var in values.keys():
         if var == value_being_compared:
-            x[True] += norm
+            x[True] += values[var]
         else:
-            x[False] += norm
+            x[False] += values[var]
     return x
         
 
@@ -55,22 +55,7 @@ def compare_numeric_abundances(values_in_taxa_list_1, values_in_taxa_list_2):
         'p-value': a.pvalue,
     })
 
-if __name__ == '__main__':
-    # Run some simple tests
-    cat_test_abundances = compare_categorical_abundances(
-            'A',
-            {'A':0.2, 'B':0.3, 'D':0.5},
-            {'B':0.25, 'C':0.4, 'D':0.25, 'E':0.1}
-    )    
-    print(cat_test_abundances)
-    
-    numeric_abundances_test = compare_numeric_abundances(
-            {5:0.2, 6:0.25, 7:0.25, 8:0.1, 9:0.2},
-            {4:0.2, 6:0.125, 7:0.3, 8:0.375},
-    )
-    print(numeric_abundances_test)
-
-    def compare_microbe_directory_dataframes(values_in_taxa_list_1, values_in_taxa_list_2):
+def compare_microbe_directory_dataframes(values_in_taxa_list_1, values_in_taxa_list_2):
     df_final = pd.DataFrame(columns = ['variable', 'type', 'dataset', 'value', 'abundance_in', 'abundance_out', 'p-value'])
     for column_name in CATEGORICAL_LIST:
         taxa_list1 = values_in_taxa_list_1[column_name]
@@ -103,3 +88,19 @@ def compare_taxa_lists(values_in_taxa_list_1, values_in_taxa_list_2):
     df1 = MICROBE_DIRECTORY.loc[values_in_taxa_list_1]
     df2 = MICROBE_DIRECTORY.loc[values_in_taxa_list_2]
     return compare_microbe_directory_dataframes(df1, df2)
+
+if __name__ == '__main__':
+    # Run some simple tests
+    cat_test_abundances = compare_categorical_abundances(
+            'A',
+            {'A':0.2, 'B':0.3, 'D':0.5},
+            {'B':0.25, 'C':0.4, 'D':0.25, 'E':0.1}
+    )    
+    print(cat_test_abundances)
+    
+    numeric_abundances_test = compare_numeric_abundances(
+            {5:0.2, 6:0.25, 7:0.25, 8:0.1, 9:0.2},
+            {4:0.2, 6:0.125, 7:0.3, 8:0.375},
+    )
+    print(numeric_abundances_test)
+
