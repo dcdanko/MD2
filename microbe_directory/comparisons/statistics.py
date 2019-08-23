@@ -80,10 +80,9 @@ def count_values_abundances(values, value_being_compared):
     x = defaultdict(float)
     for var in [True, False]:
         x[var] = 1 / (1000 * 1000)
-    norm = 1./len(values)
-    for var in values:
+    for var in values.keys():
         if var == value_being_compared:
-            x[True] += norm
+            x[True] += values[var]
         else:
-            x[False] += norm
+            x[False] += values[var]
     return x
