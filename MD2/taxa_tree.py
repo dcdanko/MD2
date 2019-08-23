@@ -48,9 +48,9 @@ class NCBITaxaTree:
         all_files = glob.glob(file_path + "/*.csv")
         for filename in all_files: 
             df = pd.read_csv(open(filename, 'r'))
-            column_name, value = self.find_column(df, ncbi_file['scientific name'])
+            column_name, value = self.find_column(df, ncbi_file['scientific_name'])
             if value > 0:
-                ncbi_file  = ncbi_file.merge(df, left_on='scientific name', right_on=column_name, how='left')
+                ncbi_file  = ncbi_file.merge(df, left_on='scientific_name', right_on=column_name, how='left')
         return ncbi_file
 
     def ancestor_rank(self, rank, taxon, default=None):
@@ -106,9 +106,13 @@ class NCBITaxaTree:
 		
     def rank_of_species(self, taxon):
         """Returns the rank and taxonomic id for a given taxon."""
-        taxon_file = {'scientific name': taxon, 'tax_id' : self._node(taxon), 
+        taxon_file = {'scientific_name': taxon, 'tax_id' : self._node(taxon), 
                       'rank': self.nodes_to_name[self._node(taxon)]['rank']}
         return taxon_file
+		
+    def genus(self, taxon, default=None):
+        """Return the genus for the given taxon."""
+        return self.ancestor_rank('genus', taxon, default=default)
 
     def rank_microbes(self, taxon, default=None):
         """Returns the rank and taxonomic id for a given microbial taxon."""
