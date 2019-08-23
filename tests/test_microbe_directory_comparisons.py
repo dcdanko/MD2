@@ -12,6 +12,8 @@ from microbe_directory.comparisons import (
 from microbe_directory.comparisons.statistics import (
     compare_categorical,
     compare_numeric,
+    compare_numeric_abundances,
+    compare_categorical_abundances,
 )
 from microbe_directory.comparisons.constants import (
     MICROBE_DIRECTORY,
@@ -30,9 +32,9 @@ class TestMicrobeDirectoryComparisons(TestCase):
              pd.Series(['yes', 'yes', 'no', 'yes', 'yes']),
              pd.Series(['no', 'no', 'no', 'yes', 'yes', 'no', 'no']),
         )
-        self.assertTrue(0 <= a.pvalue <= 1)
-        self.assertTrue(0 < stats1)
-        self.assertTrue(0 < stats2)
+        self.assertTrue(0 <= categorical_test['p-value'].any() <= 1)
+        self.assertTrue(0 < categorical_test['abundance_in'].any())
+        self.assertTrue(0 < categorical_test['abundance_out'].any())
 
     def test_compare_categorical_multi(self):
         """Test that we can run UMAP."""
@@ -41,9 +43,9 @@ class TestMicrobeDirectoryComparisons(TestCase):
             pd.Series(['A', 'B', 'D']),
             pd.Series(['B', 'C', 'D', 'E'])
         )
-        self.assertTrue(0 <= a.pvalue <= 1)
-        self.assertTrue(0 < stats1)
-        self.assertTrue(0 < stats2)
+        self.assertTrue(0 <= categorical_test['p-value'].any() <= 1)
+        self.assertTrue(0 < categorical_test['abundance_in'].any())
+        self.assertTrue(0 < categorical_test['abundance_out'].any())
 
     def test_compare_numeric(self):
         """Test that we can run fractal."""
@@ -51,23 +53,23 @@ class TestMicrobeDirectoryComparisons(TestCase):
             pd.Series([0, 1, 3, 0, 1, 1, 2, 2]),
             pd.Series([2, 2, 1, 3, 1, 3, 4]),
         )
-        self.assertTrue(0 <= a.pvalue <= 1)
-        self.assertTrue(0 < mean1)
-        self.assertTrue(0 < mean2)
+        self.assertTrue(0 <= numeric_test['p-value'] <= 1)
+        self.assertTrue(0 < numeric_test['abundance_in'])
+        self.assertTrue(0 < numeric_test['abundance_out'])
 
     def test_compare_dataframes(self):
         dataframe_test = compare_microbe_directory_dataframes(
             pd.DataFrame(MICROBE_DIRECTORY.iloc[0:5, 7:30]),
             pd.DataFrame(MICROBE_DIRECTORY.iloc[9:14, 7:30]),
         )
-        self.assertTrue(len(df_final.columns) == 7)
+        self.assertTrue(len(dataframe_test.columns) == 7)
     
     def test_compare_taxa_lists(self):
         taxa_list_test = compare_taxa_lists(
             MICROBE_DIRECTORY.iloc[0:5].index.tolist(),
             MICROBE_DIRECTORY.iloc[9:14].index.tolist(),
         )
-        self.assertTrue(len(df_final.columns) == 7)
+        self.assertTrue(len(taxa_list_test.columns) == 7)
     
     def test_compare_categorical_abundances(self):
         cat_abundances_test = compare_categorical_abundances(
@@ -75,15 +77,15 @@ class TestMicrobeDirectoryComparisons(TestCase):
             {'A':0.2, 'B':0.3, 'C':0.5},
             {'B':0.25, 'C':0.4, 'D':0.25, 'E':0.1},
         )
-        self.assertTrue(0 <= a.pvalue <= 1)
-        self.assertTrue(0 < stats1)
-        self.assertTrue(0 < stats2)
+        self.assertTrue(0 <= cat_abundances_test['p-value'] <= 1)
+        self.assertTrue(0 < cat_abundances_test['abundance_in'].any())
+        self.assertTrue(0 < cat_abundances_test['abundance_out'].any())
 
-    def test_compare_numerical_abundances(self):
-        numeric_abundances_test = compare_numerical_abundances(
+    def test_compare_numeric_abundances(self):
+        numeric_abundances_test = compare_numeric_abundances(
             {5:0.2, 6:0.25, 7:0.25, 8:0.1, 9:0.2},
             {4:0.2, 6:0.125, 7:0.3, 8:0.375},
         )
-        self.assertTrue(0 <= a.pvalue <= 1)
-        self.assertTrue(0 < mean1)
-        self.assertTrue(0 < mean2)   
+        self.assertTrue(0 <= numeric_abundances_test['p-value'] <= 1)
+        self.assertTrue(0 < numeric_abundances_test['abundance_in'])
+        self.assertTrue(0 < numeric_abundances_test['abundance_out'])
