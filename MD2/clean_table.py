@@ -15,6 +15,8 @@ REGEX_COLUMN = [
     ' id',
     'citation',
     'evidence',
+    'microbe_id',
+    'otu',
     ]
 	
 REGEX_COUNT_COL = [
@@ -45,6 +47,9 @@ REGEX_TAXANOMY = [
     'methanotroph',
     'clinical sample',
     'isolate',
+    'ice',
+    'sterile',
+    'pathogen',
     'clone',
     'like',
     'degrading',
@@ -80,7 +85,7 @@ def reduce_col(isvirus, file):
     """Remove empty columns, ids and taxonomy columns"""
     drop_col = file.dropna(axis='columns', how='all')
     drop_col.columns = map(str.lower, drop_col.columns)
-    col_names = ['class', 'pmid', 'id']
+    col_names = ['class']
     for reg in REGEX_COLUMN:
         col_names.extend(list(drop_col.filter(regex=reg)))
     if isvirus == 'True': 
@@ -121,7 +126,7 @@ def rename_MD1_tables(file):
     file['plant_pathogen'] = file['plant_pathogen'].replace([0, 1], ['Maybe Not', 'Sometimes'])
     file['microbiome_location'] = file['microbiome_location'].replace([0, 1], ['Maybe', 'Sometimes'])
     file['spore_forming'] = file['spore_forming'].replace([0, 1], ['Never', 'Always'])
-    file = file.rename(columns={'microbiome_location': 'human_disease_causing'})
+    file = file.rename(columns={'microbiome_location': 'human_pathogen'})
     return file
 	
 def modify_dataset_value(file):
