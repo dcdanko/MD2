@@ -1,7 +1,8 @@
-import pandas as pd
+import pandas as pdi
 import numpy as np
 from scipy.stats import chisquare
-
+from scipy import stats
+from collections import Counter, defaultdict
 
 def compare_datasets(taxa_list_1, taxa_list_2):
     """Return a Pandas DataFrame listing differences between two taxa lists.
@@ -20,21 +21,56 @@ def compare_datasets(taxa_list_1, taxa_list_2):
     This is a long format dataframe which means some of the data may
     be repeated.
     """
-    pass
+     
 
+def count_values(values, value_being_compared):
+    x=defaultdict(float)
+    for var in [True, False]:
+        x[var] = 1 / (1000 * 1000)
+    for var in values:
+        if var == value_being_compared:
+            x[True] += 1
+        else:
+            x[False] +=1
+    return x
+        
 
 def compare_categorical(value_being_compared, values_in_taxa_list_1, values_in_taxa_list_2):
-    """Return a Pandas Series with [abundance-in, abundance-out, p-value]."""
-    pass
+    all_variables= set(values_in_taxa_list_1) | set(values_in_taxa_list_2)
+    stats1 = count_values(values_in_taxa_list_1, value_being_compared)
+    stats1 = pd.Series(stats1)
+    stats2 =  count_values(values_in_taxa_list_2, value_being_compared)
+    stats2 = pd.Series(stats2)
+    a = chisquare(stats1, stats2)
+    return pd.Series({
+        'abundance_in': stats1,
+        'abundance_out': stats2,
+        'p-value': a.pvalue,
+    })
 
 
 def compare_numeric(values_in_taxa_list_1, values_in_taxa_list_2):
-    """Return a Pandas Series with [abundance-in, abundance-out, p-value]."""
+    """Retun a Pandas Series with [abundance-in, abundance-out, p-value]."""
+    mean1 = values_in_taxa_list_1.mean()
+    mean2 = values_in_taxa_list_2.mean()
+    a = stats.ttest_ind(values_in_taxa_list_1, values_in_taxa_list_2, equal_var=False)
     return pd.Series({
-        'abundance_in': values_in_taxa_list_1.mean(),
-        'abundance_out': values_in_taxa_list_2.mean(),
-        'p-value': 1,  # TODO
+        'abundance_in': mean1, 
+        'abundance_out': mean2,
+        'p-value': a.pvalue,
     })
+"""
+def create_df():
+    df = create_df()
+    data = {'variable': [numbers],
+            'dataset': [values_in_taxa_list_1],
+            'value': [mean],
+            'abundance_in': [mean1],
+            'abundance_out': [mean2],
+            'p-value': [a.pvalue]}
+    df = pd.DataFrame(data)
+    return df
+"""
 
 
 if __name__ == '__main__':
@@ -45,8 +81,16 @@ if __name__ == '__main__':
          pd.Series(['no', 'no', 'no', 'yes', 'yes', 'no', 'no']),
     )
     print(categorical_test)
+
+    cat_test_empty = compare_categorical(
+        'A',
+        pd.Series(['A', 'B', 'D']),
+        pd.Series(['B', 'C', 'D', 'E'])
+    )    
+    print(cat_test_empty)
+    
     numeric_test = compare_numeric(
         pd.Series([0, 1, 3, 0, 1, 1, 2, 2]),
-        pd.Series([2, 2, , 3, 1, 3, 4]),
+        pd.Series([2, 2, 1, 3, 1, 3, 4]),
     )
     print(numeric_test)
