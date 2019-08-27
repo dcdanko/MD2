@@ -41,7 +41,6 @@ def verify_column_names(file, microbe_type, default=None):
 	
 def dataset_stats(file, microbe_type):
     """Calculate the number of non empty columns for each microbe"""
-    file = file.loc[:,~file.columns.duplicated()]
     if microbe_type=='bacteria':
         new_file = file.filter(BACTERIA, axis=1)
     elif microbe_type=='virus':
@@ -51,17 +50,3 @@ def dataset_stats(file, microbe_type):
     non_null = new_file.count(axis = 1) 
     stats_file = pd.DataFrame(list(zip(file['scientific_name'], non_null)), columns=['scientific_name', 'counts']) 
     return stats_file
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-    
