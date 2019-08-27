@@ -6,17 +6,17 @@ REGEX_COLUMN = [
     'genus', 
     'family', 
     'order', 
-    'class_', 
+    'class', 
     'phylum', 
     'domain', 
     'kingdom', 
     'organism', 
     'unnamed',
-    ' id',
     'citation',
     'evidence',
     'microbe_id',
     'otu',
+    ' id',
     ]
 	
 REGEX_COUNT_COL = [
@@ -77,8 +77,17 @@ REGEX_TAXANOMY = [
     'soil',
     'marine',
     'candidate',
+    'endo',
+    'exo',
+    'complex',
+    'type',
+    'mycorrhiza',
+    'root',
+    'tip',
+    'rot',
     '\'',
     '\[',
+    '\('
     ]
 
 def reduce_col(isvirus, file):
@@ -86,10 +95,10 @@ def reduce_col(isvirus, file):
     drop_col = file.dropna(axis='columns', how='all')
     drop_col.columns = map(str.lower, drop_col.columns)
     col_names = ['class']
-    for reg in REGEX_COLUMN:
+    for reg in REGEX_COLUMN:    
         col_names.extend(list(drop_col.filter(regex=reg)))
-    if isvirus == 'True': 
-        col_names.remove('id')
+    #if isvirus == 'True': 
+    #    col_names.remove('id')
     drop_col = drop_col.drop(columns=col_names, axis=1)
     drop_col.columns = rename_col(drop_col)	
     final_file = rename_MD1_tables(drop_col)
@@ -151,6 +160,4 @@ def clean_count_datasets(file, regex_list):
         file[reg] = file[reg].mask((file[reg]>=75) & (file[reg]<100), 4)
         file[reg] = file[reg].replace([0, 2, 3, 4, 100], ['Never Observed', 'Rarely Observed', 'Fairly Observed', 'Mostly Observed', 'Always Observed'])
     return file
-
-
 
