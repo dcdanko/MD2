@@ -124,8 +124,8 @@ if __name__ == '__main__':
     )
     print(numeric_abundances_test)
     
-    taxa_lists_abundances_test = compare_taxa_lists_abundances(
+    taxa_list_abundances_test = compare_taxa_lists_abundances(
             pd.Series({MICROBE_DIRECTORY.iloc[[0]].index[0]:0.2, MICROBE_DIRECTORY.iloc[[1]].index[0]:0.1, MICROBE_DIRECTORY.iloc[[2]].index[0]:0.3,   MICROBE_DIRECTORY.iloc[[3]].index[0]:0.25, MICROBE_DIRECTORY.iloc[[4]].index[0]:0.15}),
             pd.Series({MICROBE_DIRECTORY.iloc[[9]].index[0]:0.25, MICROBE_DIRECTORY.iloc[[10]].index[0]:0.3, MICROBE_DIRECTORY.iloc[[11]].index[0]:0.15, MICROBE_DIRECTORY.iloc[[12]].index[0]:0.2, MICROBE_DIRECTORY.iloc[[13]].index[0]:0.1})
     )
-    print(taxa_lists_abundances_test)
+    print(taxa_list_abundances_test)
