@@ -65,7 +65,7 @@ def compare_numeric_abundances(values_in_taxa_list_1, values_in_taxa_list_2):
         'p-value': a.pvalue,
     })
 
-def compare_microbe_directory_dataframes(values_in_taxa_list_1, values_in_taxa_list_2):
+def compare_microbe_directory_dataframes_abundances(values_in_taxa_list_1, values_in_taxa_list_2):
     df_final = pd.DataFrame(columns = ['variable', 'type', 'dataset', 'value', 'abundance_in', 'abundance_out', 'p-value']) 
     for column_name in CATEGORICAL_LIST:
         taxa_list1 = values_in_taxa_list_1[column_name]
@@ -107,7 +107,7 @@ def compare_taxa_lists_abundances(values_in_taxa_list_1, values_in_taxa_list_2):
     df1['WEIGHT'] = values_in_taxa_list_1.values 
     df2 = MICROBE_DIRECTORY.loc[values_in_taxa_list_2.keys()]
     df2['WEIGHT'] = values_in_taxa_list_2.values 
-    return compare_microbe_directory_dataframes(df1, df2)
+    return compare_microbe_directory_dataframes_abundances(df1, df2)
 
 if __name__ == '__main__':
     # Run some simple tests
