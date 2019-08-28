@@ -6,11 +6,14 @@ from collections import Counter, defaultdict
 from random import choices 
 import csv
 
+MICROBE_DIRECTORY = pd.read_csv(r'microbe-directory.csv', index_col=[7])
+NUMERICAL_LIST = ["optimal_temperature", "optimal_ph", "pathogenicity"]
+CATEGORICAL_LIST = ["gram_stain", "microbiome_location", "antimicrobial_susceptibility", "extreme_environment", "biofilm_forming", "animal_pathogen", "spore_forming", "plant_pathogen"]
+
 def count_values_abundances(values, value_being_compared):
     x = defaultdict(float)
     for var in [True, False]:
         x[var] = 1 / (1000 * 1000)
-  #  norm = /len(values)
     for var in values.keys():
         if var == value_being_compared:
             x[True] += values[var]
@@ -20,7 +23,6 @@ def count_values_abundances(values, value_being_compared):
         
 
 def compare_categorical_abundances(value_being_compared, values_in_taxa_list_1, values_in_taxa_list_2):
-    all_variables = set(values_in_taxa_list_1) | set(values_in_taxa_list_2)
     stats1 = count_values_abundances(values_in_taxa_list_1, value_being_compared)
     stats1 = pd.Series(stats1)
     stats2 = count_values_abundances(values_in_taxa_list_2, value_being_compared)
@@ -38,10 +40,19 @@ def compare_categorical_abundances(value_being_compared, values_in_taxa_list_1, 
         'p-value': a.pvalue,
     })
 
+def mean_ignore_nans(dictin):
+    num   = 0
+    denom = 0
+    for key,val in dictin.items():
+        if not np.isnan(key):
+            num   += key*val
+            denom += val
+    return num/denom if denom != 0 else 0
+
 def compare_numeric_abundances(values_in_taxa_list_1, values_in_taxa_list_2):
     """Retun a Pandas Series with [abundance-in, abundance-out, p-value]."""
-    mean1 = sum([key * val for key, val in values_in_taxa_list_1.items()])
-    mean2 = sum([key * val for key, val in values_in_taxa_list_2.items()])
+    mean1 = mean_ignore_nans(values_in_taxa_list_1)
+    mean2 = mean_ignore_nans(values_in_taxa_list_2)
     keyslist1 = list(values_in_taxa_list_1.keys())
     keyslist2 = list(values_in_taxa_list_2.keys())
     valueslist1 = list(values_in_taxa_list_1.values())
@@ -56,21 +67,28 @@ def compare_numeric_abundances(values_in_taxa_list_1, values_in_taxa_list_2):
     })
 
 def compare_microbe_directory_dataframes(values_in_taxa_list_1, values_in_taxa_list_2):
-    df_final = pd.DataFrame(columns = ['variable', 'type', 'dataset', 'value', 'abundance_in', 'abundance_out', 'p-value'])
+    df_final = pd.DataFrame(columns = ['variable', 'type', 'dataset', 'value', 'abundance_in', 'abundance_out', 'p-value']) 
     for column_name in CATEGORICAL_LIST:
         taxa_list1 = values_in_taxa_list_1[column_name]
         taxa_list2 = values_in_taxa_list_2[column_name]
         values_list = (values_in_taxa_list_1[column_name] + values_in_taxa_list_1[column_name]).unique()
+        dict1 = {} 
+        dict2 = {}
+        [dict1.update({values_in_taxa_list_1.at[key,column_name] : values_in_taxa_list_1.at[key,'WEIGHT']}) for key in values_in_taxa_list_1.index.tolist()]
+        [dict2.update({values_in_taxa_list_2.at[key,column_name] : values_in_taxa_list_2.at[key,'WEIGHT']}) for key in values_in_taxa_list_2.index.tolist()]
         for var in values_list:
-            categorical = compare_categorical(var, values_in_taxa_list_1[column_name], values_in_taxa_list_2[column_name])
+            categorical = compare_categorical_abundances(var, dict1, dict2)
             df_final = df_final.append({'variable': column_name, 'type': 'categorical', 'dataset': 'df', 'value': var, 'abundance_in': categorical[0], 'abundance_out': categorical[1], 'p-value': categorical[2]}, ignore_index = True)
     for column_name in NUMERICAL_LIST:
-        numeric = compare_numeric(values_in_taxa_list_1[column_name], values_in_taxa_list_2[column_name])
+        dict1 = {}
+        dict2 = {}
+        [dict1.update({values_in_taxa_list_1.at[key,column_name] : values_in_taxa_list_1.at[key,'WEIGHT']}) for key in values_in_taxa_list_1.index.tolist()]
+        [dict2.update({values_in_taxa_list_2.at[key,column_name] : values_in_taxa_list_2.at[key,'WEIGHT']}) for key in values_in_taxa_list_2.index.tolist()]
+        numeric = compare_numeric_abundances(dict1,dict2)
         df_final = df_final.append({'variable': column_name, 'type': 'numerical', 'dataset': 'df', 'value': 'mean', 'abundance_in': numeric[0], 'abundance_out': numeric[1], 'p-value': numeric[2]}, ignore_index = True)
     return df_final
 
-
-def compare_taxa_lists(values_in_taxa_list_1, values_in_taxa_list_2):
+def compare_taxa_lists_abundances(values_in_taxa_list_1, values_in_taxa_list_2):
     """Return a Pandas DataFrame listing differences between two taxa lists.
     The DataFrame should have the following columns:
      1. variable, the thing being compared (e.g. spore forming)
@@ -85,13 +103,16 @@ def compare_taxa_lists(values_in_taxa_list_1, values_in_taxa_list_2):
     This is a long format dataframe which means some of the data may
     be repeated.
     """
-    df1 = MICROBE_DIRECTORY.loc[values_in_taxa_list_1]
-    df2 = MICROBE_DIRECTORY.loc[values_in_taxa_list_2]
+
+    df1 = MICROBE_DIRECTORY.loc[values_in_taxa_list_1.keys()]
+    df1['WEIGHT'] = values_in_taxa_list_1.values 
+    df2 = MICROBE_DIRECTORY.loc[values_in_taxa_list_2.keys()]
+    df2['WEIGHT'] = values_in_taxa_list_2.values 
     return compare_microbe_directory_dataframes(df1, df2)
 
 if __name__ == '__main__':
     # Run some simple tests
-    cat_test_abundances = compare_categorical_abundances(
+    cat_test_abundances = compare_categorical_abundances( 
             'A',
             {'A':0.2, 'B':0.3, 'D':0.5},
             {'B':0.25, 'C':0.4, 'D':0.25, 'E':0.1}
@@ -103,4 +124,10 @@ if __name__ == '__main__':
             {4:0.2, 6:0.125, 7:0.3, 8:0.375},
     )
     print(numeric_abundances_test)
+    
 
+    taxa_lists_abundances_test = compare_taxa_lists_abundances(
+            pd.Series({MICROBE_DIRECTORY.iloc[[0]].index[0]:0.2, MICROBE_DIRECTORY.iloc[[1]].index[0]:0.1, MICROBE_DIRECTORY.iloc[[2]].index[0]:0.3,   MICROBE_DIRECTORY.iloc[[3]].index[0]:0.25, MICROBE_DIRECTORY.iloc[[4]].index[0]:0.15}),
+            pd.Series({MICROBE_DIRECTORY.iloc[[9]].index[0]:0.25, MICROBE_DIRECTORY.iloc[[10]].index[0]:0.3, MICROBE_DIRECTORY.iloc[[11]].index[0]:0.15, MICROBE_DIRECTORY.iloc[[12]].index[0]:0.2, MICROBE_DIRECTORY.iloc[[13]].index[0]:0.1})
+    )
+    print(taxa_lists_abundances_test)
