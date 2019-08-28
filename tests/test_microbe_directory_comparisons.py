@@ -92,7 +92,7 @@ class TestMicrobeDirectoryComparisons(TestCase):
 
      def test_compare_taxa_lists_abundances(self):
         taxa_list_abundances_test = compare_taxa_lists_abundances(
-            pd.Series({MICROBE_DIRECTORY.iloc[[0]].index[0]:0.2, MICROBE_DIRECTORY.iloc[[1]].index[0]:0.1, MICROBE_DIRECTORY.iloc[[2]].index[0]:0.3,   MICROBE_DIRECTORY.iloc[[3]].index[0]:0.25, MICROBE_DIRECTORY.iloc[[4]].index[0]:0.15}),
-            pd.Series({MICROBE_DIRECTORY.iloc[[9]].index[0]:0.25, MICROBE_DIRECTORY.iloc[[10]].index[0]:0.3, MICROBE_DIRECTORY.iloc[[11]].index[0]:0.15, MICROBE_DIRECTORY.iloc[[12]].index[0]:0.2, MICROBE_DIRECTORY.iloc[[13]].index[0]:0.1})
+            pd.Series({'Bacteriovorax marinus':0.2, 'Staphylococcus phage 44AHJD':0.1, 'Junonia coenia densovirus':0.3, 'Listeria phage B025':0.25, 'Prevotella copri':0.15}),
+            pd.Series({'Prevotella nigrescens':0.25, 'Mycobacterium phage PattyP':0.3, 'Clostridium asparagiforme':0.15, 'Nocardiopsis halophila':0.2, 'Cucumber Bulgarian virus':0.1})
         )
         self.assertTrue(len(taxa_list_abundances_test.columns) == 7)
