@@ -108,6 +108,7 @@ if __name__ == '__main__':
 
     print(numeric_test)
 
+
     dataframe_test = compare_microbe_directory_dataframes(
         pd.DataFrame(MICROBE_DIRECTORY.iloc[0:5, 7:30]),
         pd.DataFrame(MICROBE_DIRECTORY.iloc[9:14, 7:30]),
