@@ -15,8 +15,6 @@ from .constants import (
 def compare_microbe_directory_dataframes(values_in_taxa_list_1, values_in_taxa_list_2):
     df_final = pd.DataFrame(columns = ['variable', 'type', 'dataset', 'value', 'abundance_in', 'abundance_out', 'p-value'])
     for column_name in CATEGORICAL_LIST:
-        taxa_list1 = values_in_taxa_list_1[column_name]
-        taxa_list2 = values_in_taxa_list_2[column_name]
         values_list = (values_in_taxa_list_1[column_name] + values_in_taxa_list_1[column_name]).unique()
         for var in values_list:
             categorical = compare_categorical(var, values_in_taxa_list_1[column_name], values_in_taxa_list_2[column_name])
@@ -52,8 +50,6 @@ def compare_taxa_lists(values_in_taxa_list_1, values_in_taxa_list_2):
 def compare_microbe_directory_dataframes_abundances(values_in_taxa_list_1, values_in_taxa_list_2):
     df_final = pd.DataFrame(columns = ['variable', 'type', 'dataset', 'value', 'abundance_in', 'abundance_out', 'p-value']) 
     for column_name in CATEGORICAL_LIST:
-        taxa_list1 = values_in_taxa_list_1[column_name]
-        taxa_list2 = values_in_taxa_list_2[column_name]
         values_list = (values_in_taxa_list_1[column_name] + values_in_taxa_list_1[column_name]).unique()
         dict1 = {} 
         dict2 = {}
