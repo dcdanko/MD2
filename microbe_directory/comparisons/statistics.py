@@ -58,11 +58,11 @@ def compare_categorical_abundances(value_being_compared, values_in_taxa_list_1, 
     })
 
 def mean_ignore_nans(dictin):
-    num   = 0
+    num = 0
     denom = 0
     for key, val in dictin.items():
         if not np.isnan(key):
-            num  += key*val
+            num += key*val
             denom += val
     return num/denom if denom != 0 else 0
 
