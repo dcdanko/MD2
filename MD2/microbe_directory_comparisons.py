@@ -3,6 +3,7 @@ import numpy as np
 from scipy.stats import chisquare
 from scipy import stats
 from collections import Counter, defaultdict
+from random import choices
 import csv
 
 MICROBE_DIRECTORY = pd.read_csv(r'microbe-directory.csv', index_col=7)
@@ -220,8 +221,8 @@ if __name__ == '__main__':
         MICROBE_DIRECTORY.iloc[9:14].index.tolist(),
     )
     print(taxa_list_test)
-
-   cat_test_abundances = compare_categorical_abundances( 
+    
+    cat_test_abundances = compare_categorical_abundances( 
             'A',
             {'A':0.2, 'B':0.3, 'D':0.5},
             {'B':0.25, 'C':0.4, 'D':0.25, 'E':0.1}
