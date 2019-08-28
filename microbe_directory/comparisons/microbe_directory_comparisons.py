@@ -4,6 +4,8 @@ import pandas as pd
 from .statistics import (
     compare_categorical,
     compare_numeric,
+    compare_categorical_abundances,
+    compare_numeric_abundances,
 )
 from .constants import (
     MICROBE_DIRECTORY,
