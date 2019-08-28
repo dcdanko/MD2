@@ -21,7 +21,6 @@ def count_values_abundances(values, value_being_compared):
             x[False] += values[var]
     return x
         
-
 def compare_categorical_abundances(value_being_compared, values_in_taxa_list_1, values_in_taxa_list_2):
     stats1 = count_values_abundances(values_in_taxa_list_1, value_being_compared)
     stats1 = pd.Series(stats1)
@@ -41,11 +40,11 @@ def compare_categorical_abundances(value_being_compared, values_in_taxa_list_1, 
     })
 
 def mean_ignore_nans(dictin):
-    num   = 0
+    num  = 0
     denom = 0
     for key,val in dictin.items():
         if not np.isnan(key):
-            num   += key*val
+            num += key*val
             denom += val
     return num/denom if denom != 0 else 0
 
@@ -84,7 +83,7 @@ def compare_microbe_directory_dataframes(values_in_taxa_list_1, values_in_taxa_l
         dict2 = {}
         [dict1.update({values_in_taxa_list_1.at[key,column_name] : values_in_taxa_list_1.at[key,'WEIGHT']}) for key in values_in_taxa_list_1.index.tolist()]
         [dict2.update({values_in_taxa_list_2.at[key,column_name] : values_in_taxa_list_2.at[key,'WEIGHT']}) for key in values_in_taxa_list_2.index.tolist()]
-        numeric = compare_numeric_abundances(dict1,dict2)
+        numeric = compare_numeric_abundances(dict1, dict2)
         df_final = df_final.append({'variable': column_name, 'type': 'numerical', 'dataset': 'df', 'value': 'mean', 'abundance_in': numeric[0], 'abundance_out': numeric[1], 'p-value': numeric[2]}, ignore_index = True)
     return df_final
 
@@ -125,7 +124,6 @@ if __name__ == '__main__':
     )
     print(numeric_abundances_test)
     
-
     taxa_lists_abundances_test = compare_taxa_lists_abundances(
             pd.Series({MICROBE_DIRECTORY.iloc[[0]].index[0]:0.2, MICROBE_DIRECTORY.iloc[[1]].index[0]:0.1, MICROBE_DIRECTORY.iloc[[2]].index[0]:0.3,   MICROBE_DIRECTORY.iloc[[3]].index[0]:0.25, MICROBE_DIRECTORY.iloc[[4]].index[0]:0.15}),
             pd.Series({MICROBE_DIRECTORY.iloc[[9]].index[0]:0.25, MICROBE_DIRECTORY.iloc[[10]].index[0]:0.3, MICROBE_DIRECTORY.iloc[[11]].index[0]:0.15, MICROBE_DIRECTORY.iloc[[12]].index[0]:0.2, MICROBE_DIRECTORY.iloc[[13]].index[0]:0.1})
