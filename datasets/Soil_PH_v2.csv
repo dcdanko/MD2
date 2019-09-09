@@ -1,30 +1,3 @@
-Genus,Low pH,High pH,Drylands,Low Productivity
-Actinomycetospora,0,0,1,0
-Afifella,0,1,0,0
-Balneimo0s,0,1,1,0
-Bradyrhizobium,1,0,0,0
-Candidatus Solibacter,1,0,0,0
-DA101,0,1,0,1
-Devosia,0,0,1,0
-Ellin506,0,0,0,1
-Frankia,1,0,0,0
-Gemmata,0,1,0,0
-Geodermatophilus,0,0,1,0
-Iamia,0,1,0,0
-Kaistobacter,0,1,1,0
-Lentzea,0,1,0,0
-Mesorhizobium,0,1,0,0
-Methylobacterium,1,0,0,0
-Microlu0tus,0,1,0,0
-Modestobacter,0,0,1,0
-Mycobacterium,1,0,1,0
-Nocardioides,1,1,0,0
-Opitutus,0,1,0,0
-Phenylobacterium,1,0,0,0
-Pseudonocardia,0,1,0,0
-Rhodoplanes,1,1,0,0
-Rubrobacter,0,1,0,0
-Skermanella,0,0,1,0
-Sphingomo0s,0,0,1,1
-Steroidobacter,0,1,0,0
-Virgisporangium,0,1,0,0
+version https://git-lfs.github.com/spec/v1
+oid sha256:2a547374b5dabe10e500b7938975d3dbb75a96e92ae61ddbceb41400bf115453
+size 671
