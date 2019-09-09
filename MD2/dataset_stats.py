@@ -50,3 +50,9 @@ def dataset_stats(file, microbe_type):
     non_null = new_file.count(axis = 1) 
     stats_file = pd.DataFrame(list(zip(file['scientific_name'], non_null)), columns=['scientific_name', 'counts']) 
     return stats_file
+    
+def column_compare(file1, file2):
+    """Before and after comparisons of non-na values for column"""
+    stats1 = file1.notna().sum()
+    stats2 = file2.notna().sum()
+    return stats1, stats2
