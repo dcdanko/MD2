@@ -6,7 +6,6 @@ from collections import defaultdict
 from random import choices
 
 def compare_categorical(value_being_compared, values_in_taxa_list_1, values_in_taxa_list_2):
-    all_variables = set(values_in_taxa_list_1) | set(values_in_taxa_list_2)
     stats1 = count_values(values_in_taxa_list_1, value_being_compared)
     stats1 = pd.Series(stats1)
     stats2 = count_values(values_in_taxa_list_2, value_being_compared)
@@ -41,7 +40,6 @@ def count_values(values, value_being_compared):
     return x
 
 def compare_categorical_abundances(value_being_compared, values_in_taxa_list_1, values_in_taxa_list_2):
-    all_variables = set(values_in_taxa_list_1) | set(values_in_taxa_list_2)
     stats1 = count_values_abundances(values_in_taxa_list_1, value_being_compared)
     stats1 = pd.Series(stats1)
     stats2 = count_values_abundances(values_in_taxa_list_2, value_being_compared)
@@ -59,10 +57,19 @@ def compare_categorical_abundances(value_being_compared, values_in_taxa_list_1, 
         'p-value': a.pvalue,
     })
 
+def mean_ignore_nans(dictin):
+    num = 0
+    denom = 0
+    for key, val in dictin.items():
+        if not np.isnan(key):
+            num += key*val
+            denom += val
+    return num/denom if denom != 0 else 0
+
 def compare_numeric_abundances(values_in_taxa_list_1, values_in_taxa_list_2):
     """Retun a Pandas Series with [abundance-in, abundance-out, p-value]."""
-    mean1 = sum([key * val for key, val in values_in_taxa_list_1.items()])
-    mean2 = sum([key * val for key, val in values_in_taxa_list_2.items()])
+    mean1 = mean_ignore_nans(values_in_taxa_list_1)
+    mean2 = mean_ignore_nans(values_in_taxa_list_2)
     keyslist1 = list(values_in_taxa_list_1.keys())
     keyslist2 = list(values_in_taxa_list_2.keys())
     valueslist1 = list(values_in_taxa_list_1.values())

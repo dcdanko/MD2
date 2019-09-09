@@ -9,9 +9,9 @@ NCBI_DELIM = '\t|'  # really...
 NAMES_ENV_VAR = 'MD2_NCBI_NAMES'
 NODES_ENV_VAR = 'MD2_NCBI_NODES'
 RANKEDLINEAGE_ENV_VAR = 'MD2_NCBI_RANKEDLINEAGE'
-NAMES_DEF = join(dirname(__file__), 'ncbi_taxa_file/names.dmp.gz')
-NODES_DEF = join(dirname(__file__), 'ncbi_taxa_file/nodes.dmp.gz')
-RANKEDLINEAGE_DEF = join(dirname(__file__), 'ncbi_taxa_file/rankedlineage.dmp.gz')
+NAMES_DEF = join(dirname(__file__), 'ncbi_tree/names.dmp.gz')
+NODES_DEF = join(dirname(__file__), 'ncbi_tree/nodes.dmp.gz')
+RANKEDLINEAGE_DEF = join(dirname(__file__), 'ncbi_tree/rankedlineage.dmp.gz')
 
 
 
@@ -48,9 +48,9 @@ class NCBITaxaTree:
         all_files = glob.glob(file_path + "/*.csv")
         for filename in all_files: 
             df = pd.read_csv(open(filename, 'r'))
-            column_name, value = self.find_column(df, ncbi_file['scientific name'])
+            column_name, value = self.find_column(df, ncbi_file['scientific_name'])
             if value > 0:
-                ncbi_file  = ncbi_file.merge(df, left_on='scientific name', right_on=column_name, how='left')
+                ncbi_file  = ncbi_file.merge(df, left_on='scientific_name', right_on=column_name, how='left')
         return ncbi_file
 
     def ancestor_rank(self, rank, taxon, default=None):
@@ -60,6 +60,22 @@ class NCBITaxaTree:
             if rank == self.nodes_to_name[parent_num]['rank']:
                 return self.nodes_to_name[parent_num]['name']
             parent_num = self.parent_map[parent_num]
+        return default
+	
+    def ancestors_list(self, rank, taxon, default=None):
+        """Return the node of the ancestor for a taxon upto a given rank."""
+        rank_list = ['subspecies', 'species', 'species group', 'species subgroup', 'subgenus', 'genus', 'subfamily', 'family', 'suborder', 'order', 
+		            'subclass', 'class', 'subphylum', 'phylum', 'kingdom', 'superkingdom', 'no rank', 'varietas', 'forma', 'tribe']
+        index = rank_list.index(rank)
+        if rank_list.index(self.nodes_to_name[self._node(taxon)]['rank']) > index:
+            return default
+        else:
+            parent_num = self.parent_map[self._node(taxon)]
+            ancestor_name_list = [taxon]
+            while index >= rank_list.index(self.nodes_to_name[parent_num]['rank']):
+                ancestor_name_list.append(self.nodes_to_name[parent_num]['name'])
+                parent_num = self.parent_map[parent_num]  
+            return ancestor_name_list
         return default
 
     def microbe_taxonomy(self, taxon, default=None):
@@ -90,9 +106,13 @@ class NCBITaxaTree:
 		
     def rank_of_species(self, taxon):
         """Returns the rank and taxonomic id for a given taxon."""
-        taxon_file = {'scientific name': taxon, 'tax_id' : self._node(taxon), 
+        taxon_file = {'scientific_name': taxon, 'tax_id' : self._node(taxon), 
                       'rank': self.nodes_to_name[self._node(taxon)]['rank']}
         return taxon_file
+		
+    def genus(self, taxon, default=None):
+        """Return the genus for the given taxon."""
+        return self.ancestor_rank('genus', taxon, default=default)
 
     def rank_microbes(self, taxon, default=None):
         """Returns the rank and taxonomic id for a given microbial taxon."""
@@ -112,6 +132,7 @@ class NCBITaxaTree:
         if taxon == 'root':
             return default
         return self.microbe_taxonomy(taxon, default=None)
+		
 
     def _tree(self, taxa):
         queue, tree = {self._node(el) for el in taxa}, {}
@@ -180,5 +201,3 @@ class NCBITaxaTree:
                         parent = None
                     parent_map[node] = parent
         return cls(parent_map, names_to_nodes, nodes_to_name), sci_name
-	
-    
