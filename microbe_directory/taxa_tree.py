@@ -9,9 +9,9 @@ NCBI_DELIM = '\t|'  # really...
 NAMES_ENV_VAR = 'MD2_NCBI_NAMES'
 NODES_ENV_VAR = 'MD2_NCBI_NODES'
 RANKEDLINEAGE_ENV_VAR = 'MD2_NCBI_RANKEDLINEAGE'
-NAMES_DEF = join(dirname(__file__), 'ncbi_taxa_file/names.dmp.gz')
-NODES_DEF = join(dirname(__file__), 'ncbi_taxa_file/nodes.dmp.gz')
-RANKEDLINEAGE_DEF = join(dirname(__file__), 'ncbi_taxa_file/rankedlineage.dmp.gz')
+NAMES_DEF = join(dirname(__file__), 'ncbi_tree/names.dmp.gz')
+NODES_DEF = join(dirname(__file__), 'ncbi_tree/nodes.dmp.gz')
+RANKEDLINEAGE_DEF = join(dirname(__file__), 'ncbi_tree/rankedlineage.dmp.gz')
 
 
 

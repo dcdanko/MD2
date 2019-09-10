@@ -111,7 +111,7 @@ def update_bacteria(file, out):
                 file_name.loc[file_name['scientific_name']==rows['scientific_name'], 'spore_forming'] = 'Never'
         #Update Gram_Stain in a Mixed approach based on Genus
         if taxa_tree.ancestors_list('genus', rows['scientific_name'], default=None) != None:
-            ancestors = taxa_tree.ancestors_list('genus', rows['scientific_name'], default=None).copy()
+            ancestors = taxa_tree.ancestors_list('genus', rows['scientific_name'], default=None)
             df_val = file_name[file_name['scientific_name'].isin(ancestors)]
             if 'Positive' in df_val['gram_stain'].values:
                 file_name.loc[file_name['scientific_name'].isin(ancestors), 'gram_stain'] = 'Positive'
@@ -138,7 +138,7 @@ def clean_file(microbe, file, out):
 @click.argument('out', type=click.File('w'))
 def metasub_preprocess(feature_name, subtext, file, metadata_file, out):
     """Construct a table to integrate MetaSUB data based on chosen feature"""
-    file_name = tbl = pd.read_csv(filename, index_col=0) 
+    file_name = pd.read_csv(file, index_col=0) 
     compiled_metasub = metasub_process(file_name, metadata_file, feature_name, subtext)
     compiled_metasub.to_csv(out)
 	
@@ -157,15 +157,16 @@ def dataset_preprocess(feature_name, subtext, file, biom_file, metadata_file, ou
 @main.command('column-compare')
 @click.argument('file1', type=click.File('r'))
 @click.argument('file2', type=click.File('r'))
-def dataset_column_compare(file1, file2):
+@click.argument('out', type=click.File('w'))
+def dataset_column_compare(file1, file2, out):
     """Compare the before and after statistics of a file"""
     file_data_1 = pd.read_csv(file1)
     file_data_2 = pd.read_csv(file2)
     file_data_1 = file_data_1.replace(r'^\s*$', np.nan, regex=True)
     file_data_2 = file_data_2.replace(r'^\s*$', np.nan, regex=True)
     stats1, stats2 = column_compare(file_data_1, file_data_2)
-    stats1.to_csv('column_stats_before.csv')
-    stats2.to_csv('column_stats_after.csv')
+    stats = pd.concat([stats1, stats2], axis=1)
+    stats.to_csv(out)
 
 if __name__ == '__main__':
     main()
