@@ -167,7 +167,7 @@ python setup.py install
 ## Building NCBI taxonomic table
 Command line usage	
 ```	
-MD2 filter-microbes <output-file>	
+microbe_directory filter-microbes <output-file>	
 ```
 The following outputs the taxonomy of all available Bacteria and Viruses from the NCBI dmp files. The table consists of the scientific name and classification from phylum-species level along with the unique taxonomic id.
 
@@ -181,6 +181,13 @@ The following outputs individual files for Bacteria, Viruses and Fungi merging N
 ## Cleaning the file
 Command line usage	
 ```	
-MD2 clean-file <input-file> <output-file>	
+microbe_directory clean-file <input-file> <output-file>	
 ```
 The input file consists of the file generated from previous step. The output contains clean, merged file dropping unimportant columns and rows. 
+
+## Update Bacteria Columns
+The Spore formation and Gram Negative columns are updated. Also, OTU tables are updated filling up Genus->Species. 
+
+```
+microbe_directory update-bacteria <input-file> <output-file>
+```
