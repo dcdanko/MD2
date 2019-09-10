@@ -1,5 +1,6 @@
 import click
 import pandas as pd
+import numpy as np
 import csv
 from .taxa_tree import NCBITaxaTree
 from .clean_table import (
@@ -17,6 +18,7 @@ from .dataset_modification import (
 from .dataset_stats import (
     verify_column_names,
     dataset_stats,
+    column_compare,
     )
 	
 @click.group()
@@ -152,6 +154,18 @@ def dataset_preprocess(feature_name, subtext, file, biom_file, metadata_file, ou
     compiled_metasub = convert_taxa_tree(file, biom_file, metadata_file, feature_name, subtext)
     compiled_metasub.to_csv(out)
     
+@main.command('column-compare')
+@click.argument('file1', type=click.File('r'))
+@click.argument('file2', type=click.File('r'))
+def dataset_column_compare(file1, file2):
+    """Compare the before and after statistics of a file"""
+    file_data_1 = pd.read_csv(file1)
+    file_data_2 = pd.read_csv(file2)
+    file_data_1 = file_data_1.replace(r'^\s*$', np.nan, regex=True)
+    file_data_2 = file_data_2.replace(r'^\s*$', np.nan, regex=True)
+    stats1, stats2 = column_compare(file_data_1, file_data_2)
+    stats1.to_csv('column_stats_before.csv')
+    stats2.to_csv('column_stats_after.csv')
 
 if __name__ == '__main__':
     main()
