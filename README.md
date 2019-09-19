@@ -191,3 +191,31 @@ The Spore formation and Gram Negative columns are updated. Also, OTU tables are 
 ```
 microbe_directory update-bacteria <input-file> <output-file>
 ```
+
+### Dataset Creation with OTU File
+If you have Biom File, the reference OTU file and metadata file, you can generate a table to reflect the various studies/feature. All input should be in csv and the biom file can be converted to csv using QIIME previously.
+
+```
+microbe_directory dataset-preprocessing [options] <otu-file> <biom-file> <metadata-file> <output-file>
+```
+
+### Dataset Creation for WGS File
+When proper metadata is present, species file for desired feature can be obtained as follows.
+
+```
+microbe_directory metasub-preprocessing [options] <file> <metadata-file> <output-file>
+```
+
+### Column Statistics
+The column statistics for before and after file can be obtained by the following.
+
+```
+microbe_directory column-compare <before-file> <after-file> <output-file>
+```
+
+### Row Statistics
+How many columns for a particular species is filled.
+
+```
+microbe_directory stats-file <options> <file> <output-file>
+```
