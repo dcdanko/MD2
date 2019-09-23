@@ -167,7 +167,7 @@ python setup.py install
 ## Building NCBI taxonomic table
 Command line usage	
 ```	
-MD2 filter-microbes <output-file>	
+microbe_directory filter-microbes <output-file>	
 ```
 The following outputs the taxonomy of all available Bacteria and Viruses from the NCBI dmp files. The table consists of the scientific name and classification from phylum-species level along with the unique taxonomic id.
 
@@ -181,6 +181,41 @@ The following outputs individual files for Bacteria, Viruses and Fungi merging N
 ## Cleaning the file
 Command line usage	
 ```	
-MD2 clean-file <input-file> <output-file>	
+microbe_directory clean-file <input-file> <output-file>	
 ```
 The input file consists of the file generated from previous step. The output contains clean, merged file dropping unimportant columns and rows. 
+
+## Update Bacteria Columns
+The Spore formation and Gram Negative columns are updated. Also, OTU tables are updated filling up Genus->Species. 
+
+```
+microbe_directory update-bacteria <input-file> <output-file>
+```
+
+### Dataset Creation with OTU File
+If you have Biom File, the reference OTU file and metadata file, you can generate a table to reflect the various studies/feature. All input should be in csv and the biom file can be converted to csv using QIIME previously.
+
+```
+microbe_directory dataset-preprocessing [options] <otu-file> <biom-file> <metadata-file> <output-file>
+```
+
+### Dataset Creation for WGS File
+When proper metadata is present, species file for desired feature can be obtained as follows.
+
+```
+microbe_directory metasub-preprocessing [options] <file> <metadata-file> <output-file>
+```
+
+### Column Statistics
+The column statistics for before and after file can be obtained by the following.
+
+```
+microbe_directory column-compare <before-file> <after-file> <output-file>
+```
+
+### Row Statistics
+How many columns for a particular species is filled.
+
+```
+microbe_directory stats-file <options> <file> <output-file>
+```

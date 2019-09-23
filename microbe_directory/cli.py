@@ -117,6 +117,15 @@ def update_bacteria(file, out):
                 file_name.loc[file_name['scientific_name'].isin(ancestors), 'gram_stain'] = 'Positive'
             elif 'Negative'  in df_val['gram_stain'].values:
                 file_name.loc[file_name['scientific_name'].isin(ancestors), 'gram_stain'] = 'Negative'           
+        #Update EMP dataset based on Top-Down approach 
+        if rank_list.index(rows['rank']) < rank_list.index('genus'):
+            filter_col = [rows for rows in file_name if rows.startswith('emp')]
+            for cols in filter_col:
+                ancestors = taxa_tree.genus(rows['scientific_name'], default=None)
+                genus_value = file_name[file_name['scientific_name'] == ancestors][cols].values
+                if len(genus_value)>=1:
+                    if genus_value[0].notna():
+                        file_name.loc[file_name['scientific_name']==rows['scientific_name'], cols] = str(str(genus_value[0]) + ' in Genus')
     file_name.to_csv(out)
  
 @main.command('stats-file')
