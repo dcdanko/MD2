@@ -5,15 +5,15 @@ import csv
 from .taxa_tree import NCBITaxaTree
 from .clean_table import (
     reduce_col,
-    reduce_row,
-    rename_col,
     rename_MD1_tables,
     modify_dataset_value,
 	clean_count_datasets,
+    file_clean,
 	)
 from .dataset_modification import (
     metasub_process,
     convert_taxa_tree,
+    taxa_to_organism,
 	)
 from .dataset_stats import (
     verify_column_names,
@@ -63,26 +63,34 @@ def annotate(microbes, file_path):
     col_names = ['scientific_name', 'taxonomic_id', 'rank']
     annotated = pd.DataFrame.from_dict(viruses, columns=col_names, orient='index')
     annotated = taxa_tree.data_table(file_path, annotated)
+    annotated['non_null'] = annotated.count(axis = 1) 
+    annotated = annotated[annotated['non_null'] > 3]
+    annotated.reset_index(drop=True)
     annotated.to_csv("NCBI_Virus_rank.csv")
     annotated = pd.DataFrame.from_dict(bacteria, columns=col_names, orient='index')
-    annotate = taxa_tree.data_table(file_path, annotated)
-    annotate.to_csv("NCBI_Bacteria_rank.csv")
+    annotated = taxa_tree.data_table(file_path, annotated)
+    annotated['non_null'] = annotated.count(axis = 1)
+    annotated = annotated[annotated['non_null'] > 3]
+    annotated.reset_index(drop=True)
+    annotated.to_csv("NCBI_Bacteria_rank.csv")
     annotated = pd.DataFrame.from_dict(fungi, columns=col_names, orient='index')
     annotated = taxa_tree.data_table(file_path, annotated)
+    annotated['non_null'] = annotated.count(axis = 1)
+    annotated = annotated[annotated['non_null'] > 3]
+    annotated.reset_index(drop=True)
     annotated.to_csv("NCBI_Fungi_rank.csv")
 	
 @main.command('clean-file')
-@click.option('--isvirus', default=False, help='Whether the file contains virus')
 @click.argument('file', type=click.File('r'))
 @click.argument('out', type=click.File('w'))
-def clean_file(isvirus, file, out):
+def clean_file(file, out):
     """Clean up data-table to be used for Microbe Directory 2.0 and above"""
-    file_name = pd.read_csv(file, index_col=False)
+    file_name = pd.read_csv(file, index_col=0)
     header = list(file_name.columns.values)
-    remove_col_file = reduce_col(isvirus, file_name)  
-    remove_row_file = reduce_row(isvirus, remove_col_file)
-    remove_row_file = remove_row_file.replace('nan', '')
-    remove_row_file.to_csv(out)
+    cleaned_file = file_clean(file_name)  
+    cleaned_file = cleaned_file.replace('nan', '')
+    cleaned_file.reset_index()
+    cleaned_file.to_csv(out)
 
 @main.command('update-bacteria')
 @click.argument('file', type=click.File('r'))
@@ -119,13 +127,14 @@ def update_bacteria(file, out):
                 file_name.loc[file_name['scientific_name'].isin(ancestors), 'gram_stain'] = 'Negative'           
         #Update EMP dataset based on Top-Down approach 
         if rank_list.index(rows['rank']) < rank_list.index('genus'):
-            filter_col = [rows for rows in file_name if rows.startswith('emp')]
+            filter_col = [rows for rows in file_name if (rows.startswith('emp') or rows.startswith('count'))]
             for cols in filter_col:
-                ancestors = taxa_tree.genus(rows['scientific_name'], default=None)
-                genus_value = file_name[file_name['scientific_name'] == ancestors][cols].values
-                if len(genus_value)>=1:
-                    if genus_value[0].notna():
-                        file_name.loc[file_name['scientific_name']==rows['scientific_name'], cols] = str(str(genus_value[0]) + ' in Genus')
+                if pd.isnull(rows[cols]) == True:
+                    ancestors = taxa_tree.genus(rows['scientific_name'], default=None)
+                    genus_value = file_name[file_name['scientific_name'] == ancestors][cols].values
+                    if len(genus_value)>=1:
+                        if pd.isnull(genus_value[0]) == False:
+                            file_name.loc[file_name['scientific_name']==rows['scientific_name'], cols] = str(str(genus_value[0]) + ' in Genus')
     file_name.to_csv(out)
  
 @main.command('stats-file')
@@ -160,8 +169,9 @@ def metasub_preprocess(feature_name, subtext, file, metadata_file, out):
 @click.argument('out', type=click.File('w'))
 def dataset_preprocess(feature_name, subtext, file, biom_file, metadata_file, out):
     """Construct a table to integrate other datasets based on chosen features"""
-    compiled_metasub = convert_taxa_tree(file, biom_file, metadata_file, feature_name, subtext)
-    compiled_metasub.to_csv(out)
+    compiled_dateset = convert_taxa_tree(file, biom_file, metadata_file, feature_name)
+    compiled_dataset = compiled_dataset.add_prefix(subtext)
+    compiled_dataset.to_csv(out)
     
 @main.command('column-compare')
 @click.argument('file1', type=click.File('r'))
@@ -174,7 +184,7 @@ def dataset_column_compare(file1, file2, out):
     file_data_1 = file_data_1.replace(r'^\s*$', np.nan, regex=True)
     file_data_2 = file_data_2.replace(r'^\s*$', np.nan, regex=True)
     stats1, stats2 = column_compare(file_data_1, file_data_2)
-    stats = pd.concat([stats1, stats2], axis=1)
+    stats = pd.concat([stats1, stats2], sort=False, names=['title', 'before', 'after'], axis=1)
     stats.to_csv(out)
 
 if __name__ == '__main__':
