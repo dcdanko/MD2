@@ -3,6 +3,9 @@ from os.path import join, dirname
 import gzip
 import glob
 import pandas as pd
+from .dataset_modification import (
+    taxa_to_organism,
+    )
 
 
 NCBI_DELIM = '\t|'  # really...
@@ -48,6 +51,9 @@ class NCBITaxaTree:
         all_files = glob.glob(file_path + "/*.csv")
         for filename in all_files: 
             df = pd.read_csv(open(filename, 'r'))
+            df.columns = map(str.lower, df.columns)
+            if ('species' in df.columns or 'genus' in df.columns) and 'class' in df.columns:
+                df = taxa_to_organism(df)
             column_name, value = self.find_column(df, ncbi_file['scientific_name'])
             if value > 0:
                 ncbi_file  = ncbi_file.merge(df, left_on='scientific_name', right_on=column_name, how='left')
