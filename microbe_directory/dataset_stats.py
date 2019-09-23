@@ -56,11 +56,3 @@ def column_compare(file1, file2):
     stats1 = file1.notna().sum()
     stats2 = file2.notna().sum()
     return stats1, stats2
-	
-	
-	
-	
-	
-	
-	
-    
