@@ -44,51 +44,27 @@ TMD aims to:
 
 ## <x name="third">Features</x>
 
-Since microbial communities are phenotypic and genetically diverse, microbial features are stipulated by kingdom.
+Since microbial communities are phenotypic and genetically diverse, microbial features are stipulated by domain.
 
 #### Virus
-1. Extremophile: a microbe that thrives in physically or geochemically extreme conditions that are detrimental to most life on Earth.
-2. If extremophile, which type.
-   * Acidophile: Microbes that live in acidic systems with pH -0.06 to 4.0.
-   * Alkaliphile:  Microbes capable of survival in alkaline environments with pH 8.5–11 
-   * Halophile:  Microbes that thrive in high salt concentrations. 
-   * Metallotolerant: Microbes that survive in environments with a high concentration of dissolved heavy metals in solution
-   * Barophile: Also called piezophile, are microbes which thrive at high pressures such as deep seas.
-   * Psychrophile: Also called cryophiles, are microbes capable of growth in low temperatures, ranging from −20°C to 10°C.
-   * Radioresistant: Microbes capable of withstand high levels of ionizing radiation.
-   * Thermophile: Mircobes that live at high temperatures between 41°C and 122°C.
-   * Xerophile: Microbes that grow and reproduce in conditions with a low availability of water.
-   * Hypolith: Organisms that live underneath rocks in cold deserts.
-   * Oligotroph: Microbes capable of growth in nutritionally limited environments.
-3. Genetic material: Virus have either RNA or DNA as their genetic material
-4. Strand: The nucleic acid may be single (*ss*) or double stranded (*ds*).
-5. Capsid: The outer layer of a virus that protects the nucleic acid. Virus without capsid are called naked.
-6. Capsid symmetry: The way in which the capsid units are arranged.
+
+1. Genetic material: Virus have either RNA or DNA as their genetic material
+2. Strand: The nucleic acid may be single (*ss*) or double stranded (*ds*).
+3. Capsid symmetry: The way in which the capsid units are arranged.
   * Helical 
   * Icosahedral
   * Complex
-7. Is it a pathogen? If yes, which is its host.
+4. Envelop: The outer layer of a virus that protects the nucleic acid. Virus without envelop are called naked.
+5. Is it a pathogen? If yes, which is its host.
    * Human
    * Animal
-   * Fungi
    * Plant
-   * Bacteria
-   * Protozoa
-
-#### Bacteria
-
-1. Gram stain: Used to distinguish and classify bacterial species into two large groups: Gram-positive and Gram-negative. 
 
 #### Bacteria and Archaea
 
-2. Known antimicrobial resistance (AMR): Antimicrobial resistance occurs naturally over time, usually through genetic changes. However, the misuse and overuse of antimicrobials is accelerating this process. Information about microbes with antimicrobial resistance are increasingly relevant.
-3. Biofilm forming: Biofilms are multicellular communities held together by a self-produced extracellular matrix.  Biofilms impact humans in many ways as they can form in natural, medical, and industrial settings.
-4. Is it a pathogen? If yes, which is its host.
-   * Human
-   * Animal
-   * Fungi
-   * Plant
-5. Type of metabolisms:  the nutrition mode of microbes according to the sources of energy and carbon needed for living, growth and reproduction. All sorts of combinations may exist in nature.
+1. Gram stain: Used to distinguish and classify bacterial species into two large groups: Gram-positive and Gram-negative. 
+2. Antimicrobial resistance (AMR): Antimicrobial resistance occurs naturally over time, usually through genetic changes. However, the misuse and overuse of antimicrobials is accelerating this process. 
+3. Type of metabolisms:  the nutrition mode of microbes according to the sources of energy and carbon needed for living, growth and reproduction. All sorts of combinations may exist in nature.
    * Primary source of energy:
      * Phototrophs: Light is absorbed in photo receptors and transformed into chemical energy
      * Chemotrophs: Bond energy is released from a chemical compound.
@@ -99,27 +75,16 @@ Since microbial communities are phenotypic and genetically diverse, microbial fe
      * Heterotrophs: Organic compounds are metabolized to get carbon for growth and development.
      * Autotrophs: Carbon dioxide (CO2) is used as source of carbon.
 
+
 #### Bacteria, Archaea and Eukarya
 
-6. Extremophile: a microbe that thrives in physically or geochemically extreme conditions that are detrimental to most life on Earth.
-7. If extremophile, which type.
-   * Acidophile: Microbes that live in acidic systems with pH -0.06 to 4.0.
-   * Alkaliphile:  Microbes capable of survival in alkaline environments with pH 8.5–11 
-   * Halophile:  Microbes that thrive in high salt concentrations. 
-   * Metallotolerant: Microbes that survive in environments with a high concentration of dissolved heavy metals in solution
-   * Barophile: Also called piezophile, are microbes which thrive at high pressures such as deep seas.
-   * Psychrophile: Also called cryophiles, are microbes capable of growth in low temperatures, ranging from −20°C to 10°C.
-   * Radioresistant: Microbes capable of withstand high levels of ionizing radiation.
-   * Thermophile: Microbes that live at high temperatures between 41°C and 122°C.
-   * Xerophile: Microbes that grow and reproduce in conditions with a low availability of water.
-   * Hypolith: Organisms that live underneath rocks in cold deserts.
-   * Oligotroph: Microbes capable of growth in nutritionally limited environments.
-8. Microbiome: Host or environment where microbes are usually found.
+1. Biofilm forming: Biofilms are multicellular communities held together by a self-produced extracellular matrix.  Biofilms impact humans in many ways as they can form in natural, medical, and industrial settings.
+2. Spore forming: Also referred to as endospores, are the dormant form of vegetative microbes and are highly resistant to physical and chemical influences.
+3. Microbiome: Host or environment where microbes are usually found.
    * Host: Microbes might be commensal or pathogenic to their host. Commensal microbes are found to be crucial to the survival of their hosts.
      * Sponges
      * Corals
      * Fungi
-     * Lichen
      * Plant
      * Animal
      * Human: Body sites of [Human Microbiome Project](https://www.hmpdacc.org/hmp/) 
@@ -135,11 +100,33 @@ Since microbial communities are phenotypic and genetically diverse, microbial fe
      * Desert
      * Polar
      * Deep ocean
+     * Space
    * Water: Water can support the growth of many types of microorganisms. Microbes are main drivers of biogeochemical processes and nutrient cycling. 
      * Ocean
      * Fresh
      * Mangrove
      * Sediments
+4. Is it a pathogen? if Yes, which is its host:
+     * Sponges
+     * Corals
+     * Fungi
+     * Plant
+     * Animal
+     * Human: Body sites of [Human Microbiome Project](https://www.hmpdacc.org/hmp/) 
+5. Extremophile: a microbe that thrives in physically or geochemically extreme conditions that are detrimental to most life on Earth. Microbes that can only live under optimal conditions are called Mesophiles.
+6. If extremophile, which type.
+   * Acidophile: Microbes that live in acidic systems with pH -0.06 to 4.0.
+   * Alkaliphile:  Microbes capable of survival in alkaline environments with pH 8.5–11 
+   * Halophile:  Microbes that thrive in high salt concentrations. 
+   * Metallotolerant: Microbes that survive in environments with a high concentration of dissolved heavy metals in solution
+   * Barophile: Also called piezophile, are microbes which thrive at high pressures such as deep seas.
+   * Psychrophile: Also called cryophiles, are microbes capable of growth in low temperatures, ranging from −20°C to 10°C.
+   * Radioresistant: Microbes capable of withstand high levels of ionizing radiation.
+   * Thermophile: Microbes that live at high temperatures between 41°C and 122°C.
+   * Xerophile: Microbes that grow and reproduce in conditions with a low availability of water.
+   * Hypolith: Organisms that live underneath rocks in cold deserts.
+   * Oligotroph: Microbes capable of growth in nutritionally limited environments.
+
 
 
 ## Installation	
