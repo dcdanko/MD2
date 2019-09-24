@@ -10,7 +10,7 @@ TMD aims to:
 
 >* Provide a curated list of microbes from three kingdoms: Archaea, Bacteria and Eukarya
 >* Compile microbial data from different [databases](#first) and [studies](#second) into a single one
->* Give a phenotypic and ecologic description of microbial species [features](#third).
+>* Give a phenotypic and ecologic description of microbial species [parameters](#third).
 >* Make microbial data handy to everyone!
 
 ---
@@ -42,7 +42,7 @@ TMD aims to:
 
 ---
 
-## <x name="third">Features</x>
+## <x name="third">Parameters</x>
 
 Since microbial communities are phenotypic and genetically diverse, microbial features are stipulated by domain.
 
