@@ -1,0 +1,14 @@
+Bifunctional transcriptional activator/DNA repair enzyme Ada
+Bifunctional transcriptional activator/DNA repair enzyme AdaA
+DNA mismatch repair protein MutH
+DNA mismatch repair protein MutL
+DNA mismatch repair protein MutS
+DNA repair protein RadA
+DNA repair protein RecN
+DNA repair protein RecO
+DNA replication and repair protein RecF
+Multifunctional non-homologous end joining DNA repair protein LigD
+putative bifunctional transcriptional activator/DNA repair enzyme AlkA
+Spore photoproduct lyase
+Transcription-repair-coupling factor
+Very short patch repair protein
