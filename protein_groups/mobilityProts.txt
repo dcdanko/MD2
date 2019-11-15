@@ -1,0 +1,76 @@
+A-type flagellin
+B-type flagellar hook-associated protein 2
+B-type flagellin
+Chemotaxis protein CheA
+Chemotaxis protein CheV
+Chemotaxis protein CheW
+Chemotaxis protein CheY
+Chemotaxis protein CheY 
+Chemotaxis protein LafT
+Chemotaxis protein LafU
+Chemotaxis protein methyltransferase
+Chemotaxis protein methyltransferase 1
+Chemotaxis protein methyltransferase Cher2
+Chemotaxis protein PomA
+Chemotaxis response regulator protein-glutamate methylesterase
+Chemotaxis response regulator protein-glutamate methylesterase of group 1 operon
+Chemotaxis response regulator protein-glutamate methylesterase of group 2 operon
+Flagella basal body P-ring formation protein FlgA
+Flagellar assembly protein FliX
+Flagellar basal body rod protein FlgB
+Flagellar basal-body rod protein FlgC
+Flagellar basal-body rod protein FlgF
+Flagellar basal-body rod protein FlgG
+Flagellar biosynthesis protein FlhA
+Flagellar biosynthesis protein FlhF
+Flagellar biosynthetic protein FlhB
+Flagellar biosynthetic protein FliP
+Flagellar brake protein YcgR
+Flagellar FliJ protein
+Flagellar FliL protein
+Flagellar hook-associated protein 1
+Flagellar hook-associated protein 2
+Flagellar hook-associated protein 3
+Flagellar hook-basal body complex protein FliE
+Flagellar hook protein FlgE
+Flagellar L-ring protein
+Flagellar motor switch protein FliG
+Flagellar motor switch protein FliM
+Flagellar motor switch protein FliN
+Flagellar M-ring protein
+Flagellar P-ring protein
+Flagellar protein FliO
+Flagellar protein FliT
+Flagellar secretion chaperone FliS
+Flagellar transcriptional regulator FlhC
+Flagellar transcriptional regulator FlhD
+Flagellin
+flagellum biosynthesis repressor protein FlbT
+Flagellum site-determining protein YlxH
+Flagellum-specific ATP synthase
+Methyl-accepting chemotaxis protein 2
+Methyl-accepting chemotaxis protein 4
+Methyl-accepting chemotaxis protein CtpH
+Methyl-accepting chemotaxis protein CtpL
+Methyl-accepting chemotaxis protein I
+Methyl-accepting chemotaxis protein II
+Methyl-accepting chemotaxis protein III
+Methyl-accepting chemotaxis protein IV
+Methyl-accepting chemotaxis protein McpA
+Methyl-accepting chemotaxis protein McpB
+Methyl-accepting chemotaxis protein McpC
+Methyl-accepting chemotaxis protein McpH
+Methyl-accepting chemotaxis protein McpP
+Methyl-accepting chemotaxis protein McpU
+Methyl-accepting chemotaxis protein PctA
+Methyl-accepting chemotaxis protein PctB
+Motility gene repressor MogR
+Motility protein A
+Motility protein B
+RNA polymerase sigma factor for flagellar operon
+Swarming motility protein SwrC
+Swarming motility regulation protein RssB
+Swarming motility regulation sensor protein RssA
+Twitching mobility protein
+Type IV pilus biogenesis and competence protein PilQ
+Type IV pilus biogenesis factor PilY1
