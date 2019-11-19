@@ -134,7 +134,7 @@ class NCBITaxaTree:
 
     def all_names(self):
         """Return a list of all scientific names in the tree. Order not guaranteed."""
-        return list(names_to_nodes.keys())
+        return list(self.names_to_nodes.keys())
 
     @classmethod
     def parse_files(cls, names_filename=None, nodes_filename=None):
