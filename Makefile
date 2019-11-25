@@ -9,26 +9,26 @@ help:
 	@echo "test - run unit tests"
 
 clean: 
-	rm -r build
+	rm -r results
 
 virus:
-	mkdir -p build/virus
-	microbe_directory taxa-table -s viruses > build/virus/viruses_taxa.csv
-	microbe_directory merge-csvs build/virus/viruses_taxa.csv datasets/*.csv > build/virus/viruses_merged.csv
-	microbe_directory clean-file build/virus/viruses_merged.csv > build/virus/viruses_cleaned.csv
+	mkdir -p results/virus
+	microbe_directory taxa-table -s viruses > results/virus/viruses_taxa.csv
+	microbe_directory merge-csvs results/virus/viruses_taxa.csv datasets/*.csv > results/virus/viruses_merged.csv
+	microbe_directory clean-file results/virus/viruses_merged.csv > results/virus/viruses_cleaned.csv
 
 bact:
-	mkdir -p build/bacts
-	microbe_directory taxa-table -s bacteria > build/bacts/bacteria_taxa.csv
-	microbe_directory merge-csvs build/bacts/bacteria_taxa.csv datasets/*.csv > build/bacts/bacteria_merged.csv
-	microbe_directory infill-bacteria build/bacts/bacteria_merged.csv > build/bacts/bacteria_filled.csv
-	microbe_directory clean-file build/bacts/bacteria_filled.csv > build/bacts/bacteria_cleaned.csv
+	mkdir -p results/bacts
+	microbe_directory taxa-table -s bacteria > results/bacts/bacteria_taxa.csv
+	microbe_directory merge-csvs results/bacts/bacteria_taxa.csv datasets/*.csv > results/bacts/bacteria_merged.csv
+	microbe_directory infill-bacteria results/bacts/bacteria_merged.csv > results/bacts/bacteria_filled.csv
+	microbe_directory clean-file results/bacts/bacteria_filled.csv > results/bacts/bacteria_cleaned.csv
 
 euks:
-	mkdir -p build/euks
-	microbe_directory taxa-table -s eukaryota > build/euks/eukaryota_taxa.csv
-	microbe_directory merge-csvs build/euks/eukaryota_taxa.csv datasets/*.csv > build/euks/eukaryota_merged.csv
-	microbe_directory clean-file build/euks/eukaryota_merged.csv > build/euks/eukaryota_cleaned.csv
+	mkdir -p results/euks
+	microbe_directory taxa-table -s eukaryota > results/euks/eukaryota_taxa.csv
+	microbe_directory merge-csvs results/euks/eukaryota_taxa.csv datasets/*.csv > results/euks/eukaryota_merged.csv
+	microbe_directory clean-file results/euks/eukaryota_merged.csv > results/euks/eukaryota_cleaned.csv
 
 all: virus fungi bact
 
