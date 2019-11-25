@@ -9,7 +9,7 @@ help:
 	@echo "test - run unit tests"
 
 clean: 
-	rm -r results
+	rm -r results | exit 0
 
 virus:
 	mkdir -p results/virus
@@ -30,7 +30,7 @@ euks:
 	microbe_directory merge-csvs results/euks/eukaryota_taxa.csv datasets/*.csv > results/euks/eukaryota_merged.csv
 	microbe_directory clean-file results/euks/eukaryota_merged.csv > results/euks/eukaryota_cleaned.csv
 
-all: virus fungi bact
+all: virus euks bact
 
 test:
 	pytest tests
