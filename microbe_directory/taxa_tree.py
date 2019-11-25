@@ -59,16 +59,36 @@ class NCBITaxaTree:
             parent_num = self.parent_map[parent_num]
         return default
 
+    def ancestors(self, taxon, max_rank=ROOT_RANK):
+        return self.ancestors_list(taxon, max_rank=max_rank)
+
     def ancestors_list(self, taxon, max_rank=ROOT_RANK):
         """Return a phylogenetically sorted list of ancestors of taxon including taxon."""
         max_rank_index = RANK_LIST.index(max_rank)
-        if RANK_LIST.index(self.rank(taxon)) > max_rank_index:
+        try:
+            rank = self.rank(taxon)
+            taxon_rank_index = RANK_LIST.index(rank)
+        except ValueError:
+            raise TaxonomicRankError(f'Requested rank {rank} is not in rank list.')
+        if taxon_rank_index > max_rank_index:
             raise TaxonomicRankError(f'Requested rank {rank} is above {taxon}.')
         parent_num = self.parent_map[self._node(taxon)]
+        parent_rank = self.nodes_to_name[parent_num]['rank']
+        try:
+            rank_index = RANK_LIST.index(parent_rank)
+        except ValueError:
+            rank_index = -1
         ancestor_name_list = [taxon]
-        while max_rank_index >= RANK_LIST.index(self.nodes_to_name[parent_num]['rank']):
+        while max_rank_index > rank_index:
             ancestor_name_list.append(self.nodes_to_name[parent_num]['name'])
+            if int(parent_num) == 1:  # root
+                break
             parent_num = self.parent_map[parent_num]
+            parent_rank = self.nodes_to_name[parent_num]['rank']
+            try:
+                rank_index = RANK_LIST.index(parent_rank)
+            except ValueError:
+                rank_index = -1
         return ancestor_name_list
 
     def canonical_taxonomy(self, taxon):
@@ -81,6 +101,10 @@ class NCBITaxaTree:
                 out[rank] = ancestor
         out = {rank: ancestor_rank(rank, taxon)}
         return out
+
+    def phylum(self, taxon, default=None):
+        """Return the phylum for the given taxon."""
+        return self.ancestor_rank('phylum', taxon, default=default)
 
     def genus(self, taxon, default=None):
         """Return the genus for the given taxon."""

@@ -5,7 +5,7 @@ from microbe_directory.taxa_tree import NCBITaxaTree, TaxonomicRankError
 from microbe_directory.clean_table import file_clean
 from microbe_directory.dataset_modification import taxa_to_organism
 from microbe_directory.infill_fields import infill_bacterial_fields
-from microbe_directory.constants import DOMAINS
+from microbe_directory.constants import DOMAINS, FUNGI
 
 from .cli_preprocessing import preprocessing
 from .cli_stats import stats
@@ -45,9 +45,10 @@ def annotate(outfile, superkingdom):
     out_table = {}
     for taxon in taxa_tree.all_names():
         try:
-            taxon_id, rank, taxon_superkingdom = taxa_tree.place_microbes(taxon)
+            taxon_id, rank, taxon_superkingdom = taxa_tree.place_microbe(taxon)
             if taxon_superkingdom.lower() == superkingdom:
-                out_table[taxon] = (taxon, taxon_id, rank)
+                if superkingdom != FUNGI.lower() or 'Fungi' in taxa_tree.ancestors(taxon):
+                    out_table[taxon] = (taxon, taxon_id, rank)
         except TaxonomicRankError:
             pass
     annotated = pd.DataFrame.from_dict(
@@ -58,7 +59,7 @@ def annotate(outfile, superkingdom):
     annotated.to_csv(outfile)
 
 
-def __find_name_column(self, df, scientific_names):
+def __find_name_column(df, scientific_names):
     """Return a tuple of (name_column, overla_size)."""
     max_overlap, name_col_name = -1, None
     for col_name in df.columns:
@@ -76,16 +77,17 @@ def __find_name_column(self, df, scientific_names):
 @click.argument('csv_files', nargs=-1, type=click.File('r'))
 def merge_csv_files(outfile, master_table, csv_files):
     master_table = pd.read_csv(master_table)
-    for csv_file in csv_files:
-        df = pd.read_csv(csv_file)
-        df.columns = [col.lower() for col in df.columns]
-        if ('species' in df.columns or 'genus' in df.columns) and 'class' in df.columns:
-            df = taxa_to_organism(df)
-        col_name, overlap_size = __find_name_column(df, set(master_table['scientific_name']))
-        if overlap_size > 0:
-            master_table = master_table.merge(
-                df, left_on='scientific_name', right_on=col_name, how='left'
-            )
+    with click.progressbar(csv_files) as pbar:
+        for csv_file in pbar:
+            df = pd.read_csv(csv_file)
+            df.columns = [col.lower() for col in df.columns]
+            if ('species' in df.columns or 'genus' in df.columns) and 'class' in df.columns:
+                df = taxa_to_organism(df)
+            col_name, overlap_size = __find_name_column(df, set(master_table['scientific_name']))
+            if overlap_size > 0:
+                master_table = master_table.merge(
+                    df, left_on='scientific_name', right_on=col_name, how='left'
+                )
     master_table.to_csv(outfile)
 
 

@@ -1,9 +1,12 @@
 
 import pandas as pd
+import numpy as np
+
 from scipy.stats import chisquare
 from scipy import stats
 from collections import defaultdict
 from random import choices
+
 
 def compare_categorical(value_being_compared, values_in_taxa_list_1, values_in_taxa_list_2):
     stats1 = count_values(values_in_taxa_list_1, value_being_compared)
@@ -17,6 +20,7 @@ def compare_categorical(value_being_compared, values_in_taxa_list_1, values_in_t
         'p-value': a.pvalue,
     })
 
+
 def compare_numeric(values_in_taxa_list_1, values_in_taxa_list_2):
     """Retun a Pandas Series with [abundance-in, abundance-out, p-value]."""
     mean1 = values_in_taxa_list_1.mean()
@@ -28,6 +32,7 @@ def compare_numeric(values_in_taxa_list_1, values_in_taxa_list_2):
         'p-value': a.pvalue,
     })
 
+
 def count_values(values, value_being_compared):
     x = defaultdict(float)
     for var in [True, False]:
@@ -38,6 +43,7 @@ def count_values(values, value_being_compared):
         else:
             x[False] += 1
     return x
+
 
 def compare_categorical_abundances(value_being_compared, values_in_taxa_list_1, values_in_taxa_list_2):
     stats1 = count_values_abundances(values_in_taxa_list_1, value_being_compared)
@@ -57,6 +63,7 @@ def compare_categorical_abundances(value_being_compared, values_in_taxa_list_1, 
         'p-value': a.pvalue,
     })
 
+
 def mean_ignore_nans(dictin):
     num = 0
     denom = 0
@@ -66,6 +73,7 @@ def mean_ignore_nans(dictin):
             denom += val
     return num/denom if denom != 0 else 0
 
+
 def compare_numeric_abundances(values_in_taxa_list_1, values_in_taxa_list_2):
     """Retun a Pandas Series with [abundance-in, abundance-out, p-value]."""
     mean1 = mean_ignore_nans(values_in_taxa_list_1)
@@ -74,14 +82,15 @@ def compare_numeric_abundances(values_in_taxa_list_1, values_in_taxa_list_2):
     keyslist2 = list(values_in_taxa_list_2.keys())
     valueslist1 = list(values_in_taxa_list_1.values())
     valueslist2 = list(values_in_taxa_list_2.values())
-    tenthousand_samples1 = choices(keyslist1, valueslist1, k = 10**4)
-    tenthousand_samples2 = choices(keyslist2, valueslist2, k = 10**4)
+    tenthousand_samples1 = choices(keyslist1, valueslist1, k=10**4)
+    tenthousand_samples2 = choices(keyslist2, valueslist2, k=10**4)
     a = stats.ks_2samp(tenthousand_samples1, tenthousand_samples2)
     return pd.Series({
-        'abundance_in': mean1, 
+        'abundance_in': mean1,
         'abundance_out': mean2,
         'p-value': a.pvalue,
     })
+
 
 def count_values_abundances(values, value_being_compared):
     x = defaultdict(float)
