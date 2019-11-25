@@ -4,10 +4,9 @@ from os.path import dirname, join
 # Biological constants
 ROOT_RANK = 'root'
 RANK_LIST = [
-    'subspecies', 'species', 'species group', 'species subgroup', 'subgenus',
-    'genus', 'subfamily', 'family', 'suborder', 'order', 'subclass', 'class',
-    'subphylum', 'phylum', 'kingdom', 'superkingdom', 'no rank', 'varietas',
-    'forma', 'tribe', ROOT_RANK
+    'forma', 'varietas', 'subspecies', 'species', 'species group', 'species subgroup', 'subgenus',
+    'genus', 'tribe', 'subfamily', 'family', 'suborder', 'cohort', 'order', 'infraclass', 'subclass',
+    'class', 'subphylum', 'phylum', 'subkingdom', 'kingdom', 'superkingdom', 'no rank', ROOT_RANK
 ]
 CANONICAL_RANKS = ['species', 'genus', 'family', 'order', 'class', 'phylum', 'kingdom']
 SPORE_FORMING_GENERA = [
@@ -28,9 +27,9 @@ NON_SPORE_FORMING_GENERA = [
     'Dehalobacter', 'Anaerofilum', 'Acetivibrio', 'Acetanaerobacterium',
     'Fastidiosipila', 'Papillibacter', 'Subdoligranulum',
 ]
-VIRUS = 'Virus'
+VIRUS = 'Viruses'
 BACTERIA = 'Bacteria'
-FUNGI = 'Fungi'
+FUNGI = 'Eukaryota'
 ALLOWED_SUPERKINGDOMS = [VIRUS, BACTERIA, FUNGI]
 DOMAINS = [el.lower() for el in ALLOWED_SUPERKINGDOMS]
 
