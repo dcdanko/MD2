@@ -1,4 +1,5 @@
 import pandas as pd
+import click
 
 REGEX_COLUMN = [
     'specie',
@@ -29,11 +30,12 @@ REGEX_COUNT_COL = [
 def file_clean(tbl):
     column_clean = reduce_col(tbl)
     tbl_renamed = modify_dataset_value(column_clean)
-    new_tbl = tbl_renamed.groupby(['scientific_name', 'taxonomic_id', 'rank'], as_index=True)
-    new_tbl = new_tbl.agg(lambda x: ', '.join(repr(e) for e in set(x)))
+    new_tbl = tbl_renamed.drop_duplicates(
+        subset=['scientific_name', 'taxonomic_id', 'rank']
+    )  # not likely to actually be duplicates
     new_tbl = new_tbl.replace('nan, ', '', regex=True)
     new_tbl = new_tbl.replace('\'', '').replace('[', '').replace(']', '')
-    new_tbl = new_tbl.applymap(lambda x: x.replace('\'', ''))
+    new_tbl = new_tbl.applymap(lambda x: x.replace('\'', '') if isinstance(x, str) else x)
     return new_tbl
 
 
