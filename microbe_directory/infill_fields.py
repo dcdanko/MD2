@@ -19,7 +19,7 @@ def infill_bacterial_fields(table):
      - Presence of relevant genus in the EMP
     """
     table = table.copy(deep=True)
-    taxa_tree, sci_name = NCBITaxaTree.parse_files()
+    taxa_tree = NCBITaxaTree.parse_files()
     for index, row in table.iterrows():
         scientific_name = row['scientific_name']
         genera = taxa_tree.genus(scientific_name, default=None)
