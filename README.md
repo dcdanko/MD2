@@ -1,50 +1,21 @@
 # The Microbe Directory v2.0
 *The ultimate microbe database*
 
-Microbes include all unicellular organisms and so are extremely rich and diverse.
-
-
 **The Microbe Directory (TMD)** is a collective research effort to profile and annotate more than 30,000 microbial species that include Bacteria, Archaea, Virus, Fungi, and Algae.
 
 TMD aims to:
 
->* Provide a curated list of microbes from three kingdoms: Archaea, Bacteria and Eukarya
+>* Provide a curated list of microbes from four domains: Virus, Archaea, Bacteria and Eukarya
 >* Compile microbial data from different [databases](#first) and [studies](#second) into a single one
 >* Give a phenotypic and ecologic description of microbial species [parameters](#third).
->* Make microbial data handy to everyone!
+>* Provide a community portal to add data and annotate new microbes
+>* Make a machine and human readable database 
 
 ---
 
-## <a name="first">Databases</a>
+## <x name="third">The Database</x>
 
-* [Global Biodiversity Information Facility- GBIF](https://www.gbif.org/) an international network aimed to provide open access to data about all types of life on Earth. 
-* [Virus-Host DB](https://www.genome.jp/virushostdb) a database about the relationships between viruses and their hosts.
-* [HaloDom](http://halodom.bio.auth.gr) a database for halophilic organisms.
-* [The Mycology Collections data Portal- MyCoPortal](http://mycoportal.org/portal/index.php) a network of universities, botanical gardens, museums, and agencies that provide taxonomic, environmental, and specimen-based information of Fungi.
-* [BioCyc Database Collection](https://biocyc.org) a collection of Pathway/Genome Databases for Bacteria.
-* [ISHAM Barcoding Database](http://its.mycologylab.org) a database for human/animal pathogenic fungal species.
-* [FungiDB](https://fungidb.org/fungidb/) an integrated genomic and functional genomic database for Fungi. Includes experimental and environmental isolate sequence data.
-* [RefSoil](https://www.nature.com/articles/ismej2016168#Sec6): A soil microbiome database
-
----
-
-## <b name="second">Studies</b>
-
-* [MetaSUB](http://metasub.org): Molecular profile of cities around the globe to improve their design, functionality, and impact on health. 
-* [Earth Microbiome Project](http://www.earthmicrobiome.org): Characterization of microbial communities around the globe.
-* [TARA Oceans](http://ocean-microbiome.embl.de/companion.html):  Metagenomic study of oceans samples in epipelagic and mesopelagic waters across the globe.
-* [Soil bacterial and fungal communities across a pH gradient in an arable soil](https://qiita.ucsd.edu/study/description/94): Soils collected across a long-term liming experiment (pH 4.0-8.3).
-* [The ecology of the phyllosphere](https://qiita.ucsd.edu/study/description/396): Bacterial communities from leaves of 56 tree species in Boulder, Colorado, USA.
-* [Characterization of Airborne Microbial Communities at a High-Elevation Site and Their Potential To Act as Atmospheric Ice Nuclei](http://dx.doi.org/10.1128/AEM.00447-09): Atmospheric microbial abundance, community composition, and ice nucleation at a high-elevation site in northwestern Colorado.
-* [Microbial community composition in a lowland tropical rain forest- Costa Rica](https://doi.org/10.1016/j.soilbio.2010.08.011): Plot-scale manipulations of organic matter inputs to soils correlate with shifts in microbial community composition in a lowland tropical rain forest.
-* [Microbial communities on money](https://qiita.ucsd.edu/study/description/375)
-
-
----
-
-## <x name="third">Parameters</x>
-
-Since microbial communities are phenotypic and genetically diverse, microbial features are stipulated by domain.
+Different features are important for different types of Microbe. It doesn't make much sense to talk about the Gram-Stain of a Virus or the Capsid symmetry of a Bacteria. To make data as relevant as possible we have split the data in **The Microbe Directory** into three domains.
 
 #### Virus
 
@@ -60,7 +31,7 @@ Since microbial communities are phenotypic and genetically diverse, microbial fe
    * Animal
    * Plant
 
-#### Bacteria and Archaea
+#### Bacteria and Archaea Only
 
 1. Gram stain: Used to distinguish and classify bacterial species into two large groups: Gram-positive and Gram-negative. 
 2. Antimicrobial resistance (AMR): Antimicrobial resistance occurs naturally over time, usually through genetic changes. However, the misuse and overuse of antimicrobials is accelerating this process. 
@@ -127,9 +98,48 @@ Since microbial communities are phenotypic and genetically diverse, microbial fe
    * Hypolith: Organisms that live underneath rocks in cold deserts.
    * Oligotroph: Microbes capable of growth in nutritionally limited environments.
 
+---
 
+## Data Sources
 
-## Installation	
+### <a name="first">Databases</a>
+
+**The Microbe Directory** collates data from a number of other databases. Some databases directly provide information about microbes. These databases include annotations for a number of different types of microbial traits.
+
+* [Global Biodiversity Information Facility- GBIF](https://www.gbif.org/) an international network aimed to provide open access to data about all types of life on Earth. 
+* [Virus-Host DB](https://www.genome.jp/virushostdb) a database about the relationships between viruses and their hosts.
+* [HaloDom](http://halodom.bio.auth.gr) a database for halophilic organisms.
+* [The Mycology Collections data Portal- MyCoPortal](http://mycoportal.org/portal/index.php) a network of universities, botanical gardens, museums, and agencies that provide taxonomic, environmental, and specimen-based information of Fungi.
+* [BioCyc Database Collection](https://biocyc.org) a collection of Pathway/Genome Databases for Bacteria.
+* [ISHAM Barcoding Database](http://its.mycologylab.org) a database for human/animal pathogenic fungal species.
+* [FungiDB](https://fungidb.org/fungidb/) an integrated genomic and functional genomic database for Fungi. Includes experimental and environmental isolate sequence data.
+* [RefSoil](https://www.nature.com/articles/ismej2016168#Sec6): A soil microbiome database
+
+### <b name="second">Studies</b>
+
+**The Microbe Directory** also includes collated results from a number of projects on microbial communities. These studies are condensed into summary results describing the settings where a microbe may be found.
+
+* [MetaSUB](http://metasub.org): Molecular profile of cities around the globe to improve their design, functionality, and impact on health. 
+* [Earth Microbiome Project](http://www.earthmicrobiome.org): Characterization of microbial communities around the globe.
+* [TARA Oceans](http://ocean-microbiome.embl.de/companion.html):  Metagenomic study of oceans samples in epipelagic and mesopelagic waters across the globe.
+* [Soil bacterial and fungal communities across a pH gradient in an arable soil](https://qiita.ucsd.edu/study/description/94): Soils collected across a long-term liming experiment (pH 4.0-8.3).
+* [The ecology of the phyllosphere](https://qiita.ucsd.edu/study/description/396): Bacterial communities from leaves of 56 tree species in Boulder, Colorado, USA.
+* [Characterization of Airborne Microbial Communities at a High-Elevation Site and Their Potential To Act as Atmospheric Ice Nuclei](http://dx.doi.org/10.1128/AEM.00447-09): Atmospheric microbial abundance, community composition, and ice nucleation at a high-elevation site in northwestern Colorado.
+* [Microbial community composition in a lowland tropical rain forest- Costa Rica](https://doi.org/10.1016/j.soilbio.2010.08.011): Plot-scale manipulations of organic matter inputs to soils correlate with shifts in microbial community composition in a lowland tropical rain forest.
+* [Microbial communities on money](https://qiita.ucsd.edu/study/description/375)
+
+---
+
+## Installation	and Use 
+
+**The Microbe Directory** may be accessed as a set of csv files. We also provide an API to provide programmatic access to **The Microbe Directory**. This API includes several statistical functions meant to compare microbial communities based on their annotated traits.
+
+### Installation
+
+From PyPi
+```
+pip install microbe_directory
+```
 
 From source	
 ```	
@@ -138,58 +148,19 @@ cd MD2
 python setup.py install	
 ```
 
-## Building NCBI taxonomic table
-Command line usage	
-```	
-microbe_directory filter-microbes <output-file>	
+### Building TMD Tables from Source Databases
+
+TMD uses `make` to build tables, see the Makefile for details.
+```
+make clean  # delete the current tables
+make test   # run unit tests
+make all    # make  all tables
+make bact   # make bateria/archaea table
+make euks   # make eukaryotic table
+make virus  # make viral table
 ```
 The following outputs the taxonomy of all available Bacteria and Viruses from the NCBI dmp files. The table consists of the scientific name and classification from phylum-species level along with the unique taxonomic id.
 
-## Merging NCBI files with all given datasets
-Command line usage	
-```	
-MD2 annotate-taxa <file-path>	
-```
-The following outputs individual files for Bacteria, Viruses and Fungi merging NCBI unique taxonomic id, scientific name and the rank with the above mentioned databases. The file path for the following should be a folder containing all the databases intended to be merged. The dataset folder contains the merged databases.
+## License and Use
 
-## Cleaning the file
-Command line usage	
-```	
-microbe_directory clean-file <input-file> <output-file>	
-```
-The input file consists of the file generated from previous step. The output contains clean, merged file dropping unimportant columns and rows. 
-
-## Update Bacteria Columns
-The Spore formation and Gram Negative columns are updated. Also, OTU tables are updated filling up Genus->Species. 
-
-```
-microbe_directory update-bacteria <input-file> <output-file>
-```
-
-### Dataset Creation with OTU File
-If you have Biom File, the reference OTU file and metadata file, you can generate a table to reflect the various studies/feature. All input should be in csv and the biom file can be converted to csv using QIIME previously.
-
-```
-microbe_directory dataset-preprocessing [options] <otu-file> <biom-file> <metadata-file> <output-file>
-```
-
-### Dataset Creation for WGS File
-When proper metadata is present, species file for desired feature can be obtained as follows.
-
-```
-microbe_directory metasub-preprocessing [options] <file> <metadata-file> <output-file>
-```
-
-### Column Statistics
-The column statistics for before and after file can be obtained by the following.
-
-```
-microbe_directory column-compare <before-file> <after-file> <output-file>
-```
-
-### Row Statistics
-How many columns for a particular species is filled.
-
-```
-microbe_directory stats-file <options> <file> <output-file>
-```
+All original material in TMD is provided under the MIT License. Some of the source databases may have restrictions on commercial use.
