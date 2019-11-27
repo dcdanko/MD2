@@ -108,7 +108,7 @@ def clean_file(outfile, file):
 @click.argument('table', type=click.File('r'))
 def update_bacteria(outfile, table):
     """Parse NCBI File to fill a column which exhibits certain hierarchical traits"""
-    table = pd.read_csv(table, index_col=False)
+    table = pd.read_csv(table, index_col=1, dtype=str)
     table = infill_bacterial_fields(table)
     table.to_csv(outfile)
 

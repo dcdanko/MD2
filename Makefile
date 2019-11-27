@@ -14,21 +14,24 @@ clean:
 virus:
 	mkdir -p results/virus
 	microbe_directory taxa-table -s viruses > results/virus/viruses_taxa.csv
-	microbe_directory merge-csvs results/virus/viruses_taxa.csv datasets/*.csv > results/virus/viruses_merged.csv
+	microbe_directory merge-csvs results/virus/viruses_taxa.csv datasets/virus/*.csv> results/virus/viruses_merged.csv
 	microbe_directory clean-file results/virus/viruses_merged.csv > results/virus/viruses_cleaned.csv
+	cp results/virus/viruses_cleaned.csv results/viruses.csv
 
 bact:
 	mkdir -p results/bacts
 	microbe_directory taxa-table -s bacteria > results/bacts/bacteria_taxa.csv
-	microbe_directory merge-csvs results/bacts/bacteria_taxa.csv datasets/*.csv > results/bacts/bacteria_merged.csv
-	microbe_directory infill-bacteria results/bacts/bacteria_merged.csv > results/bacts/bacteria_filled.csv
-	microbe_directory clean-file results/bacts/bacteria_filled.csv > results/bacts/bacteria_cleaned.csv
+	microbe_directory merge-csvs results/bacts/bacteria_taxa.csv datasets/bact/*.csv > results/bacts/bacteria_merged.csv
+	microbe_directory clean-file results/bacts/bacteria_merged.csv > results/bacts/bacteria_cleaned.csv
+	microbe_directory infill-bacteria results/bacts/bacteria_cleaned.csv > results/bacts/bacteria_filled.csv
+	cp results/bacts/bacteria_filled.csv results/bacteria.csv
 
 euks:
 	mkdir -p results/euks
 	microbe_directory taxa-table -s eukaryota > results/euks/eukaryota_taxa.csv
-	microbe_directory merge-csvs results/euks/eukaryota_taxa.csv datasets/*.csv > results/euks/eukaryota_merged.csv
+	microbe_directory merge-csvs results/euks/eukaryota_taxa.csv datasets/euks/*.csv > results/euks/eukaryota_merged.csv
 	microbe_directory clean-file results/euks/eukaryota_merged.csv > results/euks/eukaryota_cleaned.csv
+	cp results/euks/eukaryota_cleaned.csv results/eukaryota.csv
 
 all: virus euks bact
 
