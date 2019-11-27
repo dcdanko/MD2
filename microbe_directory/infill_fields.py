@@ -22,6 +22,7 @@ def infill_bacterial_fields(table):
     taxa_tree = NCBITaxaTree.parse_files()
     for index, row in table.iterrows():
         scientific_name = row['scientific_name']
+        rank = taxa_tree.rank(scientific_name)
         genera = taxa_tree.genus(scientific_name, default=None)
         levels_below_genus = RANK_LIST.index('genus') - RANK_LIST.index(rank)
 
