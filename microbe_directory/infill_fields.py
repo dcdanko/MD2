@@ -7,7 +7,45 @@ from microbe_directory.constants import (
     RANK_LIST,
     SPORE_FORMING_GENERA,
     NON_SPORE_FORMING_GENERA,
+    PHYLUM_GRAM_STAINS,
 )
+
+
+def spore_forming(scientific_name):
+    genus = taxa_tree.genus(scientific_name, default=None)
+    if genus:
+        if genus in SPORE_FORMING_GENERA:
+            return 'Always'
+        elif genus in NON_SPORE_FORMING_GENERA:
+            return 'Never'
+    return None
+
+
+def gram_stain(scientific_name):
+    try:
+        rank = taxa_tree.rank(scientific_name)
+    except KeyError:
+        return None
+    phylum = taxa_tree.phylum(scientific_name, default=None)
+    try:
+        return PHYLUM_GRAM_STAINS[phylum]
+    except KeyError:
+        pass
+    return None
+
+
+def infill_emp_col_func(col):
+    def infill_emp_col(scientific_name):
+        genus = taxa_tree.genus(scientific_name, default=None)
+        if genus:
+            try:
+                genus_value = col[genus]
+                if genus_value and str(genus_value).lower() not in ['nan', 'na', 'n/a', '']:
+                    return f'{genus_value} in Genus'
+            except KeyError:
+                pass
+        return None
+    return infill_emp_col
 
 
 def infill_bacterial_fields(table):
@@ -24,43 +62,11 @@ def infill_bacterial_fields(table):
         if col.startswith('emp') or col.startswith('count')
     ]
     taxa_tree = NCBITaxaTree.parse_files()
-    
-    for index, row in table.iterrows():
-        scientific_name = index  # row['scientific_name']
-        try:
-            rank = taxa_tree.rank(scientific_name)
-        except KeyError:
-            continue
-        genera = taxa_tree.genus(scientific_name, default=None)
-        levels_below_genus = RANK_LIST.index('genus') - RANK_LIST.index(rank)
 
-        # Update Spore_Forming in a Top-Down approach based on Genus
-        if levels_below_genus >= 0:
-            if genera in SPORE_FORMING_GENERA:
-                table.loc[index, 'spore_forming'] = 'Always'
-            elif genera in NON_SPORE_FORMING_GENERA:
-                table.loc[index, 'spore_forming'] = 'Never'
+    table['spore_forming'] = table['spore_forming'].fillna(table.index.map(spore_forming))
+    table['gram_stain'] = table['gram_stain'].fillna(table.index.map(gram_stain))
+    for col in emp_cols:
+        filler_func = infill_emp_col_func(col)
+        table[col] = table[col].fillna(table.index.map(filler_func))
 
-        # Update Gram_Stain in a Mixed approach based on Genus
-        ancestor_list = taxa_tree.ancestors_list(scientific_name)
-        if ancestor_list:
-            for ancestor in ancestor_list[:-1:-1]:
-                ancestor_stain = table.loc[ancestor]['gram_stain']
-                if 'Positive' == ancestor_stain:
-                    table.loc[scientific_name, 'gram_stain'] = 'Positive'
-                    break
-                elif 'Negative' == ancestor_stain:
-                    table.loc[scientific_name, 'gram_stain'] = 'Negative'
-                    break
-
-        # Update EMP dataset based on Top-Down approach
-        if levels_below_genus >= 1:
-            for col in emp_cols:
-                if pd.isnull(row[col]):
-                    try:
-                        genus_value = table.loc[genera, col]
-                        if genus_value and str(genus_value).lower() not in ['nan', 'na', 'n/a', '']:
-                            table.loc[scientific_name, col] = f'{genus_value} in Genus'
-                    except KeyError:
-                        pass
     return table

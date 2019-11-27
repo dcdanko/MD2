@@ -27,6 +27,48 @@ NON_SPORE_FORMING_GENERA = [
     'Dehalobacter', 'Anaerofilum', 'Acetivibrio', 'Acetanaerobacterium',
     'Fastidiosipila', 'Papillibacter', 'Subdoligranulum',
 ]
+
+NEG = 'Negative'
+POS = 'Positive'
+PHYLUM_GRAM_STAINS = {
+    'Bacteroidetes': NEG,
+    'Chlorobi': NEG,
+    'Cyanobacteria': NEG,
+    'Proteobacteria': NEG,
+    'Firmicutes': POS,
+    'Deinococcus-Thermus': POS,
+    'Actinobacteria': POS,
+    'Fusobacteria': NEG,
+    'Nitrospirae': None,
+    'Acidobacteria': None,
+    'Fibrobacteres': NEG,
+    'Thermodesulfobacteria': None,
+    'Caldiserica': None,
+    'Armatimonadetes': NEG,
+    'Dictyoglomi': NEG,
+    'Deferribacteres': NEG,
+    'Verrucomicrobia': None,
+    'Chrysiogenetes': None,
+    'Kiritimatiellaeota': None,
+    'Aquificae': NEG,
+    'Thermotogae': NEG,
+    'Chloroflexi': NEG,
+    'Planctomycetes': NEG,
+    'Spirochaetes': None,
+    'Chlamydiae': NEG,
+    'Lentisphaerae': None,
+    'Synergistetes': NEG,
+    'Tenericutes': None,
+    'Ignavibacteriae': None,
+    'Nitrospinae': None,
+    'Rhodothermaeota': None,
+    'Calditrichaeota': None,
+    'Balneolaeota': None,
+    'Abditibacteriota': None,
+    'Coprothermobacterota': None,
+}
+
+
 VIRUS = 'Viruses'
 BACTERIA = 'Bacteria'
 FUNGI = 'Eukaryota'
