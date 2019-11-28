@@ -4,13 +4,14 @@
 Microbes include all unicellular organisms and so are extremely rich and diverse.
 
 
-**The Microbe Directory (TMD)** is a collective research effort to profile and annotate more than 30,000 microbial species that include Bacteria, Archaea, Virus, Fungi, and Algae.
+**The Microbe Directory (TMD)** is a collective research effort to profile and annotate more than 200,000 microbial species that include Bacteria, Archaea, Virus, Fungi, and Algae.
 
 TMD aims to:
 
->* Provide a curated list of microbes from three kingdoms: Archaea, Bacteria and Eukarya
->* Compile microbial data from different [databases](#first) and [studies](#second) into a single one
+>* Provide a curated list of microbes from three domains: Archaea, Bacteria, Eukarya and Virus.
+>* Compile microbial data from different [databases](#first) and [studies](#second) into a single one.
 >* Give a phenotypic and ecologic description of microbial species [parameters](#third).
+>* Annonante the microbiome where taxa have been identified.
 >* Make microbial data handy to everyone!
 
 ---
@@ -21,7 +22,7 @@ TMD aims to:
 * [Virus-Host DB](https://www.genome.jp/virushostdb) a database about the relationships between viruses and their hosts.
 * [HaloDom](http://halodom.bio.auth.gr) a database for halophilic organisms.
 * [The Mycology Collections data Portal- MyCoPortal](http://mycoportal.org/portal/index.php) a network of universities, botanical gardens, museums, and agencies that provide taxonomic, environmental, and specimen-based information of Fungi.
-* [BioCyc Database Collection](https://biocyc.org) a collection of Pathway/Genome Databases for Bacteria.
+* [BioCyC Database Collection](https://biocyc.org) a collection of Pathway/Genome Databases for Bacteria.
 * [ISHAM Barcoding Database](http://its.mycologylab.org) a database for human/animal pathogenic fungal species.
 * [FungiDB](https://fungidb.org/fungidb/) an integrated genomic and functional genomic database for Fungi. Includes experimental and environmental isolate sequence data.
 * [RefSoil](https://www.nature.com/articles/ismej2016168#Sec6): A soil microbiome database
@@ -37,7 +38,6 @@ TMD aims to:
 * [The ecology of the phyllosphere](https://qiita.ucsd.edu/study/description/396): Bacterial communities from leaves of 56 tree species in Boulder, Colorado, USA.
 * [Characterization of Airborne Microbial Communities at a High-Elevation Site and Their Potential To Act as Atmospheric Ice Nuclei](http://dx.doi.org/10.1128/AEM.00447-09): Atmospheric microbial abundance, community composition, and ice nucleation at a high-elevation site in northwestern Colorado.
 * [Microbial community composition in a lowland tropical rain forest- Costa Rica](https://doi.org/10.1016/j.soilbio.2010.08.011): Plot-scale manipulations of organic matter inputs to soils correlate with shifts in microbial community composition in a lowland tropical rain forest.
-* [Microbial communities on money](https://qiita.ucsd.edu/study/description/375)
 
 
 ---
