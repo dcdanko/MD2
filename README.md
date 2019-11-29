@@ -1,7 +1,6 @@
 # The Microbe Directory v2.0
 *The ultimate microbe database*
 
-
 **The Microbe Directory (TMD)** is a collective research effort to profile and annotate more than 200,000 microbial species that include Bacteria, Archaea, Virus, Fungi, and Algae.
 
 TMD aims to:
@@ -154,6 +153,36 @@ Different features are important for different types of Microbe. It doesn't make
 ### <b name="second">Studies</b>
 
 **The Microbe Directory** also includes collated results from a number of projects on microbial communities. These studies are condensed into summary results describing the settings where a microbe may be found.
+<<<<<<< HEAD
+
+* [MetaSUB](http://metasub.org): Molecular profile of cities around the globe to improve their design, functionality, and impact on health. 
+* [Earth Microbiome Project](http://www.earthmicrobiome.org): Characterization of microbial communities around the globe.
+* [TARA Oceans](http://ocean-microbiome.embl.de/companion.html):  Metagenomic study of oceans samples in epipelagic and mesopelagic waters across the globe.
+* [Soil bacterial and fungal communities across a pH gradient in an arable soil](https://qiita.ucsd.edu/study/description/94): Soils collected across a long-term liming experiment (pH 4.0-8.3).
+* [The ecology of the phyllosphere](https://qiita.ucsd.edu/study/description/396): Bacterial communities from leaves of 56 tree species in Boulder, Colorado, USA.
+* [Characterization of Airborne Microbial Communities at a High-Elevation Site and Their Potential To Act as Atmospheric Ice Nuclei](http://dx.doi.org/10.1128/AEM.00447-09): Atmospheric microbial abundance, community composition, and ice nucleation at a high-elevation site in northwestern Colorado.
+* [Microbial community composition in a lowland tropical rain forest- Costa Rica](https://doi.org/10.1016/j.soilbio.2010.08.011): Plot-scale manipulations of organic matter inputs to soils correlate with shifts in microbial community composition in a lowland tropical rain forest.
+* [Microbial communities on money](https://qiita.ucsd.edu/study/description/375)
+
+---
+
+## Installation	and Use 
+
+**The Microbe Directory** may be accessed as a set of csv files. We also provide an API to provide programmatic access to **The Microbe Directory**. This API includes several statistical functions meant to compare microbial communities based on their annotated traits.
+
+### Installation
+
+From PyPi
+```
+pip install microbe_directory
+```
+
+From source	
+```	
+git clone https://github.com/dcdanko/MD2	
+cd MD2	
+python setup.py install	
+=======
 
 * [MetaSUB](http://metasub.org): Molecular profile of cities around the globe to improve their design, functionality, and impact on health. 
 * [Earth Microbiome Project](http://www.earthmicrobiome.org): Characterization of microbial communities around the globe.
@@ -194,9 +223,28 @@ make all    # make  all tables
 make bact   # make bateria/archaea table
 make euks   # make eukaryotic table
 make virus  # make viral table
+>>>>>>> 28730154519877cf233172208ca4d76b2c71057c
+```
+The following outputs the taxonomy of all available Bacteria and Viruses from the NCBI dmp files. The table consists of the scientific name and classification from phylum-species level along with the unique taxonomic id.
+
+<<<<<<< HEAD
+### Building TMD Tables from Source Databases
+
+TMD uses `make` to build tables, see the Makefile for details.
+```
+make clean  # delete the current tables
+make test   # run unit tests
+make all    # make  all tables
+make bact   # make bateria/archaea table
+make euks   # make eukaryotic table
+make virus  # make viral table
 ```
 The following outputs the taxonomy of all available Bacteria and Viruses from the NCBI dmp files. The table consists of the scientific name and classification from phylum-species level along with the unique taxonomic id.
 
 ## License and Use
 
+=======
+## License and Use
+
+>>>>>>> 28730154519877cf233172208ca4d76b2c71057c
 All original material in TMD is provided under the MIT License. Some of the source databases may have restrictions on commercial use.
