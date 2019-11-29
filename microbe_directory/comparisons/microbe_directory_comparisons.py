@@ -55,8 +55,8 @@ def compare_microbe_directory_dataframes_abundances(values_in_taxa_list_1, value
         values_list = (values_in_taxa_list_1[column_name] + values_in_taxa_list_1[column_name]).unique()
         dict1 = {} 
         dict2 = {}
-        [dict1.update({values_in_taxa_list_1.at[key,column_name] : values_in_taxa_list_1.at[key,'WEIGHT']}) for key in values_in_taxa_list_1.index.tolist()]
-        [dict2.update({values_in_taxa_list_2.at[key,column_name] : values_in_taxa_list_2.at[key,'WEIGHT']}) for key in values_in_taxa_list_2.index.tolist()]
+        [dict1.update({values_in_taxa_list_1.at[key, column_name]: values_in_taxa_list_1.at[key, 'WEIGHT']}) for key in values_in_taxa_list_1.index.tolist()]
+        [dict2.update({values_in_taxa_list_2.at[key, column_name]: values_in_taxa_list_2.at[key, 'WEIGHT']}) for key in values_in_taxa_list_2.index.tolist()]
         for var in values_list:
             categorical = compare_categorical_abundances(var, dict1, dict2)
             df_final = df_final.append({'variable': column_name, 'type': 'categorical', 'dataset': 'df', 'value': var, 'abundance_in': categorical[0], 'abundance_out': categorical[1], 'p-value': categorical[2]}, ignore_index = True)

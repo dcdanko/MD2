@@ -8,6 +8,7 @@ from os.path import join, dirname
 from microbe_directory.comparisons import (
     compare_microbe_directory_dataframes,
     compare_taxa_lists,
+    compare_taxa_lists_abundances
 )
 from microbe_directory.comparisons.statistics import (
     compare_categorical,
@@ -29,8 +30,8 @@ class TestMicrobeDirectoryComparisons(TestCase):
         """Test that we can run UMAP."""
         categorical_test = compare_categorical(
             'yes',
-             pd.Series(['yes', 'yes', 'no', 'yes', 'yes']),
-             pd.Series(['no', 'no', 'no', 'yes', 'yes', 'no', 'no']),
+            pd.Series(['yes', 'yes', 'no', 'yes', 'yes']),
+            pd.Series(['no', 'no', 'no', 'yes', 'yes', 'no', 'no']),
         )
         self.assertTrue(0 <= categorical_test['p-value'].all() <= 1)
         self.assertTrue(0 < categorical_test['abundance_in'].all())
@@ -63,19 +64,19 @@ class TestMicrobeDirectoryComparisons(TestCase):
             pd.DataFrame(MICROBE_DIRECTORY.iloc[9:14, 7:30]),
         )
         self.assertTrue(len(dataframe_test.columns) == 7)
-    
+
     def test_compare_taxa_lists(self):
         taxa_list_test = compare_taxa_lists(
             MICROBE_DIRECTORY.iloc[0:5].index.tolist(),
             MICROBE_DIRECTORY.iloc[9:14].index.tolist(),
         )
         self.assertTrue(len(taxa_list_test.columns) == 7)
-    
+
     def test_compare_categorical_abundances(self):
         cat_abundances_test = compare_categorical_abundances(
             'A',
-            {'A':0.2, 'B':0.3, 'C':0.5},
-            {'B':0.25, 'C':0.4, 'D':0.25, 'E':0.1},
+            {'A': 0.2, 'B': 0.3, 'C': 0.5},
+            {'B': 0.25, 'C': 0.4, 'D': 0.25, 'E': 0.1},
         )
         self.assertTrue(0 <= cat_abundances_test['p-value'] <= 1)
         self.assertTrue(0 < cat_abundances_test['abundance_in'].all())
@@ -83,16 +84,24 @@ class TestMicrobeDirectoryComparisons(TestCase):
 
     def test_compare_numeric_abundances(self):
         numeric_abundances_test = compare_numeric_abundances(
-            {5:0.2, 6:0.25, 7:0.25, 8:0.1, 9:0.2},
-            {4:0.2, 6:0.125, 7:0.3, 8:0.375},
+            {5: 0.2, 6: 0.25, 7: 0.25, 8: 0.1, 9: 0.2},
+            {4: 0.2, 6: 0.125, 7: 0.3, 8: 0.375},
         )
         self.assertTrue(0 <= numeric_abundances_test['p-value'] <= 1)
         self.assertTrue(0 < numeric_abundances_test['abundance_in'])
         self.assertTrue(0 < numeric_abundances_test['abundance_out'])
 
-     def test_compare_taxa_lists_abundances(self):
+    def test_compare_taxa_lists_abundances(self):
         taxa_list_abundances_test = compare_taxa_lists_abundances(
-            pd.Series({'Bacteriovorax marinus':0.2, 'Staphylococcus phage 44AHJD':0.1, 'Junonia coenia densovirus':0.3, 'Listeria phage B025':0.25, 'Prevotella copri':0.15}),
-            pd.Series({'Prevotella nigrescens':0.25, 'Mycobacterium phage PattyP':0.3, 'Clostridium asparagiforme':0.15, 'Nocardiopsis halophila':0.2, 'Cucumber Bulgarian virus':0.1})
+            pd.Series({
+                'Bacteriovorax marinus': 0.2, 'Staphylococcus phage 44AHJD': 0.1,
+                'Junonia coenia densovirus': 0.3, 'Listeria phage B025': 0.25,
+                'Prevotella copri': 0.15}
+            ),
+            pd.Series({
+                'Prevotella nigrescens': 0.25, 'Mycobacterium phage PattyP': 0.3,
+                'Clostridium asparagiforme': 0.15, 'Nocardiopsis halophila': 0.2,
+                'Cucumber Bulgarian virus': 0.1
+            })
         )
         self.assertTrue(len(taxa_list_abundances_test.columns) == 7)
