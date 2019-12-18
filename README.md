@@ -19,7 +19,6 @@ TMD aims to:
 * [Virus-Host DB](https://www.genome.jp/virushostdb) a database about the relationships between viruses and their hosts.
 * [HaloDom](http://halodom.bio.auth.gr) a database for halophilic organisms.
 * [The Mycology Collections data Portal- MyCoPortal](http://mycoportal.org/portal/index.php) a network of universities, botanical gardens, museums, and agencies that provide taxonomic, environmental, and specimen-based information of Fungi.
-* [BioCyC Database Collection](https://biocyc.org) a collection of Pathway/Genome Databases for Bacteria.
 * [ISHAM Barcoding Database](http://its.mycologylab.org) a database for human/animal pathogenic fungal species.
 * [FungiDB](https://fungidb.org/fungidb/) an integrated genomic and functional genomic database for Fungi. Includes experimental and environmental isolate sequence data.
 * [RefSoil](https://www.nature.com/articles/ismej2016168#Sec6): A soil microbiome database
@@ -43,8 +42,8 @@ TMD aims to:
 >* Provide a curated list of microbes from four domains: Virus, Archaea, Bacteria and Eukarya
 >* Compile microbial data from different [databases](#first) and [studies](#second) into a single one
 >* Give a phenotypic and ecologic description of microbial species [parameters](#third).
->* Provide a community portal to add data and annotate new microbes
->* Make a machine and human readable database 
+>* Provide a community portal to add data and annotate new microbes.
+>* Make a machine and human readable database. 
 
 ---
 
@@ -65,6 +64,8 @@ Different features are important for different types of Microbe. It doesn't make
    * Human
    * Animal
    * Plant
+   * Bacteria
+   * Fungi
 
 #### Bacteria and Archaea Only
 
@@ -113,8 +114,6 @@ Different features are important for different types of Microbe. It doesn't make
      * Mangrove
      * Sediments
 4. Is it a pathogen? if Yes, which is its host:
-     * Sponges
-     * Corals
      * Fungi
      * Plant
      * Animal
