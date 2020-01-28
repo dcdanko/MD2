@@ -77,8 +77,8 @@ DOMAINS = [el.lower() for el in ALLOWED_SUPERKINGDOMS]
 
 # Programmatic
 MICROBE_DIRECTORY_CSV = join(
-    dirname(dirname(__file__)),
-    'tables/microbe-directory.csv'
+    dirname(__file__),
+    'stored_final_tables/microbe-directory.csv.gz'
 )
 MICROBE_DIRECTORY = pd.read_csv(MICROBE_DIRECTORY_CSV, index_col=7)
 
