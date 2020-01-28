@@ -5,3 +5,4 @@ from .final_tables import (
     eukaryote,
     md1,
 )
+from .annotate import annotate_taxa
