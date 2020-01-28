@@ -27,7 +27,10 @@ setuptools.setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
     ],
-	package_data={'microbe_directory': [
-        'ncbi_tree/*.dmp.gz',
-    ]},
+    package_data={
+        'microbe_directory': [
+            'ncbi_tree/*.dmp.gz',
+            'stored_final_tables/*.csv.gz',
+        ]
+    },
 )
