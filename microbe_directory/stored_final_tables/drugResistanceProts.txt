@@ -1,0 +1,44 @@
+Bicyclomycin resistance protein
+Bifunctional polymyxin resistance protein ArnA
+Bleomycin resistance protein
+Daunorubicin/doxorubicin resistance ABC transporter permease protein DrrB
+Daunorubicin/doxorubicin resistance ATP-binding protein DrrA
+Fosfomycin resistance protein FosX
+Fosmidomycin resistance protein
+Multidrug resistance ABC transporter ATP-binding and permease protein
+Multidrug resistance ABC transporter ATP-binding/permease protein BmrA
+Multidrug resistance efflux pump SepA
+Multidrug resistance-like ATP-binding protein MdlB
+Multidrug resistance protein 3
+Multidrug resistance protein D
+Multidrug resistance protein EbrA
+Multidrug resistance protein MdtA
+Multidrug resistance protein MdtB
+Multidrug resistance protein MdtC
+Multidrug resistance protein MdtE
+Multidrug resistance protein MdtG
+Multidrug resistance protein MdtH
+Multidrug resistance protein MdtK
+Multidrug resistance protein MdtL
+Multidrug resistance protein MdtN
+Multidrug resistance protein MexA
+Multidrug resistance protein MexB
+Multidrug resistance protein NorM
+Multidrug resistance protein Stp
+Multidrug resistance protein YkkC
+Multidrug resistance protein YkkD
+Multiple antibiotic resistance protein MarR
+Persistence and stress-resistance toxin PasT
+Phenazine antibiotic resistance protein EhpR
+putative multidrug resistance ABC transporter ATP-binding/permease protein YheH
+putative multidrug resistance ABC transporter ATP-binding/permease protein YheI
+putative multidrug resistance protein EmrK
+putative multidrug resistance protein EmrY
+Putative multidrug resistance protein MdtD
+Quinolone resistance protein NorB
+Tellurite resistance protein TehA
+Tetracycline resistance protein, class B
+Tetracycline resistance protein, class C
+Vancomycin C-type resistance protein VanC
+Vancomycin/teicoplanin A-type resistance protein VanA
+Virginiamycin B lyase

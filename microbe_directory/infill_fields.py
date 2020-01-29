@@ -8,6 +8,10 @@ from microbe_directory.constants import (
     SPORE_FORMING_GENERA,
     NON_SPORE_FORMING_GENERA,
     PHYLUM_GRAM_STAINS,
+    PSYCHRO,
+    PSYCHRO_GENUS,
+    RADIO,
+    RADIO_GENUS,
 )
 
 
@@ -38,6 +42,9 @@ def infill_bacterial_fields(table, verbose=True):
                 return 'Never'
         return None
 
+    table['spore_forming'] = table['spore_forming'].fillna(table.index.to_series().map(spore_forming))
+    pif('filled in spore status.')
+
     def gram_stain(scientific_name):
         try:
             rank = taxa_tree.rank(scientific_name)
@@ -49,6 +56,9 @@ def infill_bacterial_fields(table, verbose=True):
         except KeyError:
             pass
         return None
+
+    table['gram_stain'] = table['gram_stain'].fillna(table.index.to_series().map(gram_stain))
+    pif('filled in gram stain')
 
     def infill_emp_col_func(col):
         def infill_emp_col(scientific_name):
@@ -63,15 +73,31 @@ def infill_bacterial_fields(table, verbose=True):
             return None
         return infill_emp_col
 
-    table['spore_forming'] = table['spore_forming'].fillna(table.index.to_series().map(spore_forming))
-    pif('filled in spore status.')
-    table['gram_stain'] = table['gram_stain'].fillna(table.index.to_series().map(gram_stain))
-    pif('filled in gram stain')
     emp_cols = [col for col in table.columns if col.startswith('emp') or col.startswith('count')]
     pif(f'filling in {len(emp_cols)} EMP columns')
     for col in emp_cols:
         filler_func = infill_emp_col_func(table[col])
         table[col] = table[col].fillna(table.index.to_series().map(filler_func))
         pif(f'filled in {col}')
-        
+
+    def psychro(scientific_name):
+        if table.loc[scientific_name, 'optimal_temperature'] < 10:
+            return 'Psychrophilic'
+        elif scientific_name in PSYCHRO:
+            return 'Psychrophilic'
+        elif taxa_tree.genus(scientific_name, default=None) in PSYCHRO_GENUS:
+            return 'Psychrophilic Genus'
+        return None
+
+    table['psychrophilic'] = table.index.map(psychro)
+
+    def radiophilic(scientific_name):
+        if scientific_name in RADIO:
+            return 'Radiophilic'
+        elif taxa_tree.genus(scientific_name, default=None) in RADIO_GENUS:
+            return 'Radiophilic Genus'
+        return None
+
+    table['radiophilic'] = table.index.map(radiophilic)
+                               
     return table

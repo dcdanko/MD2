@@ -8,7 +8,7 @@ requirements = [
 ]
 setuptools.setup(
     name="microbe_directory",
-    version="2.0.2",
+    version="2.1.0",
     url="https://github.com/dcdanko/MD2",
     author="Chandrima Bhattacharya",
     author_email="chb4004@med.cornell.edu",
@@ -31,6 +31,7 @@ setuptools.setup(
         'microbe_directory': [
             'ncbi_tree/*.dmp.gz',
             'stored_final_tables/*.csv.gz',
+            'stored_final_tables/*.txt',
         ]
     },
 )

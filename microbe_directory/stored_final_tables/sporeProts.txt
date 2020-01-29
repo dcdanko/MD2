@@ -1,0 +1,81 @@
+Endospore coat-associated protein YheD
+Inner spore coat protein H
+Prespore-specific transcriptional regulator RsfA
+Protease synthase and sporulation protein PAI 2
+putative spore germination protein GerPA
+putative spore germination protein GerPB
+putative spore germination protein GerPC
+putative spore germination protein GerPD
+putative spore germination protein GerPE
+putative spore germination protein GerPF
+putative spore protein YtfJ
+Putative sporulation transcription regulator WhiA
+Small, acid-soluble spore protein A
+Small, acid-soluble spore protein C
+Small, acid-soluble spore protein D
+Small, acid-soluble spore protein gamma-type
+Small, acid-soluble spore protein H
+Small, acid-soluble spore protein I
+Small, acid-soluble spore protein K
+Small, acid-soluble spore protein N
+Small, acid-soluble spore protein O
+Small, acid-soluble spore protein P
+Small, acid-soluble spore protein Tlp
+Spore coat assembly protein ExsA
+Spore coat-associated protein N
+Spore coat protein A
+Spore coat protein E
+Spore coat protein SA
+Spore coat protein Z
+Spore germination protein A1
+Spore germination protein A3
+Spore germination protein B1
+Spore germination protein B3
+Spore germination protein GerD
+Spore germination protein GerE
+Spore germination protein GerM
+Spore germination protein YaaH
+Spore germination protein YndE
+Spore maturation protein A
+Spore maturation protein B
+Spore photoproduct lyase
+Spore protein SP21
+Spore protein YabP
+Spore protein YabQ
+Spore protein YkvP
+Sporulation-control protein spo0M
+Sporulation inhibitor of replication protein SirA
+Sporulation initiation inhibitor protein Soj
+Sporulation initiation phosphotransferase F
+Sporulation integral membrane protein YlbJ
+Sporulation kinase D
+Sporulation kinase E
+Sporulation membrane protein YtrH
+Sporulation membrane protein YtrI
+Sporulation protein cse60
+Sporulation protein YdcC
+Sporulation protein YunB
+Sporulation sigma-E factor-processing peptidase
+Sporulation-specific extracellular nuclease
+Sporulation-specific protease YabG
+Sporulation transcription regulator WhiA
+Stage 0 sporulation protein A
+Stage 0 sporulation protein J
+Stage III sporulation protein AB
+Stage III sporulation protein AE
+Stage III sporulation protein AH
+Stage III sporulation protein D
+Stage II sporulation protein E
+Stage II sporulation protein M
+Stage II sporulation protein Q
+Stage II sporulation protein SA
+Stage II sporulation protein SB
+Stage IV sporulation protein A
+Stage IV sporulation protein FA
+Stage IV sporulation protein FB
+Stage V sporulation protein AD
+Stage V sporulation protein B
+Stage V sporulation protein D
+Stage V sporulation protein K
+Stage V sporulation protein S
+Stage V sporulation protein T

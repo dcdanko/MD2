@@ -10,6 +10,10 @@ from .final_tables import (
 
 
 def annotate_taxa(taxa, kind='bacteria'):
+    """Return a pandas dataframe with annotations for taxa in the list.
+
+    Drops any columns that is null.
+    """
     tbl = bacteria
     if kind[0] == 'e':
         tbl = eukaryote
@@ -20,4 +24,5 @@ def annotate_taxa(taxa, kind='bacteria'):
         },
         orient='columns'
     ).set_index('taxa').join(tbl(), how='left')
+    md_annotations = md_annotations.dropna(axis=1, how='all')
     return md_annotations

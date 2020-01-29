@@ -39,6 +39,18 @@ def file_clean(tbl):
     return new_tbl
 
 
+def clean_columns(tbl):
+    unnamed = [el for el in tbl.columns if 'unnamed' in el.lower()]
+    tbl = tbl.drop(columns=unnamed)
+    halo = [el for el in tbl.columns if 'halotolerance_classification' in el.lower()]
+    if halo:
+        tbl['halotolerance'] = tbl[halo[0]].iloc[:, 0].map(
+            lambda el: 'Moderate' if 'Moderate' in str(el) else str(el).strip()
+        )
+        tbl = tbl.drop(columns=halo)
+    return tbl
+
+
 def reduce_col(tbl):
     """Remove empty columns, ids and taxonomy columns"""
     drop_col = tbl.dropna(axis='columns', how='all')

@@ -2,7 +2,7 @@ import click
 import pandas as pd
 
 from microbe_directory.taxa_tree import NCBITaxaTree, TaxonomicRankError
-from microbe_directory.clean_table import file_clean
+from microbe_directory.clean_table import file_clean, clean_columns
 from microbe_directory.dataset_modification import taxa_to_organism
 from microbe_directory.infill_fields import infill_bacterial_fields
 from microbe_directory.constants import DOMAINS, FUNGI
@@ -100,6 +100,7 @@ def clean_file(outfile, file):
     cleaned_file = file_clean(tbl)
     cleaned_file = cleaned_file.replace('nan', '')
     cleaned_file.reset_index()
+    cleaned_file = clean_columns(cleaned_file)
     cleaned_file.to_csv(outfile)
 
 

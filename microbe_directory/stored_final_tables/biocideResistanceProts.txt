@@ -1,0 +1,28 @@
+Antiseptic resistance protein
+Arsenical resistance operon repressor
+Arsenical resistance operon trans-acting repressor ArsD
+Arsenical-resistance protein Acr3
+Arsenic resistance transcriptional regulator ArsR2
+Cobalt-zinc-cadmium resistance protein CzcA
+Cobalt-zinc-cadmium resistance protein CzcB
+Cobalt-zinc-cadmium resistance protein CzcC
+Cobalt-zinc-cadmium resistance protein CzcI
+Copper resistance protein A
+Copper resistance protein B
+Copper resistance protein C
+Copper resistance protein D
+Iron-sulfur cluster repair protein ScdA
+Mercuric resistance operon regulatory protein
+Methyl viologen resistance protein SmvA
+Methyl viologen resistance protein YddG
+Nickel and cobalt resistance protein CnrA
+Nickel and cobalt resistance protein CnrB
+Nickel and cobalt resistance protein CnrC
+Nickel and cobalt resistance protein CnrR
+Nickel-cobalt-cadmium resistance protein NccX
+Organic hydroperoxide resistance protein-like protein
+Organic hydroperoxide resistance protein OhrA
+Organic hydroperoxide resistance protein OhrB
+Organic hydroperoxide resistance transcriptional regulator
+Quaternary ammonium compound-resistance protein QacC
+Quaternary ammonium compound-resistance protein SugE
