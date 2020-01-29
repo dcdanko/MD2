@@ -44,7 +44,10 @@ def clean_columns(tbl):
     tbl = tbl.drop(columns=unnamed)
     halo = [el for el in tbl.columns if 'halotolerance_classification' in el.lower()]
     if halo:
-        tbl['halotolerance'] = tbl[halo[0]].iloc[:, 0].map(
+        h = tbl[halo[0]]
+        if isinstance(h, pd.DataFrame):
+            h = h.iloc[:, 0]
+        tbl['halotolerance'] = h.map(
             lambda el: 'Moderate' if 'Moderate' in str(el) else str(el).strip()
         )
         tbl = tbl.drop(columns=halo)

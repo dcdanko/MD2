@@ -81,11 +81,17 @@ def infill_bacterial_fields(table, verbose=True):
         pif(f'filled in {col}')
 
     def psychro(scientific_name):
-        if table.loc[scientific_name, 'optimal_temperature'] < 10:
+        try:
+            temp = float(table.loc[scientific_name, 'optimal_temperature'])
+            if temp < 10:
+                return 'Psychrophilic'
+        except TypeError:
+            pass
+        except ValueError:
+            pass
+        if scientific_name in PSYCHRO:
             return 'Psychrophilic'
-        elif scientific_name in PSYCHRO:
-            return 'Psychrophilic'
-        elif taxa_tree.genus(scientific_name, default=None) in PSYCHRO_GENUS:
+        elif taxa_tree.genus(scientific_name, default='') in PSYCHRO_GENUS:
             return 'Psychrophilic Genus'
         return None
 
@@ -94,7 +100,7 @@ def infill_bacterial_fields(table, verbose=True):
     def radiophilic(scientific_name):
         if scientific_name in RADIO:
             return 'Radiophilic'
-        elif taxa_tree.genus(scientific_name, default=None) in RADIO_GENUS:
+        elif taxa_tree.genus(scientific_name, default='') in RADIO_GENUS:
             return 'Radiophilic Genus'
         return None
 

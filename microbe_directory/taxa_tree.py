@@ -52,11 +52,15 @@ class NCBITaxaTree:
 
     def ancestor_rank(self, rank, taxon, default=None):
         """Return the ancestor of taxon at the given rank."""
-        parent_num = self.parent_map[self._node(taxon)]
-        while int(parent_num) > 1:
-            if rank == self.nodes_to_name[parent_num]['rank']:
-                return self.nodes_to_name[parent_num]['name']
-            parent_num = self.parent_map[parent_num]
+        try:
+            parent_num = self.parent_map[self._node(taxon)]
+            while int(parent_num) > 1:
+                if rank == self.nodes_to_name[parent_num]['rank']:
+                    return self.nodes_to_name[parent_num]['name']
+                parent_num = self.parent_map[parent_num]
+        except KeyError:
+            if default is None:
+                raise
         return default
 
     def ancestors(self, taxon, max_rank=ROOT_RANK):
