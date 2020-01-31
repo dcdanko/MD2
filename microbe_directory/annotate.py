@@ -9,7 +9,7 @@ from .final_tables import (
 )
 
 
-def annotate_taxa(taxa, kind='bacteria'):
+def annotate_taxa(taxa, kind='bacteria', drop=True):
     """Return a pandas dataframe with annotations for taxa in the list.
 
     Drops any columns that is null.
@@ -24,5 +24,6 @@ def annotate_taxa(taxa, kind='bacteria'):
         },
         orient='columns'
     ).set_index('taxa').join(tbl(), how='left')
-    md_annotations = md_annotations.dropna(axis=1, how='all')
+    if drop:
+        md_annotations = md_annotations.dropna(axis=1, how='all')
     return md_annotations

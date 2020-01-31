@@ -8,7 +8,7 @@ requirements = [
 ]
 setuptools.setup(
     name="microbe_directory",
-    version="2.2.0",
+    version="2.2.1",
     url="https://github.com/dcdanko/MD2",
     author="Chandrima Bhattacharya",
     author_email="chb4004@med.cornell.edu",
