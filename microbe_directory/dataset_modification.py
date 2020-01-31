@@ -1,27 +1,34 @@
 import pandas as pd
 import numpy as np
 
-def metasub_process(filename, metadata_filename, feature_name='city', subtext='metasub'):
-    metasub_merged = {}
-    metadata = pd.read_csv(metadata_filename, index_col=0)
-    metadata = metadata.loc[filename.index]
-    feature = metadata[feature_name]
-    factorized, name_map = pd.factorize(feature)
-    for i in range(0, len(name_map)):
-        metasub_df = filename[factorized == i]
-        species_count = metasub_df.count()
-        species_array = (species_count.values/metasub_df.shape[0]) * 100
-        if i == 0:
-            data = np.reshape(species_array, (len(species_array)),1)
-            metasub_merged = pd.DataFrame(data, index = list(filename.columns.values), columns=[str(subtext + '_' + name_map[i])]) 
-        else:
-            metasub_merged[str(subtext + '_' + name_map[i])] = np.reshape(species_array, (len(species_array)),1)
-    metasub_merged[metasub_merged.apply(lambda x: (x>0) & (x<=25))] = 2
-    metasub_merged[metasub_merged.apply(lambda x: (x>25) & (x<75))] = 3
-    metasub_merged[metasub_merged.apply(lambda x: (x>=75) & (x<100))] = 4
-    metasub_merged = metasub_merged.replace([0, 2, 3, 4, 100], ['Never Observed', 'Rarely Observed', 'Fairly Observed', 'Mostly Observed', 'Always Observed'])
-    return metasub_merged
-	
+
+def metasub_process(taxa_tbl, metadata, feature_name='city', prefix='metasub_', min_size=16):
+    shared_keys = set(taxa_tbl.index) & set(metadata.index)
+    metadata, taxa_tbl = metadata.loc[shared_keys], taxa_tbl.loc[shared_keys]
+    taxa_tbl = taxa_tbl > 0  # convert to presense/absence matrix
+    taxa_tbl[feature_name] = metadata[feature_name]
+    taxa_tbl = taxa_tbl.groupby(feature_name).filter(lambda df: df.shape[0] >= min_size)
+    taxa_tbl = taxa_tbl.groupby(feature_name).mean()  # gives the prevalence of each taxa per group
+    taxa_tbl = taxa_tbl.T  # features in columns, taxa in rows
+    taxa_tbl.columns = taxa_tbl.columns.map(lambda el: prefix + el)
+
+    def relabel_ranges(fraction):
+        if fraction < 0.000001:
+            return 'Never Observed'
+        if fraction <= 0.25:
+            return 'Rarely Observed'
+        if fraction <= 0.75:
+            return 'Observed'
+        if fraction < 0.98:
+            return 'Often Observed'
+        if fraction <= 1.0:
+            return 'Always Observed'
+        assert False, f'Invalid fraction: {fraction}'
+
+    taxa_tbl = taxa_tbl.applymap(relabel_ranges)
+    return taxa_tbl
+
+
 def convert_taxa_tree(filename, biom_file, metadata_file, feature_name):
     otu_file = pd.read_csv(filename, index_col=0)
     otu_file.replace('__', ' __', inplace=True, regex=True)
@@ -56,7 +63,7 @@ def convert_taxa_tree(filename, biom_file, metadata_file, feature_name):
     metadata_2 = metadata_2.replace([0, 2, 3, 4, 1], ['Never Observed', 'Rarely Observed', 'Fairly Observed', 'Mostly Observed', 'Always Observed'])
     return metadata_2.transpose()
 
-	
+
 def taxa_to_organism(otu_file):
     """Convert to the most relevant level of organism for ITS/16S/18S/amplicons studies"""
     taxa_level = ['organism', 'species', 'genus', 'family', 'order', 'class', 'phylum', 'kingdom', 'domain']

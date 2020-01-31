@@ -15,20 +15,16 @@ from microbe_directory.constants import (
 )
 
 
-def infill_bacterial_fields(table, verbose=True):
-    """Return a copy of table with certain fields filled in.
+
+
+def infill_bacterial_fields(tbl, verbose=True):
+    """Return a copy of tbl with certain fields filled in.
 
     Currently fills in
      - Spore forming status for genus and below
      - Gram stain based on stain of ancestor
      - Presence of relevant genus in the EMP
     """
-    def pif(el):
-        if verbose:
-            click.echo(el, err=True)
-
-    taxa_tree = NCBITaxaTree.parse_files()
-    pif('built taxa tree.')
 
     def spore_forming(scientific_name):
         try:
@@ -42,9 +38,6 @@ def infill_bacterial_fields(table, verbose=True):
                 return 'Never'
         return None
 
-    table['spore_forming'] = table['spore_forming'].fillna(table.index.to_series().map(spore_forming))
-    pif('filled in spore status.')
-
     def gram_stain(scientific_name):
         try:
             rank = taxa_tree.rank(scientific_name)
@@ -56,9 +49,6 @@ def infill_bacterial_fields(table, verbose=True):
         except KeyError:
             pass
         return None
-
-    table['gram_stain'] = table['gram_stain'].fillna(table.index.to_series().map(gram_stain))
-    pif('filled in gram stain')
 
     def infill_emp_col_func(col):
         def infill_emp_col(scientific_name):
@@ -73,16 +63,9 @@ def infill_bacterial_fields(table, verbose=True):
             return None
         return infill_emp_col
 
-    emp_cols = [col for col in table.columns if col.startswith('emp') or col.startswith('count')]
-    pif(f'filling in {len(emp_cols)} EMP columns')
-    for col in emp_cols:
-        filler_func = infill_emp_col_func(table[col])
-        table[col] = table[col].fillna(table.index.to_series().map(filler_func))
-        pif(f'filled in {col}')
-
     def psychro(scientific_name):
         try:
-            temp = float(table.loc[scientific_name, 'optimal_temperature'])
+            temp = float(tbl.loc[scientific_name, 'optimal_temperature'])
             if temp < 10:
                 return 'Psychrophilic'
         except TypeError:
@@ -95,8 +78,6 @@ def infill_bacterial_fields(table, verbose=True):
             return 'Psychrophilic Genus'
         return None
 
-    table['psychrophilic'] = table.index.map(psychro)
-
     def radiophilic(scientific_name):
         if scientific_name in RADIO:
             return 'Radiophilic'
@@ -104,6 +85,30 @@ def infill_bacterial_fields(table, verbose=True):
             return 'Radiophilic Genus'
         return None
 
-    table['radiophilic'] = table.index.map(radiophilic)
-                               
-    return table
+    def pif(el):
+        if verbose:
+            click.echo(el, err=True)
+
+    taxa_tree = NCBITaxaTree.parse_files()
+    pif('built taxa tree.')
+
+    tbl['spore_forming'] = tbl['spore_forming'].fillna(tbl.index.to_series().map(spore_forming))
+    pif('filled in spore status.')
+
+    tbl['gram_stain'] = tbl['gram_stain'].fillna(tbl.index.to_series().map(gram_stain))
+    pif('filled in gram stain')
+
+    tbl['psychrophilic'] = tbl.index.to_series().map(psychro)
+    pif('filled in psychrophilia')
+
+    tbl['radiophilic'] = tbl.index.to_series().map(radiophilic)
+    pif('filled in radiophilia')
+
+    emp_cols = [col for col in tbl.columns if col.startswith('emp') or col.startswith('count')]
+    pif(f'filling in {len(emp_cols)} EMP columns')
+    for col in emp_cols:
+        filler_func = infill_emp_col_func(tbl[col])
+        tbl[col] = tbl[col].fillna(tbl.index.to_series().map(filler_func))
+        pif(f'filled in {col}')
+
+    return tbl

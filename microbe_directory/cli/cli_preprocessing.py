@@ -14,15 +14,16 @@ def preprocessing():
 
 
 @preprocessing.command('metasub')
-@click.option('--feature-name', default='city', help='The feature to consider')
-@click.option('--subtext', default='metasub', help='Name of Study')
-@click.argument('file', type=click.File('r'))
-@click.argument('metadata-file', type=click.File('r'))
-@click.argument('out', type=click.File('w'))
-def metasub_preprocess(feature_name, subtext, file, metadata_file, out):
+@click.option('-f', '--feature-name', default='city', help='The feature to condense')
+@click.option('-p', '--prefix', default='metasub_', help='Name of Study')
+@click.option('-o', '--out', type=click.File('w'), default='-')
+@click.argument('taxa_tbl', type=click.File('r'))
+@click.argument('metadata_tbl', type=click.File('r'))
+def metasub_preprocess(feature_name, prefix, out, taxa_tbl, metadata_tbl):
     """Construct a table to integrate MetaSUB data based on chosen feature"""
-    file_name = pd.read_csv(file, index_col=0)
-    compiled_metasub = metasub_process(file_name, metadata_file, feature_name, subtext)
+    taxa_tbl = pd.read_csv(taxa_tbl, index_col=0)
+    metadata = pd.read_csv(metadata_tbl, index_col=0)
+    compiled_metasub = metasub_process(taxa_tbl, metadata, feature_name, prefix)
     compiled_metasub.to_csv(out)
 
 

@@ -3,6 +3,7 @@ import pandas as pd
 
 from microbe_directory.taxa_tree import NCBITaxaTree, TaxonomicRankError
 from microbe_directory.clean_table import file_clean, clean_columns
+from microbe_directory.composite_fields import add_composite_fields
 from microbe_directory.dataset_modification import taxa_to_organism
 from microbe_directory.infill_fields import infill_bacterial_fields
 from microbe_directory.constants import DOMAINS, FUNGI
@@ -111,6 +112,16 @@ def update_bacteria(outfile, table):
     """Parse NCBI File to fill a column which exhibits certain hierarchical traits"""
     table = pd.read_csv(table, index_col=1, dtype=str)
     table = infill_bacterial_fields(table)
+    table.to_csv(outfile)
+
+
+@main.command('composite-bacteria')
+@click.option('-o', '--outfile', default='-', type=click.File('w'))
+@click.argument('table', type=click.File('r'))
+def composite_bacteria(outfile, table):
+    """Add certain columns which summarize other"""
+    table = pd.read_csv(table, index_col=1, dtype=str)
+    table = add_composite_fields(table)
     table.to_csv(outfile)
 
 

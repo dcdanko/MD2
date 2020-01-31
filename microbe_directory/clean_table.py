@@ -70,7 +70,10 @@ def reduce_col(tbl):
 def rename_col(tbl):
     """Convert column names as per snakelowercase standards"""
     tbl.columns = tbl.columns.str.strip().str.lower()
-    pairs = [(' ', '_'), ('_x', '_'), ('_y', '_'), ('.', '_'), (',', '_')]
+    pairs = [
+        (' ', '_'), ('_x', '_'), ('_y', '_'), ('.', '_'), (',', '_'),
+        ('/', '_'), ('(', '_'), (')', ''),
+    ]
     for a, b in pairs:
         tbl.columns = tbl.columns.str.replace(a, b)
     return tbl.columns
