@@ -1,7 +1,7 @@
 # The Microbe Directory v2.0
 *The ultimate microbe database*
 
-**The Microbe Directory (TMD)** is a collective research effort to profile and annotate more than 200,000 microbial species that include Bacteria, Archaea, Virus, Fungi, and Algae.
+**The Microbe Directory (TMD)** is a collective research effort to profile and annotate more than 68,000 microbial species that include Bacteria, Archaea, Virus, Fungi, and Algae.
 
 TMD aims to:
 
